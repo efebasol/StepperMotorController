@@ -56,4 +56,5 @@ for DIR in "$@"; do
   rm -rf "$W"/{base,head}_{sch,pcb}
 done
 git worktree remove --force /tmp/base
+echo "::notice title=Visual diff::$(cd $OUT && find . -name '*.png' -printf '%P (%kK) ' | cut -c1-900)"
 echo "Görsel diff hazır: $HTML"

@@ -53,5 +53,6 @@ kicad-cli sch export bom --output "$OUT/fab/bom.csv" \
   --group-by 'Value,Footprint' --ref-range-delimiter '' "$SCH" >/dev/null || true
 
 echo "" >> "$SUM"; echo "📦 Çıktılar: **$NAME-outputs** artifact'ında (şematik PDF, BOM, Gerber, CPL, raporlar)." >> "$SUM"
+echo "::notice title=Çıktılar ($NAME)::$(cd "$OUT" && find . -type f -printf '%P (%kK) ' | cut -c1-900)"
 if [ "${STRICT:-0}" = "1" ] && [ $fail = 1 ]; then echo "STRICT: ERC/DRC hatası"; exit 1; fi
 exit 0
