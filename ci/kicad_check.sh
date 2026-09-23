@@ -20,6 +20,7 @@ v=[x for s in d.get('sheets',[]) for x in s.get('violations',[])]
 print(sum(x['severity']=='error' for x in v), sum(x['severity']=='warning' for x in v))")
 echo "| Kontrol | Hata | Uyarı |" >> "$SUM"; echo "|---|---|---|" >> "$SUM"
 echo "| ERC | $E | $W |" >> "$SUM"
+echo "::notice title=ERC ($NAME)::$E hata, $W uyarı"
 [ "$E" -gt 0 ] && echo "::warning title=ERC ($NAME)::$E hata, $W uyarı – detay: artifact > reports/erc.rpt" && fail=1
 
 # --- DRC (şematik eşleşmesi dahil) ---
@@ -31,6 +32,7 @@ import json; d=json.load(open('$OUT/reports/drc.json'))
 v=d.get('violations',[])
 print(sum(x['severity']=='error' for x in v), sum(x['severity']=='warning' for x in v), len(d.get('unconnected_items',[])), len(d.get('schematic_parity',[])))")
   echo "| DRC | $DE | $DW |" >> "$SUM"
+  echo "::notice title=DRC ($NAME)::$DE hata, $DW uyarı, $DU bağlanmamış, $DP şematik farkı"
   echo "| Bağlanmamış | $DU | – |" >> "$SUM"
   echo "| Şematik ↔ PCB farkı | $DP | – |" >> "$SUM"
   [ "$DE" -gt 0 ] || [ "$DU" -gt 0 ] && echo "::warning title=DRC ($NAME)::$DE hata, $DU bağlanmamış – detay: artifact > reports/drc.rpt" && fail=1

@@ -2,9 +2,10 @@
 # Kullanım: ci/kicad_visual_diff.sh <base-ref> <kart-klasörü...>
 # İki commit arasındaki şematik ve PCB farkını görsel olarak çıkarır → diff-out/index.html
 set -uo pipefail
+LOG=/tmp/vdiff.log; exec 2> >(tee -a "$LOG" >&2)
 BASE="$1"; shift
 OUT="diff-out"; mkdir -p "$OUT"
-git worktree add -q /tmp/base "$BASE" 2>/dev/null || { echo "base ref bulunamadı: $BASE"; exit 1; }
+git worktree add -q /tmp/base "$BASE" || { echo "::error title=Visual diff::base ref açılamadı: $BASE – $(tail -3 $LOG | tr '\n' ' ')"; exit 1; }
 HEADSHA=$(git rev-parse --short HEAD); BASESHA=$(git -C /tmp/base rev-parse --short HEAD)
 HTML="$OUT/index.html"
 cat > "$HTML" <<H

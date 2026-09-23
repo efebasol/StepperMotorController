@@ -26,7 +26,7 @@ jobs:
       - name: Araçlar
         run: |
           apt-get update -qq && apt-get install -y -qq git imagemagick librsvg2-bin >/dev/null
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --system --add safe.directory "*"
       - name: Görsel diff
         env:
           HOME: /root
