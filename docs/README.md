@@ -1,6 +1,6 @@
 # docs
 
-Tasarım hesapları, kararlar ve notlar.
+Design calculations, decisions and notes.
 
-- Datasheet PDF'lerini buraya koyma → link ver (repo şişmesin).
-- Hesap dosyaları (Excel/Python/Markdown) buraya: FB bölücüler, UVLO, chopper eşiği, track width, kayıp/ısı hesapları.
+- Don't put datasheet PDFs here → link them instead (keeps the repo small).
+- Calculation files (Excel/Python/Markdown) go here: FB dividers, UVLO, chopper threshold, track widths, loss/thermal estimates.

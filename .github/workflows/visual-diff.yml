@@ -1,15 +1,15 @@
 name: Visual Diff
 
-# Şematik/PCB'deki değişiklikleri görsel olarak gösterir (önce | sonra | fark).
-# Otomatik: hardware/ değişen her push'ta bir önceki commit ile karşılaştırır.
-# Elle: Actions > Visual Diff > Run workflow → base alanına tag/commit yaz (örn. power-rev-a).
+# Shows schematic/PCB changes visually (before | after | diff).
+# Automatic: on every push that touches hardware/, compares against the previous commit.
+# Manual: Actions > Visual Diff > Run workflow → enter a tag/commit as base (e.g. power-rev-a).
 on:
   push:
     paths: ["hardware/**"]
   workflow_dispatch:
     inputs:
       base:
-        description: "Karşılaştırılacak eski commit / tag / branch"
+        description: "Older commit / tag / branch to compare against"
         required: true
         default: "HEAD~1"
 
@@ -23,11 +23,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Araçlar
+      - name: Tools
         run: |
           apt-get update -qq && apt-get install -y -qq git imagemagick librsvg2-bin >/dev/null
           git config --system --add safe.directory "*"
-      - name: Görsel diff
+      - name: Visual diff
         env:
           HOME: /root
         run: |
@@ -36,8 +36,8 @@ jobs:
           BOARDS=$(git diff --name-only "$BASE" HEAD -- hardware | cut -d/ -f2 | sort -u | grep -v '^lib$' | sed 's#^#hardware/#')
           [ -z "$BOARDS" ] && BOARDS="hardware/power hardware/driver"
           bash ci/kicad_visual_diff.sh "$BASE" $BOARDS
-          echo "### 🔍 Görsel diff hazır" >> $GITHUB_STEP_SUMMARY
-          echo "**visual-diff** artifact'ını indir, \`index.html\`'i aç." >> $GITHUB_STEP_SUMMARY
+          echo "### 🔍 Visual diff ready" >> $GITHUB_STEP_SUMMARY
+          echo "Download the **visual-diff** artifact and open \`index.html\`." >> $GITHUB_STEP_SUMMARY
       - uses: actions/upload-artifact@v4
         with:
           name: visual-diff

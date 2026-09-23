@@ -1,6 +1,6 @@
 name: Hardware CI
 
-# Her push'ta: ERC, DRC, şematik PDF, BOM, Gerber, CPL
+# On every push: ERC, DRC, schematic PDF, BOM, Gerber, CPL
 on:
   push:
     paths: ["hardware/**", "ci/**", ".github/workflows/hardware-ci.yml"]
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  # 1 yaparsan ERC/DRC hatasında ✗ olur. Layout bitene kadar 0: sadece rapor + uyarı.
+  # Set to 1 to fail on ERC/DRC errors. Keep 0 until layout is done: report + warnings only.
   STRICT: "0"
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     name: ${{ matrix.board }}
     runs-on: ubuntu-latest
     container:
-      image: kicad/kicad:10.0-full   # -full: standart sembol/footprint kütüphaneleri dahil
+      image: kicad/kicad:10.0-full   # -full: includes the standard symbol/footprint libraries
       options: --user root
     strategy:
       fail-fast: false
@@ -25,16 +25,16 @@ jobs:
         board: [power, driver]
     steps:
       - uses: actions/checkout@v4
-      - name: Araçlar
+      - name: Tools
         run: apt-get update -qq && apt-get install -y -qq zip python3 >/dev/null
-      - name: KiCad kütüphane tabloları
+      - name: KiCad library tables
         run: |
           mkdir -p /root/.config/kicad/10.0
           for t in sym-lib-table fp-lib-table; do
             f=$(find /usr/share/kicad -name "$t" -path '*template*' | head -1); [ -n "$f" ] && cp "$f" /root/.config/kicad/10.0/
           done
           ls /root/.config/kicad/10.0
-      - name: ERC / DRC / çıktılar
+      - name: ERC / DRC / outputs
         env:
           HOME: /root
         run: bash ci/kicad_check.sh hardware/${{ matrix.board }}

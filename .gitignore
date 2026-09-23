@@ -3,7 +3,7 @@
 #  KiCad 6–10 + STM32CubeIDE
 # ============================================
 
-# --- Yedekler ---
+# --- Backups ---
 *-backups/
 *.bak
 *.bck
@@ -14,37 +14,37 @@
 _autosave-*
 \#auto_saved_files\#
 
-# --- Kilit dosyaları (dosya açıkken oluşur) ---
+# --- Lock files (created while a file is open) ---
 *.lmk
 ~*.lck
 *.lck
 
-# --- Kişisel/yerel ayarlar (açık pencereler, katman görünürlüğü vs.) ---
+# --- Personal/local settings (open windows, layer visibility, etc.) ---
 *.kicad_prl
 
-# --- KiCad 10 yerel geçmiş (Local History) — kendi içinde git reposu ---
+# --- KiCad 10 Local History (a git repo of its own) ---
 .history/
 
-# --- Önbellekler ---
+# --- Caches ---
 fp-info-cache
 *.cache
 
-# --- Raporlar (DRC/ERC çıktıları) ---
+# --- Reports (ERC/DRC output) ---
 *.rpt
 *.erc
 *.drc
 
-# --- Autorouter (Freerouting) ara dosyaları ---
+# --- Autorouter (Freerouting) intermediate files ---
 *.dsn
 *.ses
 
-# --- Netlist / BOM gibi yeniden üretilebilir çıktılar ---
+# --- Regenerable outputs (netlist / BOM) ---
 *.net
 *.xml
 *.csv
 
-# --- Üretim çıktıları ---
-# Repoya girmez: CI her push'ta üretir, siparişe gidenler GitHub Release'e eklenir
+# --- Fabrication outputs ---
+# Not committed: CI generates them on every push; the ordered revision is attached to a GitHub Release
 gerber/
 gerbers/
 fab/
@@ -57,14 +57,14 @@ production/
 # --- KiCad 5 legacy ---
 *.000
 *.pro-bak
-# NOT: KiCad 5 kullanıyorsan *-cache.lib dosyasını ignore ETME, sembolleri o tutuyor
+# NOTE: on KiCad 5 do NOT ignore *-cache.lib, it holds the symbols
 
-# --- CI / yerel çıktı klasörleri ---
+# --- CI / local output folders ---
 ci-out/
 diff-out/
 
-# --- STM32CubeIDE / firmware derleme çıktıları ---
-# (.ioc, .project, .cproject, .mxproject COMMIT'LENİR)
+# --- STM32CubeIDE / firmware build outputs ---
+# (.ioc, .project, .cproject, .mxproject ARE committed)
 firmware/**/Debug/
 firmware/**/Release/
 firmware/**/build/
@@ -79,13 +79,13 @@ firmware/**/build/
 *.hex
 *.bin
 
-# --- Gizli bilgiler (asla commit'leme) ---
+# --- Secrets (never commit) ---
 *.pem
 *.key
 .env
 *token*
 
-# --- İşletim sistemi / editör çöpleri ---
+# --- OS / editor junk ---
 .DS_Store
 Thumbs.db
 desktop.ini
