@@ -1,0 +1,43 @@
+name: 🐞 Donanım / firmware hatası
+description: Şematikte, layout'ta, kartta veya firmware'de bulunan bir hata
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: board
+    attributes:
+      label: Kart / alan
+      options: [Güç kartı, Sürücü kartı, Ana kart, Firmware, Diğer]
+    validations: {required: true}
+  - type: input
+    id: rev
+    attributes:
+      label: Revizyon / commit
+      description: Hangi kart revizyonunda veya commit'te görüldü?
+      placeholder: "Rev A / power-rev-a / 4aabb87"
+    validations: {required: true}
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Nerede bulundu?
+      options: [Şematik review, Layout review, ERC/DRC, Bring-up / test, Çalışma sırasında]
+  - type: textarea
+    id: what
+    attributes:
+      label: Sorun ne?
+      description: Beklenen davranış ne, ne oluyor?
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Kanıt
+      description: Ölçüm değerleri, osiloskop görüntüsü, şematik/layout ekran görüntüsü (sürükle-bırak)
+  - type: textarea
+    id: fix
+    attributes:
+      label: Olası çözüm
+  - type: dropdown
+    id: when
+    attributes:
+      label: Ne zaman düzeltilecek?
+      options: [Bu revizyonda, Rev B'ye bırak, Karar verilmedi]

@@ -21,6 +21,25 @@ print(sum(x['severity']=='error' for x in v), sum(x['severity']=='warning' for x
 echo "| Kontrol | Hata | Uyarı |" >> "$SUM"; echo "|---|---|---|" >> "$SUM"
 echo "| ERC | $E | $W |" >> "$SUM"
 echo "::notice title=ERC ($NAME)::$E hata, $W uyarı"
+# --- ERC uyarılarını türe göre grupla ---
+python3 - "$OUT/reports/erc.json" "$NAME" >> "$SUM" <<'PY'
+import json,sys,collections
+d=json.load(open(sys.argv[1])); name=sys.argv[2]
+v=[x for s in d.get('sheets',[]) for x in s.get('violations',[])]
+if not v: sys.exit()
+c=collections.Counter((x['severity'],x['type'],x['description']) for x in v)
+print("\n#### ERC dağılımı\n\n| Seviye | Tür | Açıklama | Adet | Örnek |\n|---|---|---|---|---|")
+ex={}
+for x in v:
+    k=(x['severity'],x['type'],x['description'])
+    if k not in ex:
+        it=[i.get('description','') for i in x.get('items',[])][:2]
+        ex[k]=" / ".join(it)[:90]
+for (sev,t,desc),n in c.most_common():
+    print(f"| {sev} | `{t}` | {desc} | **{n}** | {ex[(sev,t,desc)]} |")
+top="; ".join(f"{t}×{n}" for (sev,t,desc),n in c.most_common(6))
+print(f"::notice title=ERC türleri ({name})::{top}", file=sys.stderr)
+PY
 [ "$E" -gt 0 ] && echo "::warning title=ERC ($NAME)::$E hata, $W uyarı – detay: artifact > reports/erc.rpt" && fail=1
 
 # --- DRC (şematik eşleşmesi dahil) ---

@@ -1,0 +1,27 @@
+name: 🛠️ Görev
+description: Yapılacak bir iş (şematik, layout, firmware, test, doküman)
+labels: []
+body:
+  - type: dropdown
+    id: board
+    attributes:
+      label: Kart / alan
+      options: [Güç kartı, Sürücü kartı, Ana kart, Firmware, Doküman, Diğer]
+    validations: {required: true}
+  - type: textarea
+    id: goal
+    attributes:
+      label: Amaç
+      description: Bu iş bitince ne değişmiş olacak?
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes:
+      label: Adımlar
+      value: |
+        - [ ] 
+  - type: input
+    id: blocked
+    attributes:
+      label: Bağımlılık
+      placeholder: "Blocked by #..."
