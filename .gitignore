@@ -1,0 +1,65 @@
+# ============================================
+#  KiCad .gitignore (KiCad 6 / 7 / 8 / 9)
+# ============================================
+
+# --- Yedekler ---
+*-backups/
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*~
+_autosave-*
+\#auto_saved_files\#
+
+# --- Kilit dosyaları (dosya açıkken oluşur) ---
+*.lmk
+~*.lck
+
+# --- Kişisel/yerel ayarlar (açık pencereler, katman görünürlüğü vs.) ---
+*.kicad_prl
+
+# --- Önbellekler ---
+fp-info-cache
+*.cache
+
+# --- Raporlar (DRC/ERC çıktıları) ---
+*.rpt
+*.erc
+*.drc
+
+# --- Autorouter (Freerouting) ara dosyaları ---
+*.dsn
+*.ses
+
+# --- Netlist / BOM gibi yeniden üretilebilir çıktılar ---
+*.net
+*.xml
+*.csv
+
+# --- Üretim çıktıları ---
+# Gerber'leri repoda tutmak istiyorsan bu satırları yoruma al
+gerber/
+gerbers/
+fab/
+production/
+*.gbr
+*.gbrjob
+*.drl
+*.zip
+
+# --- KiCad 5 legacy ---
+*.000
+*.pro-bak
+# NOT: KiCad 5 kullanıyorsan *-cache.lib dosyasını ignore ETME, sembolleri o tutuyor
+
+# --- İşletim sistemi / editör çöpleri ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+school_files/
+other_files/
