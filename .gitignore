@@ -1,5 +1,6 @@
 # ============================================
-#  KiCad .gitignore (KiCad 6 / 7 / 8 / 9)
+#  StepperMotorController .gitignore
+#  KiCad 6–10 + STM32CubeIDE
 # ============================================
 
 # --- Yedekler ---
@@ -16,9 +17,13 @@ _autosave-*
 # --- Kilit dosyaları (dosya açıkken oluşur) ---
 *.lmk
 ~*.lck
+*.lck
 
 # --- Kişisel/yerel ayarlar (açık pencereler, katman görünürlüğü vs.) ---
 *.kicad_prl
+
+# --- KiCad 10 yerel geçmiş (Local History) — kendi içinde git reposu ---
+.history/
 
 # --- Önbellekler ---
 fp-info-cache
@@ -39,7 +44,7 @@ fp-info-cache
 *.csv
 
 # --- Üretim çıktıları ---
-# Gerber'leri repoda tutmak istiyorsan bu satırları yoruma al
+# Repoya girmez: CI her push'ta üretir, siparişe gidenler GitHub Release'e eklenir
 gerber/
 gerbers/
 fab/
@@ -53,6 +58,32 @@ production/
 *.000
 *.pro-bak
 # NOT: KiCad 5 kullanıyorsan *-cache.lib dosyasını ignore ETME, sembolleri o tutuyor
+
+# --- CI / yerel çıktı klasörleri ---
+ci-out/
+diff-out/
+
+# --- STM32CubeIDE / firmware derleme çıktıları ---
+# (.ioc, .project, .cproject, .mxproject COMMIT'LENİR)
+firmware/**/Debug/
+firmware/**/Release/
+firmware/**/build/
+.metadata/
+*.launch
+*.o
+*.d
+*.su
+*.elf
+*.map
+*.list
+*.hex
+*.bin
+
+# --- Gizli bilgiler (asla commit'leme) ---
+*.pem
+*.key
+.env
+*token*
 
 # --- İşletim sistemi / editör çöpleri ---
 .DS_Store

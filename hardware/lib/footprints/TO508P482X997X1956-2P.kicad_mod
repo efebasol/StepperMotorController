@@ -24,7 +24,7 @@
   (fp_line (start -2.605 -3.11) (end -2.605 0) (layer F.SilkS) (width 0.2))
   (pad 1 thru_hole rect (at 0 0) (size 2.085 2.085) (drill 1.39) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 5.08 0) (size 2.085 2.085) (drill 1.39) (layers *.Cu *.Mask))
-  (model MBR10100.stp
+  (model "${KIPRJMOD}/../lib/3dmodels/MBR10100.stp"
     (at (xyz 0.099999998498151 0.010236220096979 0.0019685039663409))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

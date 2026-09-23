@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Step Motor Controller")(type "KiCad")(uri "${KIPRJMOD}/../lib/footprints")(options "")(descr "Proje ortak footprint kütüphanesi (hardware/lib)"))
+)

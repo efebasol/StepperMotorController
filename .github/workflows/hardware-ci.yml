@@ -1,0 +1,38 @@
+name: Hardware CI
+
+# Her push'ta: ERC, DRC, şematik PDF, BOM, Gerber, CPL
+on:
+  push:
+    paths: ["hardware/**", "ci/**", ".github/workflows/hardware-ci.yml"]
+  pull_request:
+    paths: ["hardware/**"]
+  workflow_dispatch:
+
+env:
+  # 1 yaparsan ERC/DRC hatasında ✗ olur. Layout bitene kadar 0: sadece rapor + uyarı.
+  STRICT: "0"
+
+jobs:
+  check:
+    name: ${{ matrix.board }}
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    strategy:
+      fail-fast: false
+      matrix:
+        board: [power, driver]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Araçlar
+        run: apt-get update -qq && apt-get install -y -qq zip python3 >/dev/null
+      - name: ERC / DRC / çıktılar
+        env:
+          HOME: /root
+        run: bash ci/kicad_check.sh hardware/${{ matrix.board }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.board }}-outputs
+          path: ci-out/${{ matrix.board }}
+          retention-days: 30
