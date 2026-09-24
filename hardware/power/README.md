@@ -1,6 +1,6 @@
 # Power board
 
-48 V input, brake chopper, 24 V / 5 V buck (TPS54360), 3V3 LDO (AP2112K).
+48 V input, brake chopper, 24 V / 5 V buck (TPS54360), 3V3 LDO (AP2112K), 12 V LDO (L78L12) for the chopper gate driver.
 Feeds the driver boards (48 V), the stepper motor brakes (24 V) and the logic (5 V / 3V3).
 
 ## Stackup
@@ -27,7 +27,7 @@ Values sized with IPC-2221 for 2 oz outer copper, ΔT ≈ 20 °C. Empty cells in
 | `PWR_48V` | **0.6 mm** | 2.5 mm | 1.0 mm | 0.5 mm | 48 V bus. Main 10 A path (input → output connector) as pour where possible (10 A on 2 oz needs ≥2.4 mm) |
 | `SW_NODE` | **0.6 mm** | 0.8 mm | – | – | Buck switch nodes (`SW_24V`, `SW_5V`). Swing 0–48 V → 48 V clearance. Keep copper area minimal |
 | `PWR_24V` | 0.25 mm | 0.8 mm | 0.8 mm | 0.4 mm | 24 V brake rail (motor brakes). Buck max 3 A → ≥0.45 mm |
-| `PWR_5V` | 0.2 mm | 0.5 mm | 0.6 mm | 0.3 mm | 5 V logic rail |
+| `PWR_5V` | 0.2 mm | 0.5 mm | 0.6 mm | 0.3 mm | 5 V logic rail; also `+12V` (L78L12 → MCP1416 gate driver, low current) |
 | `PWR_3V3` | 0.2 mm | 0.4 mm | 0.6 mm | 0.3 mm | 3V3 LDO output |
 | `GND` | 0.2 mm | 0.5 mm | 0.6 mm | 0.3 mm | Mostly planes/pours; tracks only for short links |
 | `Default` | 0.2 mm | 0.25 mm | 0.6 mm | 0.3 mm | Signals (FB, comparator, gate drive, …) |
