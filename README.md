@@ -16,7 +16,7 @@ Tracking: [GitHub Project](https://github.com/users/efebasol/projects/12)
 
 ```
 hardware/
-  power/     KiCad project – power board (48V input, brake chopper, 24V/5V buck, 3V3 LDO)
+  power/     KiCad project – power board (48V input, brake chopper, 24V/5V buck, 3V3 LDO) – see its README for stackup & net classes
   driver/    KiCad project – TMC5160 + MOSFET driver board
   lib/       Shared library: symbols/, footprints/, 3dmodels/
 firmware/    STM32CubeIDE project
