@@ -1,0 +1,5 @@
+(version 1)
+(rule "High-power nets: outer 2 oz layers only"
+  (layer inner)
+  (condition "A.NetClass == 'PWR_48V' || A.NetClass == 'PWR_24V' || A.NetClass == 'SW_NODE'")
+  (constraint disallow track zone))
