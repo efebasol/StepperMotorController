@@ -211,7 +211,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x05"
+		(symbol "Connector:Screw_Terminal_01x06"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -231,8 +231,8 @@
 					)
 				)
 			)
-			(property "Value" "Screw_Terminal_01x05"
-				(at 0 -7.62 0)
+			(property "Value" "Screw_Terminal_01x06"
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -263,7 +263,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -296,10 +296,10 @@
 					)
 				)
 			)
-			(symbol "Screw_Terminal_01x05_1_1"
+			(symbol "Screw_Terminal_01x06_1_1"
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -6.35)
+					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -370,6 +370,18 @@
 				)
 				(polyline
 					(pts
+						(xy -0.5334 -7.2898) (xy 0.3302 -8.128)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -0.3556 5.588) (xy 0.508 4.7498)
 					)
 					(stroke
@@ -428,6 +440,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -0.3556 -7.112) (xy 0.508 -7.9502)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center 0 5.08)
 					(radius 0.635)
@@ -474,6 +498,17 @@
 				)
 				(circle
 					(center 0 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -7.62)
 					(radius 0.635)
 					(stroke
 						(width 0.1524)
@@ -566,6 +601,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1892,6 +1945,315 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Diodes:Schottky,SS510"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SS510"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SMA"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS510_C18199171.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V Independent Type 850mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C18199171"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "70200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.058USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Diodes,Schottky Diodes"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "SS510"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rectified Current" "5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Forward Voltage (Vf@If)" "850mV@5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Voltage (Vr)" "100V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Diode Configuration" "Independent Type"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Leakage Current (Ir)" "50uA@100V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Schottky,SS510_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Schottky,SS510_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5044,6 +5406,12 @@
 		(uuid "60df01c1-2910-49e7-acf3-c573f5495f40")
 	)
 	(junction
+		(at 229.87 240.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "613ca440-79af-4a9b-8460-56a04864b73e")
+	)
+	(junction
 		(at 161.29 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5078,6 +5446,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "841d5a0e-8496-4fd1-aff9-f93ceeaf99d1")
+	)
+	(junction
+		(at 229.87 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8851d396-e8a1-49fd-b520-e8ca8b0d391c")
 	)
 	(junction
 		(at 21.59 254)
@@ -5381,6 +5755,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 240.03) (xy 229.87 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0640ba64-4fce-4526-806c-5b255e18b08f")
+	)
+	(wire
+		(pts
 			(xy 177.8 185.42) (xy 181.61 185.42)
 		)
 		(stroke
@@ -5511,6 +5895,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 240.03) (xy 229.87 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ab3d97-83dc-498a-bb27-1a9113900e2b")
+	)
+	(wire
+		(pts
 			(xy 198.12 190.5) (xy 198.12 200.66)
 		)
 		(stroke
@@ -5608,16 +6002,6 @@
 			(type default)
 		)
 		(uuid "1e4bb8d2-5334-4d8f-991d-2a89a995a206")
-	)
-	(wire
-		(pts
-			(xy 53.34 57.15) (xy 53.34 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fbcb3c2-5335-464c-bbfd-faf3a7be3fee")
 	)
 	(wire
 		(pts
@@ -5721,6 +6105,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 229.87) (xy 229.87 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27116dd0-6b42-41a6-a1f3-ef5e7d844dae")
+	)
+	(wire
+		(pts
 			(xy 160.02 172.72) (xy 168.91 172.72)
 		)
 		(stroke
@@ -5788,6 +6182,16 @@
 			(type default)
 		)
 		(uuid "29d5fa74-9e96-43cd-bdf4-f63dadcc37d0")
+	)
+	(wire
+		(pts
+			(xy 59.69 49.53) (xy 59.69 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b324aed-9014-4dc3-8958-0a61bd8b8231")
 	)
 	(wire
 		(pts
@@ -6101,6 +6505,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 49.53) (xy 53.34 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "501fa416-888e-43a8-98ab-697cb8cb30fb")
+	)
+	(wire
+		(pts
 			(xy 274.32 114.3) (xy 274.32 111.76)
 		)
 		(stroke
@@ -6228,6 +6642,16 @@
 			(type default)
 		)
 		(uuid "5a4b61d6-42b0-4740-8be4-c0d0e96e87cf")
+	)
+	(wire
+		(pts
+			(xy 66.04 49.53) (xy 66.04 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b21c8dd-2f45-4c97-b4f4-71ac1be4c354")
 	)
 	(wire
 		(pts
@@ -6391,16 +6815,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 59.69) (xy 27.94 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "644c6b4a-5653-4f4a-a224-7dbc892fb660")
-	)
-	(wire
-		(pts
 			(xy 63.5 116.84) (xy 106.68 116.84)
 		)
 		(stroke
@@ -6408,16 +6822,6 @@
 			(type default)
 		)
 		(uuid "659a4eb7-90bc-4b7f-b15a-6dc2fc1cdbc5")
-	)
-	(wire
-		(pts
-			(xy 59.69 49.53) (xy 59.69 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65ea75a8-e906-48a5-bb03-3a10e34c6102")
 	)
 	(wire
 		(pts
@@ -6478,16 +6882,6 @@
 			(type default)
 		)
 		(uuid "71bf394e-820e-492f-98ab-07896b75f273")
-	)
-	(wire
-		(pts
-			(xy 27.94 62.23) (xy 40.64 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "721522be-3b0b-44c6-af18-6dc32c6a161a")
 	)
 	(wire
 		(pts
@@ -6558,6 +6952,16 @@
 			(type default)
 		)
 		(uuid "7bd3e2d5-8f92-42da-8686-71fc551aa7f0")
+	)
+	(wire
+		(pts
+			(xy 220.98 229.87) (xy 229.87 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf81975-b502-4557-9cab-f24a1dcfc01f")
 	)
 	(wire
 		(pts
@@ -6701,6 +7105,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 59.69) (xy 27.94 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b3c6a6e-7636-4168-9064-00dbe520b467")
+	)
+	(wire
+		(pts
 			(xy 154.94 231.14) (xy 154.94 236.22)
 		)
 		(stroke
@@ -6708,16 +7122,6 @@
 			(type default)
 		)
 		(uuid "8c43a7f0-78ac-47c0-8ae0-db5c54a6759a")
-	)
-	(wire
-		(pts
-			(xy 40.64 62.23) (xy 40.64 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cb3f603-ef12-45bc-a327-399b0c2c5fd4")
 	)
 	(wire
 		(pts
@@ -6811,6 +7215,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 62.23) (xy 27.94 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a0e363-a9d2-469c-a753-cce82021877f")
+	)
+	(wire
+		(pts
 			(xy 199.39 260.35) (xy 199.39 267.97)
 		)
 		(stroke
@@ -6901,7 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 229.87) (xy 229.87 232.41)
+			(xy 229.87 228.6) (xy 229.87 229.87)
 		)
 		(stroke
 			(width 0)
@@ -6978,6 +7392,16 @@
 			(type default)
 		)
 		(uuid "9bead46e-1818-4562-bed4-a3d4209a718d")
+	)
+	(wire
+		(pts
+			(xy 53.34 57.15) (xy 27.94 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c067664-076a-44e5-aaef-c04297b2af5c")
 	)
 	(wire
 		(pts
@@ -7231,16 +7655,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 57.15) (xy 53.34 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc7d8d33-822c-4387-ba9a-bae291b9e569")
-	)
-	(wire
-		(pts
 			(xy 219.71 267.97) (xy 229.87 267.97)
 		)
 		(stroke
@@ -7381,6 +7795,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 238.76) (xy 220.98 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89111ba-1b32-4716-a0a7-865aeafda46f")
+	)
+	(wire
+		(pts
 			(xy 207.01 172.72) (xy 217.17 172.72)
 		)
 		(stroke
@@ -7388,6 +7812,26 @@
 			(type default)
 		)
 		(uuid "c9c3f111-c213-4ec2-94b1-e95435ff5c62")
+	)
+	(wire
+		(pts
+			(xy 220.98 231.14) (xy 220.98 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac6397c-a169-41ba-97cc-b25f9ff126ad")
+	)
+	(wire
+		(pts
+			(xy 27.94 64.77) (xy 40.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caceb7eb-6f26-4d62-83f2-3c8521c3c209")
 	)
 	(wire
 		(pts
@@ -7601,7 +8045,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 240.03) (xy 229.87 242.57)
+			(xy 229.87 238.76) (xy 229.87 240.03)
 		)
 		(stroke
 			(width 0)
@@ -7698,6 +8142,16 @@
 			(type default)
 		)
 		(uuid "e780cd56-2229-4e87-b887-67f5520edae5")
+	)
+	(wire
+		(pts
+			(xy 40.64 64.77) (xy 40.64 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7efb7c6-c477-47b8-baa7-1cff52960d48")
 	)
 	(wire
 		(pts
@@ -8223,7 +8677,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 64.77 0)
+		(at 40.64 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8234,7 +8688,7 @@
 		(fields_autoplaced yes)
 		(uuid "10d729c2-daee-4506-9452-8919592d39f7")
 		(property "Reference" "#PWR07"
-			(at 40.64 71.12 0)
+			(at 40.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8245,7 +8699,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 69.85 0)
+			(at 40.64 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8255,7 +8709,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 64.77 0)
+			(at 40.64 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8266,7 +8720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 64.77 0)
+			(at 40.64 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8277,7 +8731,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 64.77 0)
+			(at 40.64 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9100,7 +9554,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 229.87 236.22 0)
+		(at 229.87 234.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9108,10 +9562,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "362c6fe6-9079-4039-9889-b40dabe76f1f")
 		(property "Reference" "R16"
-			(at 232.41 234.9499 0)
+			(at 230.124 237.236 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9121,8 +9574,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33R >=10W"
-			(at 232.41 237.4899 0)
+		(property "Value" "RX24, 50W, 33Ω"
+			(at 232.664 243.586 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9133,7 +9586,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P25.40mm_Horizontal"
-			(at 228.092 236.22 90)
+			(at 228.092 234.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9144,7 +9597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 236.22 0)
+			(at 229.87 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9154,8 +9607,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 229.87 236.22 0)
+		(property "Description" "RX24 tipi, 50W, 33Ω alüminyum gövdeli tel sargılı direnç"
+			(at 229.87 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11636,95 +12089,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x05")
-		(at 22.86 57.15 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "885b704b-beec-4739-8bbd-f98eab71f902")
-		(property "Reference" "J2"
-			(at 22.86 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Screw_Terminal_Output"
-			(at 22.86 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 22.86 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "bebd3a00-2b4b-4068-b547-d4c5b3f87e28")
-		)
-		(pin "3"
-			(uuid "a494bf16-353a-45fb-8c43-490a9f152f38")
-		)
-		(pin "2"
-			(uuid "b41b8241-23e8-4304-b8e9-334d7940bf51")
-		)
-		(pin "1"
-			(uuid "06e62575-3649-4618-9522-4f17790346b1")
-		)
-		(pin "5"
-			(uuid "4f3d2590-825d-4f5e-ad6b-071292db6aaa")
-		)
-		(instances
-			(project "smc_power"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:AP2112K-3.3")
 		(at 284.48 114.3 0)
 		(unit 1)
@@ -11964,6 +12328,84 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 53.34 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90123218-1e4f-4cc4-bd09-cd81f8290723")
+		(property "Reference" "#PWR032"
+			(at 53.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 53.34 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 53.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e49e2e5a-a403-462b-a133-abb00f3e2eb1")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -12280,6 +12722,98 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x06")
+		(at 22.86 59.69 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95542197-07c9-4489-95cc-debfbe1bf538")
+		(property "Reference" "J2"
+			(at 22.86 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_Output"
+			(at 22.86 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal"
+			(at 22.86 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4f25e776-bfb6-42b5-81ff-9cfcc5cfcc4a")
+		)
+		(pin "3"
+			(uuid "f2140fcd-f209-43fa-a6a5-b541c0f5f519")
+		)
+		(pin "4"
+			(uuid "e4f112c6-b1b0-4e28-8ba3-53ada39fe315")
+		)
+		(pin "5"
+			(uuid "14df9ef1-1434-4934-bd83-f32d4007650b")
+		)
+		(pin "6"
+			(uuid "4efea152-6a0b-45f0-b4dc-14306544369b")
+		)
+		(pin "1"
+			(uuid "e4fcc9da-b513-4c47-b17b-ce4923d5b7b7")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12845,7 +13379,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 59.69 49.53 0)
+		(at 66.04 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12856,7 +13390,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0f988a9-bfc3-494d-855e-d03d662d2ee1")
 		(property "Reference" "#PWR06"
-			(at 59.69 53.34 0)
+			(at 66.04 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12867,7 +13401,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 59.69 44.45 0)
+			(at 66.04 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12877,7 +13411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 49.53 0)
+			(at 66.04 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12888,7 +13422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 49.53 0)
+			(at 66.04 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12899,7 +13433,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 59.69 49.53 0)
+			(at 66.04 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13590,6 +14124,253 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS510")
+		(at 220.98 234.95 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b897bcb5-9dd5-4ac3-bdf5-95278becfcba")
+		(property "Reference" "D5"
+			(at 223.52 233.3624 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SS510"
+			(at 223.52 235.9025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SMA"
+			(at 222.758 234.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS510_C18199171.pdf"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V Independent Type 850mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18199171"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "70200"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.058USD"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "5"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "4"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Schottky Diodes"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "SS510"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rectified Current" "5A"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "850mV@5A"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "100V"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Independent Type"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current (Ir)" "50uA@100V"
+			(at 220.98 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c293746b-ac08-42fc-96f3-dad54a61e3b1")
+		)
+		(pin "1"
+			(uuid "41b6f099-456a-4b47-9745-3198f6db752a")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 198.12 186.69 0)
 		(unit 1)
@@ -14230,7 +15011,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 53.34 49.53 0)
+		(at 59.69 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14241,7 +15022,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce106f58-1f87-4dcc-be86-4f810c82c5ca")
 		(property "Reference" "#PWR05"
-			(at 53.34 53.34 0)
+			(at 59.69 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14252,7 +15033,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 53.34 44.45 0)
+			(at 59.69 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14262,7 +15043,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 49.53 0)
+			(at 59.69 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14273,7 +15054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 49.53 0)
+			(at 59.69 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14284,7 +15065,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 53.34 49.53 0)
+			(at 59.69 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16104,7 +16885,7 @@
 	)
 	(symbol
 		(lib_id "power:+VM")
-		(at 229.87 229.87 0)
+		(at 229.87 228.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16115,7 +16896,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffd44eee-19ca-4a6f-9a82-288b2df746bc")
 		(property "Reference" "#PWR020"
-			(at 229.87 233.68 0)
+			(at 229.87 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16126,7 +16907,7 @@
 			)
 		)
 		(property "Value" "+VM"
-			(at 229.87 224.79 0)
+			(at 229.87 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16136,7 +16917,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 229.87 0)
+			(at 229.87 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16147,7 +16928,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 229.87 0)
+			(at 229.87 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16158,7 +16939,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 229.87 229.87 0)
+			(at 229.87 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
