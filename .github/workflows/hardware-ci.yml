@@ -28,13 +28,11 @@ jobs:
       - name: Tools
         run: apt-get update -qq && apt-get install -y -qq zip python3 >/dev/null
       - name: KiCad library tables
+        # Install KiCad's default global symbol/footprint tables (standard libs: Device, power, Resistor_SMD, …)
         run: |
           mkdir -p /root/.config/kicad/10.0
-          for t in sym-lib-table fp-lib-table; do
-            f=$(find /usr/share/kicad -name "$t" -path '*template*' | head -1); [ -n "$f" ] && cp "$f" /root/.config/kicad/10.0/
-          done
-          ls /root/.config/kicad/10.0
-          echo "::notice title=libdebug::tables=$(ls /root/.config/kicad/10.0 | tr '\n' ' ') | templates=$(find / -name sym-lib-table -not -path '*/proc/*' 2>/dev/null | tr '\n' ' ') | env=$(env | grep -i kicad | tr '\n' ' ') | head=$(head -3 /root/.config/kicad/10.0/sym-lib-table 2>/dev/null | tr '\n' ' ') | symdirs=$(ls -d /usr/share/kicad/symbols 2>/dev/null) $(ls /usr/share/kicad/symbols 2>/dev/null | head -3 | tr '\n' ' ')"
+          cp /usr/share/kicad/template/sym-lib-table /usr/share/kicad/template/fp-lib-table /root/.config/kicad/10.0/
+          echo "::notice title=KiCad libs::$(grep -c '(lib ' /root/.config/kicad/10.0/sym-lib-table) symbol libs, $(grep -c '(lib ' /root/.config/kicad/10.0/fp-lib-table) footprint libs"
       - name: ERC / DRC / outputs
         env:
           HOME: /root
