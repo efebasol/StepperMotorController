@@ -34,6 +34,7 @@ jobs:
             f=$(find /usr/share/kicad -name "$t" -path '*template*' | head -1); [ -n "$f" ] && cp "$f" /root/.config/kicad/10.0/
           done
           ls /root/.config/kicad/10.0
+          echo "::notice title=libdebug::tables=$(ls /root/.config/kicad/10.0 | tr '\n' ' ') | templates=$(find / -name sym-lib-table -not -path '*/proc/*' 2>/dev/null | tr '\n' ' ') | env=$(env | grep -i kicad | tr '\n' ' ') | head=$(head -3 /root/.config/kicad/10.0/sym-lib-table 2>/dev/null | tr '\n' ' ') | symdirs=$(ls -d /usr/share/kicad/symbols 2>/dev/null) $(ls /usr/share/kicad/symbols 2>/dev/null | head -3 | tr '\n' ' ')"
       - name: ERC / DRC / outputs
         env:
           HOME: /root
