@@ -13334,7 +13334,7 @@
 			)
 		)
 	)
-	(footprint "PCM_JLCPCB:D_SMA"
+	(footprint "Diode_SMD:D_SMA"
 		(layer "F.Cu")
 		(uuid "b8a0ca9a-3317-4a61-8ea9-384af2867eeb")
 		(at 78.185 70.025)

@@ -1955,7 +1955,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Diodes:Schottky,SS510"
+		(symbol "Step Motor Controller:SS510"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1989,7 +1989,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "PCM_JLCPCB:D_SMA"
+			(property "Footprint" "Diode_SMD:D_SMA"
 				(at -1.778 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2198,7 +2198,7 @@
 					)
 				)
 			)
-			(symbol "Schottky,SS510_0_1"
+			(symbol "SS510_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
@@ -2224,7 +2224,7 @@
 					)
 				)
 			)
-			(symbol "Schottky,SS510_1_1"
+			(symbol "SS510_1_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.81)
@@ -4717,7 +4717,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+VM"
+		(symbol "Step Motor Controller:+VM"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -8954,7 +8954,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 21.59 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -9032,7 +9032,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 74.93 223.52 0)
 		(unit 1)
 		(body_style 1)
@@ -10634,7 +10634,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 40.64 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -14164,7 +14164,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Diodes:Schottky,SS510")
+		(lib_id "Step Motor Controller:SS510")
 		(at 220.98 234.95 180)
 		(unit 1)
 		(body_style 1)
@@ -14197,7 +14197,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 222.758 234.95 90)
 			(hide yes)
 			(show_name no)
@@ -14493,7 +14493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 22.86 100.33 0)
 		(unit 1)
 		(body_style 1)
@@ -16924,7 +16924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 229.87 228.6 0)
 		(unit 1)
 		(body_style 1)
