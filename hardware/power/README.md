@@ -25,18 +25,25 @@ Values sized with IPC-2221 for 2 oz outer copper, ΔT ≈ 20 °C. Empty cells in
 | Net class | Clearance | Track width | Via size | Via hole | Nets / notes |
 |---|---|---|---|---|---|
 | `PWR_48V` | **0.6 mm** | 2.5 mm | 1.0 mm | 0.5 mm | 48 V bus. Main 10 A path (input → output connector) as pour where possible (10 A on 2 oz needs ≥2.4 mm) |
-| `SW_NODE` | **0.6 mm** | 0.8 mm | – | – | Buck switch nodes (`SW_24V`, `SW_5V`). Swing 0–48 V → 48 V clearance. Keep copper area minimal |
+| `SW_NODE` | **0.6 mm** | 1.0 mm | – | – | Buck switch nodes (`SW_24V`, `SW_5V`, pattern `*SW_*`). Swing 0–48 V → 48 V clearance. Keep copper area minimal |
+| `BOOT_NODE` | **0.6 mm** | 0.4 mm | – | – | Bootstrap nodes (`BOOT_24V`, `BOOT_5V`, pattern `*BOOT_*`). Rides on SW (up to ~SW + 8 V) → 48 V clearance, low current |
 | `PWR_24V` | 0.25 mm | 0.8 mm | 0.8 mm | 0.4 mm | 24 V brake rail (motor brakes). Buck max 3 A → ≥0.45 mm |
 | `PWR_5V` | 0.2 mm | 0.5 mm | 0.6 mm | 0.3 mm | 5 V logic rail; also `+12V` (L78L12 → MCP1416 gate driver, low current) |
 | `PWR_3V3` | 0.2 mm | 0.4 mm | 0.6 mm | 0.3 mm | 3V3 LDO output |
 | `GND` | 0.2 mm | 0.5 mm | 0.6 mm | 0.3 mm | Mostly planes/pours; tracks only for short links |
 | `Default` | 0.2 mm | 0.25 mm | 0.6 mm | 0.3 mm | Signals (FB, comparator, gate drive, …) |
 
+**FB nets** (`FB_24V`, `FB_5V`) stay in `Default` on purpose — see layout notes below.
+
 Why 0.6 mm: IPC-2221 B2 (external, uncoated, 31–100 V). Between two classes KiCad applies the larger clearance, so every net next to 48 V automatically gets 0.6 mm.
 
 Rules of thumb:
 - ~1 A per 0.3 mm via → parallel vias on high-current transitions.
 - Track width is the default, not a limit — widen freely, never go narrower.
+
+### Layout notes
+
+- **FB:** no net class needed — tiny current, width doesn't matter. What matters is placement: divider resistors right at the FB pin, short trace, never under or next to the SW node. A noisy FB makes the regulator output jitter.
 
 ### Global constraints (Board Setup → Constraints)
 

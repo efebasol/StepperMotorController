@@ -8313,6 +8313,26 @@
 		)
 		(uuid "fffe4a5a-c2a2-48c9-aa50-9ea58e093fbc")
 	)
+	(label "BOOT_5V"
+		(at 127 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ab1e792-8629-4063-be1c-759377863faf")
+	)
+	(label "SW_24V"
+		(at 128.27 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f582f35-49f1-44d4-9f53-2ef80089f130")
+	)
 	(label "FB_24V"
 		(at 179.07 121.92 180)
 		(effects
@@ -8322,6 +8342,26 @@
 			(justify right bottom)
 		)
 		(uuid "20786c30-f7b2-4f1b-9111-3f3a2fdef49f")
+	)
+	(label "SW_5V"
+		(at 127 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ad9a116-3e72-46a9-adb9-9e80d6a40e73")
+	)
+	(label "BOOT_24V"
+		(at 128.27 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a57a3be-fff8-465e-9d09-4a789d5458ca")
 	)
 	(label "FB_5V"
 		(at 127 180.34 0)
