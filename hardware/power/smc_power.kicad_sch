@@ -1955,52 +1955,36 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Step Motor Controller:SS510"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "JLCImport:TL431B_C54830630"
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 2.032 0.834 0)
+			(property "Reference" "U"
+				(at 0 7.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SS510"
-				(at 2.032 -1.2122 0)
+			(property "Value" "TL431B_C54830630"
+				(at 0 -7.08 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMA"
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS510_C18199171.pdf"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2011,7 +1995,7 @@
 					)
 				)
 			)
-			(property "Description" "100V Independent Type 850mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+			(property "Datasheet" "https://item.szlcsc.com/139341.html"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2022,7 +2006,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C18199171"
+			(property "Description" "-20℃~+70℃@(Ta) 150mA 1uA 2.5V~36V 2.5V~36V 250uA Adjustable Parallel ±0.3% SOT-23 Voltage Reference ROHS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2033,73 +2017,7 @@
 					)
 				)
 			)
-			(property "Stock" "70200"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Price" "0.058USD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Minimum Qty" "5"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Attrition Qty" "4"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Class" "Preferred Component"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Category" "Diodes,Schottky Diodes"
+			(property "LCSC" "C54830630"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2121,7 +2039,7 @@
 					)
 				)
 			)
-			(property "Part" "SS510"
+			(property "Manufacturer Part" "TL431B"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2132,7 +2050,7 @@
 					)
 				)
 			)
-			(property "Rectified Current" "5A"
+			(property "ki_keywords" "C54830630 SOT-23-3_L3.0-W1.7-P0.95-LS2.9-BR TL431B hongjiacheng"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2143,69 +2061,14 @@
 					)
 				)
 			)
-			(property "Forward Voltage (Vf@If)" "850mV@5A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Reverse Voltage (Vr)" "100V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Diode Configuration" "Independent Type"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Reverse Leakage Current (Ir)" "50uA@100V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SS510_0_1"
+			(symbol "TL431B_C54830630_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+						(xy -2.54 0) (xy 0 0)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
@@ -2213,22 +2076,62 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+						(xy -1.524 1.524) (xy -1.016 1.016) (xy 1.016 1.016) (xy 1.524 0.508)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "SS510_1_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.81)
-					(name ""
+				(polyline
+					(pts
+						(xy 0 1.016) (xy -1.016 -1.524) (xy 1.016 -1.524) (xy 0 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -2.54) (xy 2.1311 -2.5302) (xy 2.2264 -2.5013) (xy 2.3142 -2.4544) (xy 2.3912 -2.3912)
+						(xy 2.4544 -2.3142) (xy 2.5013 -2.2264) (xy 2.5302 -2.1311) (xy 2.54 -2.032) (xy 2.5302 2.1311)
+						(xy 2.5013 2.2264) (xy 2.4544 2.3142) (xy 2.3912 2.3912) (xy 2.3142 2.4544) (xy 2.2264 2.5013)
+						(xy 2.1311 2.5302) (xy 2.032 2.54) (xy -2.1311 2.5302) (xy -2.2264 2.5013) (xy -2.3142 2.4544)
+						(xy -2.3912 2.3912) (xy -2.4544 2.3142) (xy -2.5013 2.2264) (xy -2.5302 2.1311) (xy -2.54 2.032)
+						(xy -2.5302 -2.1311) (xy -2.5013 -2.2264) (xy -2.4544 -2.3142) (xy -2.3912 -2.3912) (xy -2.3142 -2.4544)
+						(xy -2.2264 -2.5013) (xy -2.1311 -2.5302) (xy -2.032 -2.54) (xy 2.032 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2243,10 +2146,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.81)
-					(name ""
+				(pin unspecified line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2261,188 +2164,9 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Reference_Voltage:TL431D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TL431D"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-				(at 0.254 -10.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" "Shunt Regulator, SO-8"
-				(at -0.254 -8.382 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode device shunt regulator"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOIC?8*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TL431D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.762) (xy -0.762 0.762) (xy -0.762 0.762) (xy 0.762 0) (xy -0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TL431D_1_1"
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.27)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
+				(pin unspecified line
+					(at 0 -5.08 90)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -2450,7 +2174,7 @@
 							)
 						)
 					)
-					(number "[2,3,6,7]"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3069,6 +2793,145 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Step Motor Controller:+VM"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+VM"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V0\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+VM_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+VM_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4022,6 +3885,315 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Step Motor Controller:SS510"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SS510"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310131745_hongjiacheng-SS510_C18199171.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V Independent Type 850mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C18199171"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "70200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.058USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Diodes,Schottky Diodes"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "SS510"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rectified Current" "5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Forward Voltage (Vf@If)" "850mV@5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Voltage (Vr)" "100V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Diode Configuration" "Independent Type"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Leakage Current (Ir)" "50uA@100V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SS510_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS510_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -4717,145 +4889,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Step Motor Controller:+VM"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+VM"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+1V0\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+VM_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+VM_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -5334,12 +5367,6 @@
 		(uuid "274179b2-8890-4147-94bd-bd7110da3dc3")
 	)
 	(junction
-		(at 87.63 267.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31c67e2b-c29a-4ea9-9a85-d2270e41ced9")
-	)
-	(junction
 		(at 63.5 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5638,6 +5665,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dbb0e20e-5a99-4ac6-9163-28dcc4c594f6")
+	)
+	(junction
+		(at 86.36 267.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df8f054b-f7dd-4d04-9f80-ee0076965a0e")
 	)
 	(junction
 		(at 62.23 167.64)
@@ -6155,6 +6188,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 264.16) (xy 86.36 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e41d54-fa61-46c0-b56c-33113a4a8257")
+	)
+	(wire
+		(pts
 			(xy 148.59 184.15) (xy 148.59 175.26)
 		)
 		(stroke
@@ -6215,7 +6258,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 255.27) (xy 87.63 256.54)
+			(xy 86.36 252.73) (xy 86.36 254)
 		)
 		(stroke
 			(width 0)
@@ -6595,7 +6638,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 267.97) (xy 87.63 267.97)
+			(xy 74.93 267.97) (xy 86.36 267.97)
 		)
 		(stroke
 			(width 0)
@@ -6702,16 +6745,6 @@
 			(type default)
 		)
 		(uuid "5e4ee9b1-fcfe-4b8c-a647-6ba8db76a77b")
-	)
-	(wire
-		(pts
-			(xy 90.17 259.08) (xy 92.71 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e973de6-01d5-4bd3-8260-7eacdc06fb34")
 	)
 	(wire
 		(pts
@@ -6825,7 +6858,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 246.38) (xy 87.63 247.65)
+			(xy 86.36 243.84) (xy 86.36 245.11)
 		)
 		(stroke
 			(width 0)
@@ -6945,7 +6978,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 233.68) (xy 111.76 233.68)
+			(xy 93.98 233.68) (xy 111.76 233.68)
 		)
 		(stroke
 			(width 0)
@@ -7085,6 +7118,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 267.97) (xy 199.39 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d40f5e-d4ff-4109-af73-c1317d8bb220")
+	)
+	(wire
+		(pts
 			(xy 259.08 167.64) (xy 267.97 167.64)
 		)
 		(stroke
@@ -7145,7 +7188,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 259.08) (xy 92.71 233.68)
+			(xy 93.98 259.08) (xy 93.98 233.68)
 		)
 		(stroke
 			(width 0)
@@ -7835,6 +7878,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 259.08) (xy 93.98 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc92dae2-8c2c-4437-9a0b-78ea5b42497a")
+	)
+	(wire
+		(pts
 			(xy 181.61 185.42) (xy 181.61 187.96)
 		)
 		(stroke
@@ -8105,16 +8158,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 267.97) (xy 87.63 267.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5683f17-55c5-432a-a63e-0466ae5b6565")
-	)
-	(wire
-		(pts
 			(xy 181.61 172.72) (xy 176.53 172.72)
 		)
 		(stroke
@@ -8152,16 +8195,6 @@
 			(type default)
 		)
 		(uuid "e7efb7c6-c477-47b8-baa7-1cff52960d48")
-	)
-	(wire
-		(pts
-			(xy 87.63 261.62) (xy 87.63 267.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e844442e-5234-40f3-98c7-19ac44058833")
 	)
 	(wire
 		(pts
@@ -8395,7 +8428,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 251.46 180)
+		(at 86.36 248.92 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8405,7 +8438,7 @@
 		(dnp no)
 		(uuid "0b4ed1b0-e072-4e97-9410-2197d3805596")
 		(property "Reference" "R19"
-			(at 82.042 250.444 0)
+			(at 80.772 247.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8416,7 +8449,7 @@
 			)
 		)
 		(property "Value" "1kR"
-			(at 82.042 252.984 0)
+			(at 80.772 250.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8427,7 +8460,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 89.408 251.46 90)
+			(at 88.138 248.92 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8438,7 +8471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 251.46 0)
+			(at 86.36 248.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8449,7 +8482,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 87.63 251.46 0)
+			(at 86.36 248.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9836,7 +9869,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 87.63 246.38 0)
+		(at 86.36 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9847,7 +9880,7 @@
 		(fields_autoplaced yes)
 		(uuid "457ee92b-1be6-45f9-81d7-24cf29fd18cf")
 		(property "Reference" "#PWR025"
-			(at 87.63 250.19 0)
+			(at 86.36 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9858,7 +9891,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 87.63 241.3 0)
+			(at 86.36 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9868,7 +9901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 246.38 0)
+			(at 86.36 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9879,7 +9912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 246.38 0)
+			(at 86.36 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9890,7 +9923,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 87.63 246.38 0)
+			(at 86.36 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12042,93 +12075,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Reference_Voltage:TL431D")
-		(at 87.63 259.08 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "803e11d6-8235-46b4-b33e-b589cb92a145")
-		(property "Reference" "U4"
-			(at 85.09 257.8099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TL431D"
-			(at 85.09 260.3499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 81.28 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-			(at 76.962 259.334 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "Shunt Regulator, SO-8"
-			(at 79.248 258.826 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7c23cb60-651a-414d-bf0d-16cb0d116575")
-		)
-		(pin "8"
-			(uuid "e37bb1b6-dc29-4c52-b44d-f3df7203536c")
-		)
-		(pin "[2,3,6,7]"
-			(uuid "0fb0bf0a-60a3-4877-b9b4-9d0c985dcaaf")
-		)
-		(instances
-			(project "smc_power"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:AP2112K-3.3")
 		(at 284.48 114.3 0)
 		(unit 1)
@@ -13973,6 +13919,124 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:TL431B_C54830630")
+		(at 86.36 259.08 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acac41c5-438f-4306-a91c-6136692d54ab")
+		(property "Reference" "U6"
+			(at 82.55 257.8099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TL431B_C54830630"
+			(at 98.044 265.176 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/139341.html"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-20℃~+70℃@(Ta) 150mA 1uA 2.5V~36V 2.5V~36V 250uA Adjustable Parallel ±0.3% SOT-23 Voltage Reference ROHS"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C54830630"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TL431B"
+			(at 86.36 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "23ee64d7-284a-45fb-b413-048e90533e76")
+		)
+		(pin "1"
+			(uuid "dfcee101-a850-4bfb-9b38-fa92d87d15fb")
+		)
+		(pin "2"
+			(uuid "381cccbd-38db-41cd-845a-c810e5cb085a")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -16373,7 +16437,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SMBJ58A"
+		(property "Value" "SMBJ51A"
 			(at 64.77 260.3499 90)
 			(show_name no)
 			(do_not_autoplace no)
