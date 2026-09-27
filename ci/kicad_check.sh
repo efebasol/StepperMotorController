@@ -37,7 +37,7 @@ for x in v:
         ex[k]=" / ".join(it)[:90]
 for (sev,t,desc),n in c.most_common():
     print(f"| {sev} | `{t}` | {desc} | **{n}** | {ex[(sev,t,desc)]} |")
-top="; ".join(f"{t}×{n}" for (sev,t,desc),n in c.most_common(6))
+top="; ".join(f"{desc} ×{n} (e.g. {ex[(sev,t,desc)][:60]})" for (sev,t,desc),n in c.most_common(6))
 print(f"::notice title=ERC types ({name})::{top}", file=sys.stderr)
 PY
 [ "$E" -gt 0 ] && echo "::warning title=ERC ($NAME)::$E errors, $W warnings – details: artifact > reports/erc.rpt" && fail=1
