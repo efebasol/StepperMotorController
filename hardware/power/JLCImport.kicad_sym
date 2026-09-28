@@ -404,7 +404,7 @@
     (property "ki_keywords" "C72676 MF72 5D11 Nanjing Shiheng Elec RES-TH_L12.5-W5.1-P7.50-D1.2-S2.20" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C72676" (at 0 0 0)
+    (property "LCSC" "C122780" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "Nanjing Shiheng Elec" (at 0 0 0)

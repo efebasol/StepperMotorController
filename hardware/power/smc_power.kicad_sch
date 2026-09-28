@@ -2017,7 +2017,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C72676"
+			(property "LCSC" "C122780"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5361,7 +5361,7 @@
 	)
 	(text "5V Buck Converter  —  UVLO: start ~34 V / stop ~32 V (will not start from a 24 V bench supply)"
 		(exclude_from_sim no)
-		(at 27.178 150.368 0)
+		(at 65.532 150.114 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5379,16 +5379,6 @@
 		)
 		(uuid "37ace6ca-bea4-4950-afcb-d8eb6949a271")
 	)
-(text "AP2112K: max ~200 mA load (SOT-23-5 thermal limit, see #61)"
-		(exclude_from_sim no)
-		(at 252.73 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "968e5d8f-698c-4580-8b66-72d1f7d11756")
-	)
 	(text "C17, C18	-> 16V"
 		(exclude_from_sim no)
 		(at 282.448 102.108 0)
@@ -5399,9 +5389,19 @@
 		)
 		(uuid "49774a83-25df-4439-8ebb-aa832b0886cc")
 	)
+	(text "AP2112K: max ~200 mA load (SOT-23-5 thermal limit, see #61)"
+		(exclude_from_sim no)
+		(at 252.73 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "968e5d8f-698c-4580-8b66-72d1f7d11756")
+	)
 	(text "24V Buck Converter  —  UVLO: start ~34 V / stop ~32 V (will not start from a 24 V bench supply)"
 		(exclude_from_sim no)
-		(at 27.178 84.328 0)
+		(at 66.04 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5618,6 +5618,12 @@
 		(uuid "61f267f1-7840-477d-82d2-d7d95eb1f892")
 	)
 	(junction
+		(at 86.36 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68ceaa41-907e-4225-8866-ccaa034cf4b0")
+	)
+	(junction
 		(at 114.3 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5682,6 +5688,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e2748db-2871-4608-b5b3-6ac4bb4b7b6a")
+	)
+	(junction
+		(at 93.98 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8edc7340-ad36-43a1-a6fa-e9efebc44a77")
 	)
 	(junction
 		(at 161.29 231.14)
@@ -5926,28 +5938,6 @@
 	(no_connect
 		(at 152.4 233.68)
 		(uuid "325c44cd-5894-42a5-9546-d5532e51c615")
-	)
-	(wire
-		(pts
-			(xy 86.36 252.73) (xy 93.98 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b7fca33-ad90-475f-b713-06f35b5bb20a")
-	)
-	(junction
-		(at 86.36 252.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68ceaa41-907e-4225-8866-ccaa034cf4b0")
-	)
-	(junction
-		(at 93.98 252.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8edc7340-ad36-43a1-a6fa-e9efebc44a77")
 	)
 	(wire
 		(pts
@@ -6698,6 +6688,16 @@
 			(type default)
 		)
 		(uuid "4addafac-bd47-4e76-b138-14f9091d9c98")
+	)
+	(wire
+		(pts
+			(xy 86.36 252.73) (xy 93.98 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b7fca33-ad90-475f-b713-06f35b5bb20a")
 	)
 	(wire
 		(pts
@@ -14513,7 +14513,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C72676"
+		(property "LCSC" "C122780"
 			(at 21.59 247.65 0)
 			(hide yes)
 			(show_name no)
