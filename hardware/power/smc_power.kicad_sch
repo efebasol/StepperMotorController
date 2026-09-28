@@ -1955,6 +1955,175 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JLCImport:NTC_5_20"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NTC_5_20"
+				(at 0 -3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_Phoenix_SPT:PhoenixContact_SPT_5_1-V-7.5_1x01_P7.5mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810170717_Nanjing-Shiheng-Elec-MF72-5D11_C72676.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-40℃~+170℃ 2800K 3W 4A 5Ω 7.5mm ±10% 插件,P=7.5mm NTC Thermistors ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C72676"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Nanjing Shiheng Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "MF72 5D11"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C72676 MF72 5D11 Nanjing Shiheng Elec RES-TH_L12.5-W5.1-P7.50-D1.2-S2.20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NTC_5_20_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.778) (xy 1.27 1.778) (xy -1.27 -1.778) (xy -2.54 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "JLCImport:TL431B_C54830630"
 			(pin_names
 				(offset 1.016)
@@ -5313,12 +5482,6 @@
 		(uuid "14652b61-8d07-44ff-acc4-2c33ba16d188")
 	)
 	(junction
-		(at 21.59 223.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "164eb812-98d3-4e34-b198-97f7c7ebf965")
-	)
-	(junction
 		(at 34.29 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5331,7 +5494,7 @@
 		(uuid "17662ca0-a454-4db0-90a8-3a66e9c8ac9f")
 	)
 	(junction
-		(at 198.12 172.72)
+		(at 194.31 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a3421f4-f1d1-481b-9737-06638f1dc689")
@@ -5463,6 +5626,12 @@
 		(uuid "779609c8-a2ec-4d15-b5f2-82156c79417f")
 	)
 	(junction
+		(at 43.18 255.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7db685e8-72ed-4e1a-86ba-bbebfe2637a1")
+	)
+	(junction
 		(at 76.2 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5475,16 +5644,16 @@
 		(uuid "841d5a0e-8496-4fd1-aff9-f93ceeaf99d1")
 	)
 	(junction
+		(at 204.47 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87b300ac-389f-4f02-9a60-97a9cd538c9c")
+	)
+	(junction
 		(at 229.87 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8851d396-e8a1-49fd-b520-e8ca8b0d391c")
-	)
-	(junction
-		(at 21.59 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8948ae40-dfa5-40e1-bb08-92840a9a71a7")
 	)
 	(junction
 		(at 219.71 252.73)
@@ -5509,6 +5678,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fe250a3-2487-4f30-aeb2-0643862114aa")
+	)
+	(junction
+		(at 194.31 200.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "905e7f83-5df5-4268-809f-dd439e60c660")
 	)
 	(junction
 		(at 182.88 109.22)
@@ -5607,10 +5782,22 @@
 		(uuid "b5887d0a-ee19-454d-8438-f12a0ac100e9")
 	)
 	(junction
+		(at 21.59 255.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b80226a7-b900-4201-8ba0-e4b002780c19")
+	)
+	(junction
 		(at 199.39 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b979a836-4fd3-475c-a83f-6dda43e9f936")
+	)
+	(junction
+		(at 49.53 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9b1b4f0-4776-4022-9b42-82c7acc708a9")
 	)
 	(junction
 		(at 77.47 137.16)
@@ -5683,12 +5870,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dffa50af-236d-4a8b-9a6e-f441dda669a3")
-	)
-	(junction
-		(at 43.18 255.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e625cc0a-a553-4cd5-94e1-5caf16ed5cd2")
 	)
 	(junction
 		(at 182.88 137.16)
@@ -5928,6 +6109,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 241.3) (xy 21.59 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1419b0b1-f3a9-4e41-ae18-09a40416d9e9")
+	)
+	(wire
+		(pts
 			(xy 229.87 240.03) (xy 229.87 242.57)
 		)
 		(stroke
@@ -5938,7 +6129,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 190.5) (xy 198.12 200.66)
+			(xy 194.31 190.5) (xy 194.31 200.66)
 		)
 		(stroke
 			(width 0)
@@ -6048,26 +6239,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 172.72) (xy 198.12 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20f959c4-6108-4f74-ac67-e85bcd8dc888")
-	)
-	(wire
-		(pts
-			(xy 21.59 250.19) (xy 21.59 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "216b91a9-4a10-4444-accf-2fcbd1bff0ac")
-	)
-	(wire
-		(pts
 			(xy 43.18 255.27) (xy 62.23 255.27)
 		)
 		(stroke
@@ -6105,16 +6276,6 @@
 			(type default)
 		)
 		(uuid "249cf1be-6008-40d1-ac8b-344249e753df")
-	)
-	(wire
-		(pts
-			(xy 21.59 232.41) (xy 21.59 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24bf5ead-075d-4cc3-8889-07c4a283b98c")
 	)
 	(wire
 		(pts
@@ -6158,23 +6319,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 223.52) (xy 21.59 223.52)
+			(xy 57.15 224.79) (xy 49.53 224.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "27cd71ca-ea80-4de0-9128-386496ea70db")
-	)
-	(wire
-		(pts
-			(xy 21.59 223.52) (xy 21.59 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28450151-b721-48e7-9358-81b4dedae434")
 	)
 	(wire
 		(pts
@@ -6345,16 +6496,6 @@
 			(type default)
 		)
 		(uuid "3df2908b-c7bc-4be1-aceb-8bbd1fd8b785")
-	)
-	(wire
-		(pts
-			(xy 21.59 255.27) (xy 21.59 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ffc98d9-4505-46fc-b589-9555df5a3fd0")
 	)
 	(wire
 		(pts
@@ -6738,7 +6879,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 172.72) (xy 181.61 172.72)
+			(xy 181.61 172.72) (xy 204.47 172.72)
 		)
 		(stroke
 			(width 0)
@@ -6868,6 +7009,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 252.73) (xy 21.59 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67ba53f1-0fdb-4840-8210-3a72ebf62af4")
+	)
+	(wire
+		(pts
 			(xy 48.26 104.14) (xy 48.26 106.68)
 		)
 		(stroke
@@ -6898,6 +7049,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 255.27) (xy 43.18 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c22920c-d15d-49e5-a672-8b577b8b877c")
+	)
+	(wire
+		(pts
 			(xy 99.06 231.14) (xy 96.52 231.14)
 		)
 		(stroke
@@ -6905,6 +7066,16 @@
 			(type default)
 		)
 		(uuid "6dcc012e-dfeb-44b8-a069-497251973505")
+	)
+	(wire
+		(pts
+			(xy 21.59 224.79) (xy 21.59 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70969b18-33ec-4331-81ec-314a14d60c76")
 	)
 	(wire
 		(pts
@@ -6955,6 +7126,16 @@
 			(type default)
 		)
 		(uuid "7834a578-f227-4a63-8a57-0a23b57c0df7")
+	)
+	(wire
+		(pts
+			(xy 204.47 200.66) (xy 194.31 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7913f977-2508-4fe7-843e-577f7e43df78")
 	)
 	(wire
 		(pts
@@ -7178,7 +7359,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 261.62) (xy 21.59 267.97)
+			(xy 21.59 262.89) (xy 21.59 267.97)
 		)
 		(stroke
 			(width 0)
@@ -7408,7 +7589,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 200.66) (xy 160.02 200.66)
+			(xy 160.02 200.66) (xy 194.31 200.66)
 		)
 		(stroke
 			(width 0)
@@ -7515,6 +7696,16 @@
 			(type default)
 		)
 		(uuid "a44d9ece-654f-4be0-a59c-40dcf9ba6e0d")
+	)
+	(wire
+		(pts
+			(xy 38.1 224.79) (xy 21.59 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e18a3d-344c-49de-9ff5-55eafda93265")
 	)
 	(wire
 		(pts
@@ -7628,6 +7819,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 190.5) (xy 204.47 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b87f100c-0e0e-4e58-90de-a2be310322bf")
+	)
+	(wire
+		(pts
 			(xy 110.49 218.44) (xy 167.64 218.44)
 		)
 		(stroke
@@ -7738,16 +7939,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 200.66) (xy 181.61 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bea4acf7-86b9-4d6d-ace7-d39557f728f6")
-	)
-	(wire
-		(pts
 			(xy 62.23 167.64) (xy 62.23 170.18)
 		)
 		(stroke
@@ -7775,16 +7966,6 @@
 			(type default)
 		)
 		(uuid "c27a748b-2082-4353-9e14-4ead426ee3a9")
-	)
-	(wire
-		(pts
-			(xy 21.59 255.27) (xy 43.18 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4054f49-9bc0-4b86-aa53-64c00b26df06")
 	)
 	(wire
 		(pts
@@ -7898,7 +8079,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 222.25) (xy 21.59 223.52)
+			(xy 49.53 223.52) (xy 49.53 224.79)
 		)
 		(stroke
 			(width 0)
@@ -7978,6 +8159,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 172.72) (xy 207.01 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02bfaef-2dc9-4a1a-81d2-f3a3d704d6ce")
+	)
+	(wire
+		(pts
 			(xy 21.59 267.97) (xy 21.59 270.51)
 		)
 		(stroke
@@ -7998,7 +8189,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 182.88) (xy 198.12 172.72)
+			(xy 204.47 172.72) (xy 204.47 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3abcd35-b7c2-41b7-9cd1-b503ecc1882a")
+	)
+	(wire
+		(pts
+			(xy 194.31 182.88) (xy 194.31 172.72)
 		)
 		(stroke
 			(width 0)
@@ -8138,7 +8339,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 222.25) (xy 29.21 223.52)
+			(xy 57.15 223.52) (xy 57.15 224.79)
 		)
 		(stroke
 			(width 0)
@@ -8275,6 +8476,16 @@
 			(type default)
 		)
 		(uuid "f29261eb-f16c-43a8-a189-0a522a4db7fe")
+	)
+	(wire
+		(pts
+			(xy 45.72 224.79) (xy 49.53 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3b11917-c67d-4f35-96f0-9608380adc89")
 	)
 	(wire
 		(pts
@@ -9296,6 +9507,87 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 204.47 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "243e60d6-a236-478a-a657-ce9aba88cc65")
+		(property "Reference" "C27"
+			(at 201.168 188.468 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22µF 25V X7R 1210"
+			(at 207.772 196.596 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.4352 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 204.47 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19079472-6e34-4532-afb4-cb6c7d29e2c7")
+		)
+		(pin "2"
+			(uuid "51511c88-0497-4254-b223-6fdafbbc9477")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -10448,7 +10740,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "43pF, 25V"
+		(property "Value" "220pF, 25V"
 			(at 152.4 189.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11270,7 +11562,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nF, 25V"
+		(property "Value" "27nF, 25V"
 			(at 138.43 195.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11998,7 +12290,7 @@
 	)
 	(symbol
 		(lib_id "power:+48V")
-		(at 21.59 222.25 0)
+		(at 49.53 223.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12009,7 +12301,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b74fd22-4a60-4820-9840-454d385d5374")
 		(property "Reference" "#PWR017"
-			(at 21.59 226.06 0)
+			(at 49.53 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12020,7 +12312,7 @@
 			)
 		)
 		(property "Value" "+48V"
-			(at 21.59 217.17 0)
+			(at 49.53 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12030,7 +12322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 21.59 222.25 0)
+			(at 49.53 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12041,7 +12333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 222.25 0)
+			(at 49.53 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12052,7 +12344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+48V\""
-			(at 21.59 222.25 0)
+			(at 49.53 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12399,7 +12691,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 21.59 228.6 0)
+		(at 41.91 224.79 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12410,29 +12702,27 @@
 		(fields_autoplaced yes)
 		(uuid "928ebec9-7e76-46f2-9e24-a305c6b90140")
 		(property "Reference" "F1"
-			(at 24.13 227.3299 0)
+			(at 41.91 218.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100V 10A"
-			(at 24.13 229.8699 0)
+			(at 41.91 220.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Fuse:Fuseholder_Blade_Mini_Keystone_3568"
-			(at 19.812 228.6 90)
+			(at 41.91 226.568 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12443,7 +12733,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 228.6 0)
+			(at 41.91 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12454,7 +12744,7 @@
 			)
 		)
 		(property "Description" "yavaş atan bir sigorta kullan"
-			(at 21.59 228.6 0)
+			(at 41.91 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13848,7 +14138,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 29.21 222.25 0)
+		(at 57.15 223.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13859,7 +14149,7 @@
 		(fields_autoplaced yes)
 		(uuid "aabe69d5-325f-45e6-a454-c2f603b44a61")
 		(property "Reference" "#FLG05"
-			(at 29.21 220.345 0)
+			(at 57.15 221.615 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13870,7 +14160,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 29.21 217.17 0)
+			(at 57.15 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13880,7 +14170,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 222.25 0)
+			(at 57.15 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13891,7 +14181,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 222.25 0)
+			(at 57.15 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13902,7 +14192,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 29.21 222.25 0)
+			(at 57.15 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14119,6 +14409,121 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:NTC_5_20")
+		(at 21.59 247.65 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af1f7e1b-7b74-4d84-ba20-d31b4ab47504")
+		(property "Reference" "R21"
+			(at 24.13 246.3799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NTC_5_20"
+			(at 24.13 248.9199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_SPT:PhoenixContact_SPT_5_1-V-7.5_1x01_P7.5mm_Vertical"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810170717_Nanjing-Shiheng-Elec-MF72-5D11_C72676.pdf"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+170℃ 2800K 3W 4A 5Ω 7.5mm ±10% 插件,P=7.5mm NTC Thermistors ROHS"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72676"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nanjing Shiheng Elec"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "MF72 5D11"
+			(at 21.59 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "41e8ca5b-3264-4d4d-8a06-6b938a75cf6c")
+		)
+		(pin "1"
+			(uuid "9650fea7-315f-498f-afe0-30fab46d8139")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -14469,88 +14874,6 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 198.12 186.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8c3fd09-d84b-41f8-b34a-71ea2b6fa0a4")
-		(property "Reference" "C16"
-			(at 201.93 184.5309 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF, 25V"
-			(at 201.93 187.0709 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 199.0852 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 198.12 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "807fff07-d996-46dc-a65c-18021fb23197")
-		)
-		(pin "2"
-			(uuid "549e9aa5-4174-4958-8cc9-5347fe89daf5")
-		)
-		(instances
-			(project "smc_power"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
-					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -15034,7 +15357,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 21.59 257.81 0)
+		(at 21.59 259.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15044,7 +15367,7 @@
 		(dnp no)
 		(uuid "cc0c580c-ee80-4b33-9bd0-315eda67cca3")
 		(property "Reference" "C20"
-			(at 25.4 256.9209 0)
+			(at 25.4 258.1909 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15055,7 +15378,7 @@
 			)
 		)
 		(property "Value" "470uF 100V"
-			(at 25.4 259.4609 0)
+			(at 25.4 260.7309 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15066,7 +15389,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm"
-			(at 22.5552 261.62 0)
+			(at 22.5552 262.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15077,7 +15400,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 257.81 0)
+			(at 21.59 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15088,7 +15411,7 @@
 			)
 		)
 		(property "Description" "low esr <=100mOhm"
-			(at 21.59 257.81 0)
+			(at 21.59 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15433,7 +15756,7 @@
 	)
 	(symbol
 		(lib_id "Step Motor Controller:MBR10100")
-		(at 21.59 252.73 90)
+		(at 21.59 243.84 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15444,7 +15767,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7835041-0030-4014-8520-206c5396a892")
 		(property "Reference" "D3"
-			(at 25.4 241.2999 90)
+			(at 25.4 232.4099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15455,7 +15778,7 @@
 			)
 		)
 		(property "Value" "MBR10100"
-			(at 25.4 243.8399 90)
+			(at 25.4 234.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15466,7 +15789,7 @@
 			)
 		)
 		(property "Footprint" "Step Motor Controller:TO508P482X997X1956-2P"
-			(at 115.24 240.03 0)
+			(at 115.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15478,7 +15801,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/products/discrete-power-modules/schottky-diodes-schottky-rectifiers/mbr10100"
-			(at 215.24 240.03 0)
+			(at 215.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15490,7 +15813,7 @@
 			)
 		)
 		(property "Description" "GuardRing for Stress Protection  Low Forward Voltage  175C Operating Junction Temperature  Epoxy Meets UL 94 V0 @ 0.125 in  Low Power Loss/High Efficiency  High Surge Capacity  Low Stored Charge Majority Carrier Conduction  AECQ101 Qualified and PPAP Capable  NRVB Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements  All Packages are PbFree*"
-			(at 21.59 252.73 0)
+			(at 21.59 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15501,7 +15824,7 @@
 			)
 		)
 		(property "Height" "4.82"
-			(at 415.24 240.03 0)
+			(at 415.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15513,7 +15836,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "onsemi"
-			(at 515.24 240.03 0)
+			(at 515.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15525,7 +15848,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MBR10100"
-			(at 615.24 240.03 0)
+			(at 615.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15537,7 +15860,7 @@
 			)
 		)
 		(property "Mouser Part Number" "863-MBR10100"
-			(at 715.24 240.03 0)
+			(at 715.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15549,7 +15872,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR10100?qs=3JMERSakeboFOtFAhNHcug%3D%3D"
-			(at 815.24 240.03 0)
+			(at 815.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15561,7 +15884,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 915.24 240.03 0)
+			(at 915.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15573,7 +15896,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 1015.24 240.03 0)
+			(at 1015.24 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16035,7 +16358,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15.4kR"
+		(property "Value" "4.22kR"
 			(at 137.16 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16982,6 +17305,87 @@
 			(project "smc_power"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 194.31 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff680954-0a97-4e8f-94b6-3c2116af66cd")
+		(property "Reference" "C16"
+			(at 191.008 188.468 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22µF 25V X7R 1210"
+			(at 197.612 196.596 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.2752 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 194.31 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e6853e3-49a5-48b7-b8c7-30a11f5ee592")
+		)
+		(pin "2"
+			(uuid "b8bebaf9-f9cc-4235-adc0-b41efac4a912")
+		)
+		(instances
+			(project "smc_power"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "C16")
 					(unit 1)
 				)
 			)
