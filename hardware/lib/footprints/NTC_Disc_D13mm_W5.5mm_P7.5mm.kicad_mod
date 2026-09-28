@@ -1,0 +1,168 @@
+(footprint "NTC_Disc_D13mm_W5.5mm_P7.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Power NTC thermistor, radial disc D13mm (max) x 5.5mm, lead pitch 7.5mm, lead 0.8mm (MF72 5D11)")
+	(tags "NTC thermistor disc radial MF72")
+	(property "Reference" "REF**"
+		(at 3.75 -4 0)
+		(layer "F.SilkS")
+		(uuid "e62337ce-7690-47d6-a75f-f799698f052b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "NTC_Disc_D13mm_W5.5mm_P7.5mm"
+		(at 3.75 4 0)
+		(layer "F.Fab")
+		(uuid "13f7c4e2-a484-4f44-8e27-530b124ba0c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.75 -2.75)
+		(end 10.25 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2f3744a8-14a0-4388-a16f-7e2b7fe5c0db")
+	)
+	(fp_line
+		(start 10.25 -2.75)
+		(end 10.25 2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "58afd578-135d-4bc5-9972-d05a26a84bee")
+	)
+	(fp_line
+		(start 10.25 2.75)
+		(end -2.75 2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b5f8da8-33a0-4ac6-a1f5-6308fd8b08dc")
+	)
+	(fp_line
+		(start -2.75 2.75)
+		(end -2.75 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4be83493-5873-4ca2-892f-78e738721d9d")
+	)
+	(fp_line
+		(start -2.87 -2.87)
+		(end 10.37 -2.87)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a5d641e6-5faf-4300-81df-6ae5b97ebf7b")
+	)
+	(fp_line
+		(start 10.37 -2.87)
+		(end 10.37 2.87)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d6d6d278-a351-4eb6-98c7-d81a28add015")
+	)
+	(fp_line
+		(start 10.37 2.87)
+		(end -2.87 2.87)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "daf3e87e-36f1-4dc9-be15-273e3f58eb0a")
+	)
+	(fp_line
+		(start -2.87 2.87)
+		(end -2.87 -2.87)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0ccd365f-9a6f-4d97-87f6-cec85d5be189")
+	)
+	(fp_line
+		(start -3.25 -3.25)
+		(end 10.75 -3.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d50896ef-2dba-4055-ba2e-bf18b5610b93")
+	)
+	(fp_line
+		(start 10.75 -3.25)
+		(end 10.75 3.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1be3f16-491a-4121-ad75-5dc2b65b7bd5")
+	)
+	(fp_line
+		(start 10.75 3.25)
+		(end -3.25 3.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a6f77000-2f33-40c8-9e03-a8eb83b2c3f0")
+	)
+	(fp_line
+		(start -3.25 3.25)
+		(end -3.25 -3.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dcf2b6fa-c8bd-4e12-82f3-5dc745970895")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "67e16e2c-49cf-4094-b555-77ff8f052cdc")
+	)
+	(pad "2" thru_hole circle
+		(at 7.5 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f6a63ed7-af42-472d-87cb-8f485abb8881")
+	)
+	(embedded_fonts no)
+)

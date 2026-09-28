@@ -2085,7 +2085,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -2103,7 +2103,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -2297,7 +2297,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "R"
@@ -2315,7 +2315,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "K"
@@ -2333,7 +2333,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
 					(name "A"
@@ -5359,7 +5359,7 @@
 		)
 		(uuid "0dbbb23b-01d3-470b-bf92-afee9618b8ae")
 	)
-	(text "5V Buck Converter"
+	(text "5V Buck Converter  —  UVLO: start ~34 V / stop ~32 V (will not start from a 24 V bench supply)"
 		(exclude_from_sim no)
 		(at 27.178 150.368 0)
 		(effects
@@ -5379,6 +5379,16 @@
 		)
 		(uuid "37ace6ca-bea4-4950-afcb-d8eb6949a271")
 	)
+(text "AP2112K: max ~200 mA load (SOT-23-5 thermal limit, see #61)"
+		(exclude_from_sim no)
+		(at 252.73 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "968e5d8f-698c-4580-8b66-72d1f7d11756")
+	)
 	(text "C17, C18	-> 16V"
 		(exclude_from_sim no)
 		(at 282.448 102.108 0)
@@ -5389,7 +5399,7 @@
 		)
 		(uuid "49774a83-25df-4439-8ebb-aa832b0886cc")
 	)
-	(text "24V Buck Converter"
+	(text "24V Buck Converter  —  UVLO: start ~34 V / stop ~32 V (will not start from a 24 V bench supply)"
 		(exclude_from_sim no)
 		(at 27.178 84.328 0)
 		(effects
@@ -5916,6 +5926,28 @@
 	(no_connect
 		(at 152.4 233.68)
 		(uuid "325c44cd-5894-42a5-9546-d5532e51c615")
+	)
+	(wire
+		(pts
+			(xy 86.36 252.73) (xy 93.98 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b7fca33-ad90-475f-b713-06f35b5bb20a")
+	)
+	(junction
+		(at 86.36 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68ceaa41-907e-4225-8866-ccaa034cf4b0")
+	)
+	(junction
+		(at 93.98 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8edc7340-ad36-43a1-a6fa-e9efebc44a77")
 	)
 	(wire
 		(pts
@@ -9545,7 +9577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 205.4352 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11491,7 +11523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 260.0452 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -13207,7 +13239,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 303.2252 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -14448,7 +14480,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_SPT:PhoenixContact_SPT_5_1-V-7.5_1x01_P7.5mm_Vertical"
+		(property "Footprint" "Step Motor Controller:NTC_Disc_D13mm_W5.5mm_P7.5mm"
 			(at 21.59 247.65 0)
 			(hide yes)
 			(show_name no)
@@ -16853,7 +16885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 289.2552 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -17343,7 +17375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 195.2752 190.5 0)
 			(hide yes)
 			(show_name no)
