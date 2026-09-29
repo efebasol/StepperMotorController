@@ -2638,7 +2638,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 11.43 0)
 					(length 2.54)
 					(name "IN"
@@ -2656,7 +2656,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 8.89 0)
 					(length 2.54)
 					(name "IN"
@@ -2674,7 +2674,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 6.35 0)
 					(length 2.54)
 					(name "IN"
@@ -2692,7 +2692,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 3.81 0)
 					(length 2.54)
 					(name "N.C"
@@ -2710,7 +2710,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 1.27 0)
 					(length 2.54)
 					(name "N.C"
@@ -2728,7 +2728,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 -1.27 0)
 					(length 2.54)
 					(name "P_IN"
@@ -2746,7 +2746,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 -3.81 0)
 					(length 2.54)
 					(name "UVLO"
@@ -2764,7 +2764,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 -6.35 0)
 					(length 2.54)
 					(name "OVP"
@@ -2782,7 +2782,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 -8.89 0)
 					(length 2.54)
 					(name "GND"
@@ -2800,7 +2800,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -11.43 -11.43 0)
 					(length 2.54)
 					(name "dVdT"
@@ -2818,7 +2818,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 -11.43 180)
 					(length 2.54)
 					(name "ILIM"
@@ -2836,7 +2836,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 -8.89 180)
 					(length 2.54)
 					(name "MODE"
@@ -2854,7 +2854,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 -6.35 180)
 					(length 2.54)
 					(name "SHDN#"
@@ -2872,7 +2872,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 -3.81 180)
 					(length 2.54)
 					(name "IMON"
@@ -2890,7 +2890,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin open_collector line
 					(at 11.43 -1.27 180)
 					(length 2.54)
 					(name "FLT#"
@@ -2908,7 +2908,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin open_collector line
 					(at 11.43 1.27 180)
 					(length 2.54)
 					(name "PGOOD"
@@ -2926,7 +2926,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 3.81 180)
 					(length 2.54)
 					(name "N.C"
@@ -2944,7 +2944,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 6.35 180)
 					(length 2.54)
 					(name "OUT"
@@ -2962,7 +2962,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 8.89 180)
 					(length 2.54)
 					(name "OUT"
@@ -2980,7 +2980,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 11.43 180)
 					(length 2.54)
 					(name "OUT"
@@ -2998,7 +2998,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 16.51 270)
 					(length 2.54)
 					(name "EP"
@@ -10809,7 +10809,7 @@
 		)
 		(uuid "c0411018-01f8-436e-9377-be005798807b")
 	)
-	(text "CONNECTOR PINOUT (cable interconnect)\nJ1  KF128 5.08mm   BRAKE RESISTOR R16 (RX24 50W, off-board)\nJ2  XT60PW-M        48V IN        1: +48V   2: GND\nJ3  XT30PW-F        48V OUT       1: +VM     2: GND\nJ4  B2P-VH          24V BRAKE     1: +24V   2: GND\nJ5  B5B-XH-A        LOGIC         1: GND  2: +5V  3: +3V3  4: VBUS_SENSE\n12V is board-internal only (gate driver)"
+	(text "CONNECTOR PINOUT (cable interconnect)\nJ1  KF128 5.08mm   BRAKE RESISTOR R16 (RX24 50W, off-board)\nJ2  XT60PW-M        48V IN        1: +48V   2: GND\nJ3  XT30PW-F        48V OUT       1: +VM     2: GND\nJ4  B2P-VH          24V BRAKE     1: +24V   2: GND\nJ5  B5B-XH-A        LOGIC         1: GND  2: +5V  3: +3V3  4: VBUS_SENSE  5: TPS16630_FLT# (open-drain, active-low)\n12V is board-internal only (gate driver)"
 		(exclude_from_sim no)
 		(at 23.622 61.214 0)
 		(effects
