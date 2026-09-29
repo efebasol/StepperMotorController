@@ -6,7 +6,7 @@ Stepper motor driver system based on TMC5160A + STM32. Long-term goal: a 6-axis 
 
 | Board | Folder | Revision | Stage |
 |---|---|---|---|
-| Power board | `hardware/power` | Rev A | Schematic |
+| Power board | `hardware/power` | Rev A | Schematic reviewed (ERC clean) · EMI input filter in progress (#65) · layout next |
 | Driver board | `hardware/driver` | Rev A | Schematic |
 | Firmware | `firmware` | – | Not started |
 
@@ -16,7 +16,7 @@ Tracking: [GitHub Project](https://github.com/users/efebasol/projects/12)
 
 ```
 hardware/
-  power/     KiCad project – power board (48V input, brake chopper, 24V/5V buck, 3V3 LDO) – see its README for stackup & net classes
+  power/     KiCad project – power board (48V in, brake chopper, 24V/5V buck, 12V/3V3 LDO, 24V eFuse) – see its README
   driver/    KiCad project – TMC5160 + MOSFET driver board
   lib/       Shared library: symbols/, footprints/, 3dmodels/
 firmware/    STM32CubeIDE project
@@ -26,6 +26,8 @@ ci/          CI scripts (ERC/DRC, outputs, visual diff)
 
 Libraries are resolved from inside the project (`${KIPRJMOD}/../lib/...`), so the project opens without broken parts on any machine.
 
+> **Library rule:** don't leave parts linked to machine-local libraries (e.g. the KiCad PCM `PCM_JLCPCB-*` libs). Save them into `Step Motor Controller` (symbols/footprints) or use the standard `Device:R` / `Device:C` + an `LCSC` field. CI flags them as ERC warnings.
+
 ## Conventions
 
 - **Commit messages:** `hw(power): ...`, `hw(driver): ...`, `fw(encoder): ...`, `docs: ...`, `ci: ...`
@@ -34,6 +36,12 @@ Libraries are resolved from inside the project (`${KIPRJMOD}/../lib/...`), so th
 - **An ordered revision is frozen:** tag (`power-rev-a`) + GitHub Release (Gerber, BOM, CPL, schematic PDF). Later changes go to Rev B.
 - **Branches:** hardware lives on `main`; experiments on `experiment/...`, firmware features on `feature/...`.
 - Datasheets, tokens and key files are never committed.
+
+## Issues & labels
+
+- Templates: 🐞 Bug · ⚠️ Risk · 🛠️ Task (New issue).
+- Labels: `hw` / `fw`, `power`, `schematic` / `layout`, `bug`, `risk`, `rev-a`.
+- **`robot-arm-phase`** – deliberately deferred until the 6-axis arm; filter by this label when that phase starts.
 
 ## CI
 

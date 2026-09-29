@@ -1,7 +1,37 @@
 # Power board
 
-48 V input, brake chopper, 24 V / 5 V buck (TPS54360), 3V3 LDO (AP2112K), 12 V LDO (L78L12) for the chopper gate driver.
-Feeds the driver boards (48 V), the stepper motor brakes (24 V) and the logic (5 V / 3V3).
+Rev A — single-motor bench prototype power board.
+Feeds the driver board (48 V), the stepper motor brake (24 V) and the logic (5 V / 3V3).
+
+## Blocks
+
+| Block | Key parts | Notes |
+|---|---|---|
+| 48 V input | J2 XT60, F1 fuse, D4 SMBJ51A TVS, R21 NTC 5D-20 (inrush), D3 MBR10100 (reverse polarity), C20/C21 470 µF bulk | EMI input filter in progress (#65). LM74700 ideal diode deferred (#60) |
+| Brake chopper | IC1 LM393 + U6 TL431B (±0.3 %), Q1 P40B10SL, U5 MCP1416 gate driver, R16 RX24 50 W 33 Ω (off-board, J1), D5 SS510 flyback | Turn-on ≈ 54.8 V nominal, ≤ 55.23 V worst case (0.1 % divider) < SMBJ51A 56.7 V. Capacity ≈ 1.66 A |
+| 12 V LDO | U7 L78L12 (fed from 24 V) | Gate-driver supply only, not on any connector |
+| 24 V buck | U1 TPS54360, L1 68 µH | Brake rail. UVLO start ~34 V / stop ~32 V |
+| 24 V brake eFuse | U4 TPS16630 | PGOOD → D13, FLT# → J5 pin 5 (firmware #66) |
+| 5 V buck | U3 TPS54360, L2 22 µH, 2×22 µF X7R out (C16, C27), comp. R10 4.22k / C18 27 nF / C17 220 pF | UVLO start ~34 V / stop ~32 V |
+| 3V3 LDO | U2 AP2112K-3.3 | **max ~200 mA** (SOT-23-5 thermal); bigger LDO deferred (#61) |
+| VBUS sense | R22 100k / R23 3.9k + 100 nF | 48 V → 1.80 V, ~82 V → 3.08 V. Firmware scaling #63 |
+| Indicators | D6–D11 rail LEDs (48V, VM, 24V, 12V, 5V, 3V3), ~1.5 mA each | Silkscreen label next to each LED (#44) |
+
+Design calculations: [`docs/power-design-notes.md`](../../docs/power-design-notes.md)
+
+## Connectors
+
+Board-to-board by **cables** (no stacking / backplane).
+
+| Ref | Part | Function | Pinout |
+|---|---|---|---|
+| J2 | XT60PW-M | 48 V IN | 1: +48V · 2: GND |
+| J3 | XT30PW-F | 48 V OUT (driver) | 1: VM · 2: GND |
+| J4 | JST B2P-VH | 24 V BRAKE | 1: +24V · 2: GND |
+| J5 | JST B5B-XH-A | LOGIC (main board) | 1: GND · 2: +5V · 3: +3V3 · 4: VBUS_SENSE · 5: TPS16630_FLT# |
+| J1 | KF128 5.08 mm | Brake resistor R16 (off-board) | – |
+
+Main-board side: 1 kΩ series resistor at the MCU ADC pin for VBUS_SENSE; one pull-up for FLT# (open-drain, active-low).
 
 ## Stackup
 
