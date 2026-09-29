@@ -634,6 +634,10 @@
       {
         "netclass": "BOOT_NODE",
         "pattern": "*BOOT_*"
+      },
+      {
+        "netclass": "PWR_24V",
+        "pattern": "/+24V_BRK"
       }
     ]
   },
@@ -774,7 +778,7 @@
         "uuid": "30583e29-7231-44d2-b6ef-f52f82bb6e27"
       }
     ],
-    "used_designators": "#FLG1-5,Q1,#PWR1-42,D1-11,C1-28,F1,U1-7,J1-6,L1-2,IC1,R1-29",
+    "used_designators": "#FLG1-5,Q1,#PWR1-50,D1-13,C1-33,F1,U1-7,J1-6,L1-2,IC1,R1-35",
     "variants": []
   },
   "sheets": [
