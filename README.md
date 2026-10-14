@@ -6,7 +6,7 @@ Stepper motor driver system based on TMC5160A + STM32. Long-term goal: a 6-axis 
 
 | Board | Folder | Revision | Stage |
 |---|---|---|---|
-| Power board | `hardware/power` | Rev A | Schematic reviewed (ERC clean) · EMI input filter in progress (#65) · layout next |
+| Power board | `hardware/power` | Rev A | Schematic complete (incl. EMI filter #65) · layout next |
 | Driver board | `hardware/driver` | Rev A | Schematic |
 | Firmware | `firmware` | – | Not started |
 

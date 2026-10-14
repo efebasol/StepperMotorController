@@ -63,3 +63,12 @@ Firmware: `V_bus = V_adc × 103.9 / 3.9`.
 ## Track widths (#30)
 
 IPC-2221, external 2 oz, ΔT ≈ 20 °C: 10 A → ≥2.4 mm, 3 A → ≥0.45 mm, 2 A → ≥0.26 mm. Inner 1 oz layers would need 2–5× wider → high-power nets stay on the outer layers (custom DRC rule). Full table: `hardware/power/README.md`.
+
+## 48 V input EMI filter (#65)
+
+Differential-mode π filter: C34 2.2 µF 100 V X7R → L4 2.2 µH (ETQP4M2R2KVK, I<sub>sat</sub> 20.4 A, DCR 8.5 mΩ) → C35 2.2 µF.
+Chain: J2 → F1 → D3 → R21 NTC → VIN_EMI → L4 → +VM. CMC dropped: no 10 A+ part in stock, buck noise (~365 kHz) is mostly DM, no chassis/PE on the bench.
+
+- 10 A: 85 mV drop, ≈ 0.85 W in L4
+- Middlebrook: Z₀ ≈ 0.05 Ω (with bulk C20/C21) ≪ |R<sub>in,buck</sub>| ≈ V²/P ≈ 77 Ω → stable; electrolytic ESR provides damping, so C20/C21 must stay electrolytic
+- NTC ahead of the filter damps the hot-plug resonance (CX1 + cable inductance); TVS D4 stays on +VM to clamp regen
