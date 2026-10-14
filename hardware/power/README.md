@@ -8,7 +8,7 @@ Feeds the driver board (48 V), the stepper motor brake (24 V) and the logic (5 V
 | Block | Key parts | Notes |
 |---|---|---|
 | 48 V input | J2 XT60, F1 fuse, D4 SMBJ51A TVS, R21 NTC 5D-20 (inrush), D3 MBR10100 (reverse polarity), C20/C21 470 µF bulk | EMI input filter in progress (#65). LM74700 ideal diode deferred (#60) |
-| Brake chopper | IC1 LM393 + U6 TL431B (±0.3 %), Q1 P40B10SL, U5 MCP1416 gate driver, R16 RX24 50 W 33 Ω (off-board, J1), D5 SS510 flyback | Turn-on ≈ 54.8 V nominal, ≤ 55.23 V worst case (0.1 % divider) < SMBJ51A 56.7 V. Capacity ≈ 1.66 A |
+| Brake chopper | IC1 LM393 + U6 TL431B (±0.3 %), Q1 P40B10SL, U5 MCP1416 gate driver, R16 RX24 50 W 33 Ω (off-board, J1), D5 SS510 flyback | Turn-on 54.14–55.23 V, turn-off 52.27–53.32 V (0.1 % divider) → **PSU max ≤ 52 V**. Capacity ≈ 1.66 A |
 | 12 V LDO | U7 L78L12 (fed from 24 V) | Gate-driver supply only, not on any connector |
 | 24 V buck | U1 TPS54360, L1 68 µH | Brake rail. UVLO start ~34 V / stop ~32 V |
 | 24 V brake eFuse | U4 TPS16630 | PGOOD → D13, FLT# → J5 pin 5 (firmware #66) |

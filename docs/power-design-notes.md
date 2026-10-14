@@ -14,6 +14,19 @@ Comparator input = divider R13 97.6k / (R17 4.75k ∥ R14 243k) against U6 TL431
 | 1 % | 56.19 V | 0.51 V |
 | **0.1 % (chosen)** | **55.23 V** | 1.47 V |
 
+### Lower bound & PSU requirement (#56)
+
+Worst-case thresholds (TL431B ±0.3 %, LM393 V<sub>os</sub> ±9 mV, V<sub>OL</sub> 0–0.4 V, +5 V ±3 %):
+
+| | Nominal | 1 % resistors | 0.1 % resistors |
+|---|---|---|---|
+| Turn-on | 54.76 V | 53.22 … 56.19 V | 54.14 … 55.23 V |
+| Turn-off | 52.79 V | 51.37 … 54.26 V | 52.27 … 53.32 V |
+
+The lower limit is set by **turn-off**: if the PSU sits above the turn-off threshold, a chopper event triggered by regen never releases and R16 dissipates ~85 W continuously.
+
+→ **PSU requirement: max output (incl. trim range + load regulation) ≤ 52 V**, trim locked/labeled at 48 V; D3 drop not counted as margin. Divider R13 / R17 / R14 = **0.1 %**.
+
 - Capacity: R16 33 Ω at ~55 V → **≈ 1.66 A**. Regen above that keeps raising the bus (6-axis case deferred, #54).
 - The TVS (D4) only handles short transients; sustained regen is the chopper's job.
 
