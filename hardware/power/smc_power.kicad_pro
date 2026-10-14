@@ -517,7 +517,7 @@
         "line_style": 0,
         "name": "BOOT_NODE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "tuning_profile": ""
@@ -527,7 +527,7 @@
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(72, 72, 72)",
         "track_width": 0.5,
         "tuning_profile": "",
@@ -535,11 +535,19 @@
         "via_drill": 0.3
       },
       {
+        "line_style": 2,
+        "name": "GND_IN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(72, 72, 72)",
+        "tuning_profile": ""
+      },
+      {
         "clearance": 0.25,
         "line_style": 0,
         "name": "PWR_24V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(221, 133, 0)",
         "track_width": 0.8,
         "tuning_profile": "",
@@ -551,7 +559,7 @@
         "line_style": 0,
         "name": "PWR_3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.4,
         "tuning_profile": "",
@@ -563,7 +571,7 @@
         "line_style": 0,
         "name": "PWR_48V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 2.5,
         "tuning_profile": "",
@@ -575,7 +583,7 @@
         "line_style": 0,
         "name": "PWR_5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(194, 194, 0)",
         "track_width": 0.5,
         "tuning_profile": "",
@@ -587,7 +595,7 @@
         "line_style": 0,
         "name": "SW_NODE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(194, 0, 194)",
         "track_width": 1.0,
         "tuning_profile": ""
@@ -638,6 +646,22 @@
       {
         "netclass": "PWR_24V",
         "pattern": "/+24V_BRK"
+      },
+      {
+        "netclass": "GND_IN",
+        "pattern": "GND1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR_48V",
+        "pattern": "/VIN_EMI"
+      },
+      {
+        "netclass": "PWR_48V",
+        "pattern": "/VOUT_EMI"
       }
     ]
   },
@@ -778,7 +802,7 @@
         "uuid": "30583e29-7231-44d2-b6ef-f52f82bb6e27"
       }
     ],
-    "used_designators": "#FLG1-5,Q1,#PWR1-50,D1-13,C1-33,F1,U1-7,J1-6,L1-2,IC1,R1-35",
+    "used_designators": "#FLG1-5,Q1,#PWR1-53,D1-13,C1-35,F1,U1-7,J1-6,L1-4,IC1,R1-35",
     "variants": []
   },
   "sheets": [

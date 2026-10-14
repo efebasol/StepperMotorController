@@ -6827,7 +6827,7 @@
 	(footprint "Step Motor Controller:TO508P482X997X1956-2P"
 		(layer "F.Cu")
 		(uuid "43a2154e-a95e-4199-b994-0c47c740ee81")
-		(at 73.45 53.435)
+		(at 77.76 51.3)
 		(descr "TO−220, 2−LEAD CASE 221B−04 ISSUE F_2025")
 		(tags "Schottky Diode")
 		(property "Reference" "D3"
@@ -11205,7 +11205,7 @@
 	(footprint "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "75b9fddc-ec6e-45c5-a36f-cd004c48062d")
-		(at 58.875 71.875)
+		(at 117.95 47.3)
 		(descr "Connector XT60 Horizontal PCB Female, https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf")
 		(tags "RC Connector XT60")
 		(property "Reference" "J2"
@@ -24744,7 +24744,7 @@
 	(footprint "Step Motor Controller:NTC_Disc_D13mm_W5.5mm_P7.5mm"
 		(layer "F.Cu")
 		(uuid "f894acfc-66a6-4473-8708-4415eaee3596")
-		(at 164.375 148.125)
+		(at 147.55 147.7)
 		(descr "Power NTC thermistor, radial disc D13mm (max) x 5.5mm, lead pitch 7.5mm, lead 0.8mm (MF72 5D11)")
 		(tags "NTC thermistor disc radial MF72")
 		(property "Reference" "R21"
