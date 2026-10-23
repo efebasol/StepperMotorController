@@ -1,27 +1,27 @@
-name: 🛠️ Task
-description: A piece of work (schematic, layout, firmware, test, docs)
+name: 🛠️ Görev
+description: Bir iş (şematik, layout, firmware, test, doküman)
 labels: []
 body:
   - type: dropdown
     id: board
     attributes:
-      label: Board / area
-      options: [Power board, Driver board, Main board, Firmware, Docs, Other]
+      label: Kart / alan
+      options: [Güç kartı, Sürücü kartı, Ana kart, Firmware, Doküman, Diğer]
     validations: {required: true}
   - type: textarea
     id: goal
     attributes:
-      label: Goal
-      description: What will be different once this is done?
+      label: Hedef
+      description: Bu bitince ne değişmiş olacak?
     validations: {required: true}
   - type: textarea
     id: steps
     attributes:
-      label: Steps
+      label: Adımlar
       value: |
         - [ ] 
   - type: input
     id: blocked
     attributes:
-      label: Dependencies
-      placeholder: "Blocked by #..."
+      label: Bağımlılıklar
+      placeholder: "#... tarafından engelleniyor"

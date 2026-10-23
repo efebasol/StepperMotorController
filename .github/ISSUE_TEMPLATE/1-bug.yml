@@ -1,43 +1,43 @@
 name: 🐞 Bug
-description: A problem found in the schematic, layout, board or firmware
+description: Şematikte, layout'ta, kartta veya firmware'de bulunan bir sorun
 title: "[BUG] "
 labels: ["bug"]
 body:
   - type: dropdown
     id: board
     attributes:
-      label: Board / area
-      options: [Power board, Driver board, Main board, Firmware, Other]
+      label: Kart / alan
+      options: [Güç kartı, Sürücü kartı, Ana kart, Firmware, Diğer]
     validations: {required: true}
   - type: input
     id: rev
     attributes:
-      label: Revision / commit
-      description: Which board revision or commit shows the problem?
+      label: Revizyon / commit
+      description: Sorun hangi kart revizyonunda veya commit'te görülüyor?
       placeholder: "Rev A / power-rev-a / 4aabb87"
     validations: {required: true}
   - type: dropdown
     id: stage
     attributes:
-      label: Found during
-      options: [Schematic review, Layout review, ERC/DRC, Bring-up / test, Normal operation]
+      label: Nerede bulundu
+      options: [Şematik review, Layout review, ERC/DRC, Bring-up / test, Normal çalışma]
   - type: textarea
     id: what
     attributes:
-      label: What's wrong?
-      description: Expected behavior vs. what actually happens
+      label: Sorun ne?
+      description: Beklenen davranış vs. gerçekte olan
     validations: {required: true}
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence
-      description: Measurements, scope captures, schematic/layout screenshots (drag & drop)
+      label: Kanıt
+      description: Ölçümler, osiloskop görüntüleri, şematik/layout ekran görüntüleri (sürükle bırak)
   - type: textarea
     id: fix
     attributes:
-      label: Possible fix
+      label: Olası çözüm
   - type: dropdown
     id: when
     attributes:
-      label: When will it be fixed?
-      options: [This revision, Defer to Rev B, Not decided]
+      label: Ne zaman düzeltilecek?
+      options: [Bu revizyonda, Rev B'ye ertele, Karar verilmedi]

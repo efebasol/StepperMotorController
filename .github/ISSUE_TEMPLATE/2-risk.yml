@@ -1,29 +1,29 @@
 name: ⚠️ Risk
-description: Not a bug yet, but could cause problems later — needs analysis and a decision
+description: Henüz bug değil ama ileride sorun çıkarabilir — analiz ve karar gerekiyor
 title: "[RISK] "
 labels: ["risk"]
 body:
   - type: dropdown
     id: board
     attributes:
-      label: Board / area
-      options: [Power board, Driver board, Main board, Firmware, System]
+      label: Kart / alan
+      options: [Güç kartı, Sürücü kartı, Ana kart, Firmware, Sistem]
     validations: {required: true}
   - type: textarea
     id: risk
     attributes:
       label: Risk
-      description: What could happen, under which conditions, and what's the consequence?
+      description: Ne olabilir, hangi koşullarda ve sonucu ne olur?
     validations: {required: true}
   - type: textarea
     id: analysis
     attributes:
-      label: Analysis
-      description: Calculations / measurements / research needed (as a checklist)
+      label: Analiz
+      description: Gereken hesaplar / ölçümler / araştırma (checklist olarak)
       value: |
         - [ ] 
   - type: textarea
     id: decision
     attributes:
-      label: Decision
-      description: Fill in after the analysis
+      label: Karar
+      description: Analizden sonra doldur
