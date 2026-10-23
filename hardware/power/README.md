@@ -8,10 +8,10 @@ Feeds the driver board (48 V), the stepper motor brake (24 V) and the logic (5 V
 | Block | Key parts | Notes |
 |---|---|---|
 | 48 V input | J2 XT60 → F1 fuse → D3 MBR10100 (reverse polarity) → R21 NTC 5D-20 (inrush) → **DM π filter C34 / L4 2.2 µH / C35** → +VM; D4 SMBJ51A TVS and C20/C21 470 µF bulk on +VM | EMI filter #65 (CMC dropped: no 10 A part in stock, noise is mostly DM). LM74700 ideal diode deferred (#60) |
-| Brake chopper | IC1 LM393 + U6 TL431B (±0.3 %), Q1 P40B10SL, U5 MCP1416 gate driver, R16 RX24 50 W 33 Ω (off-board, J1), D5 SS510 flyback | Turn-on 54.14–55.23 V, turn-off 52.27–53.32 V (0.1 % divider) → **PSU max ≤ 52 V**. Capacity ≈ 1.66 A |
+| Brake chopper | IC1 LM393 + U6 TL431B (±0.3 %, REF–K via R36 0 Ω), Q1 P40B10SL, U5 MCP1416 gate driver, R16 RX24 50 W 33 Ω (off-board, J1), D5 SS510 flyback | Turn-on 54.14–55.23 V, turn-off 52.27–53.32 V (0.1 % divider) → **PSU max ≤ 52 V**. Capacity ≈ 1.66 A |
 | 12 V LDO | U7 L78L12 (fed from 24 V) | Gate-driver supply only, not on any connector |
 | 24 V buck | U1 TPS54360, L1 68 µH | Brake rail. UVLO start ~34 V / stop ~32 V |
-| 24 V brake eFuse | U4 TPS16630 | PGOOD → D13, FLT# → J5 pin 5 (firmware #66) |
+| 24 V brake eFuse | U4 TPS16630, R30 12k → I<sub>LIM</sub> ≈ 1.5 A, UVLO ≈ 20 V / OVP ≈ 30 V, auto-retry | D13 = fault LED (PGOOD low), FLT# → J5 pin 5 (firmware #66) |
 | 5 V buck | U3 TPS54360, L2 22 µH, 2×22 µF X7R out (C16, C27), comp. R10 4.22k / C18 27 nF / C17 220 pF | UVLO start ~34 V / stop ~32 V |
 | 3V3 LDO | U2 AP2112K-3.3 | **max ~200 mA** (SOT-23-5 thermal); bigger LDO deferred (#61) |
 | VBUS sense | R22 100k / R23 3.9k + 100 nF | 48 V → 1.80 V, ~82 V → 3.08 V. Firmware scaling #63 |
