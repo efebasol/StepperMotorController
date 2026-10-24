@@ -3,3 +3,10 @@
   (layer inner)
   (condition "A.NetClass == 'PWR_48V' || A.NetClass == 'PWR_24V' || A.NetClass == 'SW_NODE'")
   (constraint disallow track zone))
+(rule "M3 mounting holes: keep copper off the screw head / standoff"
+  (condition "B.memberOfFootprint('H*')")
+  (constraint hole_clearance (min 2.0mm)))
+
+(rule "TPS54360 land pattern: TI geometry"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U1') && B.memberOfFootprint('U1')) || (A.memberOfFootprint('U3') && B.memberOfFootprint('U3')))")
+  (constraint clearance (min 0.15mm)))
