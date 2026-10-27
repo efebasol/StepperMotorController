@@ -19,7 +19,19 @@ PY
 kicad-cli pcb export gerbers --layers "$LAYERS" --subtract-soldermask --no-x2 --no-netlist --output "$G/" "$PCB" >/dev/null
 kicad-cli pcb export drill --format excellon --excellon-units mm --excellon-zeros-format decimal \
   --excellon-oval-format alternate --generate-map --map-format gerberx2 --output "$G/" "$PCB" >/dev/null
-(cd "$OUT" && rm -f "$NAME-jlc-gerber.zip" && zip -qj "$NAME-jlc-gerber.zip" gerber/*)
+# JLC detects layers by file name: rename user-named copper layers (e.g. "Power Plane") to canonical KiCad names (F_Cu, In1_Cu, ...)
+python3 - "$PCB" "$G" <<'PY'
+import re,sys,os
+pcb,g=sys.argv[1:]
+t=open(pcb).read()
+for canon,user in re.findall(r'\(\d+ "([^"]+)" \w+ "([^"]+)"\)',t):
+    if not canon.endswith('.Cu'): continue
+    for f in os.listdir(g):
+        if '-'+user+'.' in f:
+            nf=f.replace('-'+user+'.','-'+canon.replace('.','_')+'.')
+            os.rename(os.path.join(g,f),os.path.join(g,nf)); print('renamed',f,'->',nf)
+PY
+(cd "$OUT" && rm -f "$NAME-jlc-gerber.zip" && zip -qj "$NAME-jlc-gerber.zip" gerber/* -x '*.gbrjob' '*drl_map*')
 kicad-cli sch export bom --output "$OUT/.bom_all.csv" --fields 'Reference,Value,Footprint,LCSC,${DNP}' \
   --labels 'Ref,Value,Footprint,LCSC,DNP' --group-by '' --exclude-dnp "$SCH" >/dev/null
 kicad-cli pcb export pos --format csv --units mm --side both --exclude-dnp --output "$OUT/.pos.csv" "$PCB" >/dev/null
