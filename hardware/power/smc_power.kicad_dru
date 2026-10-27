@@ -10,3 +10,12 @@
 (rule "TPS54360 land pattern: TI geometry"
   (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U1') && B.memberOfFootprint('U1')) || (A.memberOfFootprint('U3') && B.memberOfFootprint('U3')))")
   (constraint clearance (min 0.15mm)))
+# --- JLCPCB 4-layer, 2 oz outer / 1 oz inner (DFM, #47) ---
+(rule "JLC: outer 2 oz min track" (layer outer) (constraint track_width (min 0.15mm)))
+(rule "JLC: inner 1 oz min track" (layer inner) (constraint track_width (min 0.09mm)))
+(rule "JLC: via hole to copper" (condition "A.Type == 'Via'") (constraint hole_clearance (min 0.2mm)))
+(rule "JLC: PTH hole to copper" (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && !A.memberOfFootprint('H*')") (constraint hole_clearance (min 0.28mm)))
+(rule "JLC: hole to hole" (constraint hole_to_hole (min 0.2mm)))
+(rule "JLC: via annular ring" (condition "A.Type == 'Via'") (constraint annular_width (min 0.15mm)))
+(rule "JLC: NPTH min" (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'") (constraint hole_size (min 0.5mm)))
+(rule "JLC: silk text" (layer "F.Silkscreen") (constraint text_height (min 1.0mm)) (constraint text_thickness (min 0.15mm)))
