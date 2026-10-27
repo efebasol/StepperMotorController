@@ -3637,7 +3637,7 @@
 			(uuid "5e2499c0-a038-44a8-b822-49c390e56ad3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/HTSOP-8-1EP_3.9x4.9mm_Pitch1.27mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TI_SO-PowerPAD-8.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11938,7 +11938,7 @@
 			(uuid "331bc4de-b011-4cd6-a8a5-46a729e82720")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/HTSOP-8-1EP_3.9x4.9mm_Pitch1.27mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TI_SO-PowerPAD-8.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19638,7 +19638,7 @@
 			(uuid "a1be7a84-3d47-4f65-a90f-2eea1dda9343")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.85x4mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)

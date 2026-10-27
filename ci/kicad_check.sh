@@ -61,6 +61,8 @@ print(sum(x['severity']=='error' for x in v), sum(x['severity']=='warning' for x
   kicad-cli pcb export pos --format csv --units mm --side both --output "$OUT/fab/cpl.csv" "$PCB" >/dev/null
   (cd "$OUT/fab" && zip -qr "${NAME}-gerber.zip" gerber)
   kicad-cli pcb export pdf --layers "F.Cu,B.Cu,F.Silkscreen,B.Silkscreen,Edge.Cuts" --output "$OUT/docs/${NAME}-pcb.pdf" "$PCB" >/dev/null || true
+  # --- JLCPCB-ready Gerber / BOM / CPL ---
+  bash "$(dirname "$0")/jlc_export.sh" "$DIR" || echo "::warning title=JLC export ($NAME)::failed"
 else
   echo "| DRC | – | – |" >> "$SUM"; echo "" >> "$SUM"; echo "_No footprints on the PCB yet – DRC and fab outputs skipped._" >> "$SUM"
 fi
