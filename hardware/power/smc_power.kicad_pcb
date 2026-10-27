@@ -214,6 +214,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C49678"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bd429de-7447-46a6-bad2-e01dbd6ee75f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/7a8d69d0-7f0c-44a7-9b5e-4584f4b33f22")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -373,6 +384,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C104164"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72e63b66-099b-4f64-b4cf-3cc3a6d03327")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/dc653f69-6324-4df0-a471-b3f8dbb639b7")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -979,6 +1001,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C5341638"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1900ae06-e2e3-4dc3-b72b-81b1b792ddb6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/ff680954-0a97-4e8f-94b6-3c2116af66cd")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -1334,6 +1367,28 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C5266156"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f450f3b-b687-43c4-a0fe-fdb8a421e8f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "0.1%"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88ed3505-ae28-4bfa-87a2-148a72ced3d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/45ffc58d-4e14-407c-bbd4-590d93a902e3")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -1493,6 +1548,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "944e6098-e065-45a0-95bb-69481393d44b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/0ffdb3fb-39b3-44fb-bcf4-065262099d91")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -1652,6 +1718,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17418"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "537d1aba-dcde-49f3-89a8-1f30a74ab056")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/a1033be5-0026-4f21-9840-a81a8778f1f9")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -1811,6 +1888,17 @@
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(property "LCSC" "C5183009"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fa85018-ff3a-4b99-a6cd-61de1f50e6bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/f26c5e5b-ad52-4a11-9a09-381940e4a3f8")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -2132,6 +2220,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca6a39f4-5500-49da-b1c1-2724f31f67fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/348c78cf-7698-4d6d-9052-91d0780c79a5")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -2812,6 +2911,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C84256"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53129bd4-6adc-4471-9e64-5a64f1390d54")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/b7a8576e-2d95-4c24-9950-8b048df925fe")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -3022,6 +3132,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C28323"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0256cbac-d52e-46bd-ba17-e9d6ad47148f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d22deada-3400-4fb3-821e-a371a40fbd38")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -3173,6 +3294,17 @@
 			)
 		)
 		(property ki_fp_filters "TI*SO*PowerPAD*ThermalVias*")
+		(property "LCSC" "C44377"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "849b8ad7-b503-4953-b01a-cfe42cbe71e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/b86fd13a-cb67-4a60-8cb4-27383fce1391")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -4029,6 +4161,28 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2692699"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb16949f-c37f-4db2-b3d8-94d65a49e2aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "0.1%"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b98b65c2-8cba-4c21-bc32-ded0983d5310")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/fa52de0c-d259-4a09-a373-736a9a86f798")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -4188,6 +4342,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17499"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c205f562-3991-4308-a65c-7dfbebd173d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/4a988512-e054-47f7-874f-258f5dc0e4b3")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -4674,6 +4839,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C49678"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1f408e9-ae1c-413b-9aa3-48f8845d1c6e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/f97f6d67-5bea-4497-b163-7bf49e25c439")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -4833,6 +5009,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C376967"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37fe9cd3-1799-4f59-8bc6-a1ab88d73569")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/66200de6-ddac-4d13-ad99-8532cf1d00e4")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -5003,6 +5190,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cdb9e9b-68c6-4938-83d8-770df7e22f6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/b9121d9c-0c66-4d17-8a06-1b4fe24177dd")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -5540,6 +5738,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C5449000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbf5a59c-78cd-411d-be16-7f3f837a0458")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/f36404fa-2243-454d-8d7e-3d2826767d2b")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -5691,6 +5900,17 @@
 			)
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(property "LCSC" "C284023"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5711bffd-7b3f-4ff5-88b6-2bafa04f4774")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/f4b52863-38c4-47e4-98d6-fb790139a56f")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6020,6 +6240,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C228890"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01ce2639-699a-4956-971e-4b193ade98af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/fc8b88ff-2445-43d6-b6b4-14e1b831eb3b")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6179,6 +6410,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17444"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82023afa-8bc8-4641-bd6d-603ba47e0937")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/31253ab1-e594-4d96-b4b6-f368f2be8b3c")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6338,6 +6580,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C228890"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa49f6ea-3b29-4443-b3fe-60efe75b4fb6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/fdd1df9a-251c-43a8-bbed-74d2b00a911b")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6497,6 +6750,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C113827"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bf5f087-a035-465f-ab37-2e768b1ea639")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/23b614a0-ba21-440f-ba57-afa54bf6c62b")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6656,6 +6920,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17414"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff9755df-9b93-4c5d-a00d-872aaddaaa08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/a7a7a4df-78d7-4d29-8cab-44100007d11a")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -6815,6 +7090,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C104164"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5c3718c-959f-4433-b7e8-7c611a1e574b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/f0907e9e-37de-49ae-a3f6-71b25efdcd10")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -7742,6 +8028,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2933438"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85bcbcf8-a55d-4550-8e6b-281d73fd18fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/aa896405-369c-4db9-8044-c6e88c1f6d61")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -7901,6 +8198,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C49678"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d677a7d-0983-491c-b2b8-5ce88ca397ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/296e1da7-3d9f-402d-9b2b-fd6b64c82f3a")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -8060,6 +8368,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2999585"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acdc22f2-9d6f-482e-91b9-5a5f4d559478")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/ad2cffe7-9f55-41ce-8e69-c49b62674bd7")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -8219,6 +8538,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91630b7a-1fe8-4036-923b-b5a8cf34bc85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/a313e159-e482-4ec4-9113-6401b6c7feae")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -8378,6 +8708,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C49678"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90c5c929-3a56-494d-b695-b239e0c9bac6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/bc40b250-5307-400e-a79a-6f9548cdc33d")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -8537,6 +8878,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C5449000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "280ac17c-ed0a-404d-a86e-ca578638757d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/9f5c19e3-a825-4723-b642-fd5bce44e726")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -9968,6 +10320,17 @@
 			)
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
+		(property "LCSC" "C157991"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "855b53d2-d4ee-4786-9ab0-18f50ba05218")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/67508881-ada5-4a1c-948c-4a0c7edc6225")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -10278,6 +10641,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17414"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6040d40a-f707-4f39-a5e6-01d7514d1781")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/e5721953-f496-4314-afb2-9752ebdbfb13")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -10429,6 +10803,17 @@
 			)
 		)
 		(property ki_fp_filters "SOT?89*")
+		(property "LCSC" "C69601"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "868ed95f-9b59-4303-8c3c-fa59e9194e47")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/c2f4dd34-df86-4da1-be47-6346342875d6")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -10785,6 +11170,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C26327"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b098ac50-7090-4c31-a22b-076c10517466")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d7835041-0030-4014-8520-206c5396a892")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -11026,6 +11422,28 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2930186"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "258117b1-9218-4c09-867f-a5735c3e9c27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfa0871a-ede2-4dff-a6d0-55082d3347cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/431b37ec-63d1-4942-879e-c6eab56553db")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -11177,6 +11595,17 @@
 			)
 		)
 		(property ki_fp_filters "TI*SO*PowerPAD*ThermalVias*")
+		(property "LCSC" "C44377"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57d5aacf-7783-49e0-817a-1953cd19d37d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/6b46f5b7-075c-413e-9ebc-c01a31339300")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -11596,6 +12025,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8c7cdd4-f340-4882-9d8e-ccdf0d7eee10")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/da1d8e94-24f5-47f0-9921-51b11805e09d")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -11806,6 +12246,17 @@
 			)
 		)
 		(property ki_fp_filters "CP_*")
+		(property "LCSC" "C49256827"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "241bcdfc-6191-4c91-ab3a-01536ca2f62d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/cc0c580c-ee80-4b33-9bd0-315eda67cca3")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -14741,6 +15192,17 @@
 			)
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(property "LCSC" "C14281"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9149146e-8938-4150-a784-64cd39e6698a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/a58f58aa-a5c6-4db3-874b-1cea90ccfb92")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -15070,6 +15532,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec0857fd-7afe-4fd3-8290-64012597b27d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/e2793422-55ca-4d10-8d44-f6a39887f4be")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -15280,6 +15753,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2933442"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0be12f9d-1be0-4ffd-846d-19a72438bdf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/ebecc31d-de57-48d1-968f-3fe0de89df67")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -15766,6 +16250,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3935718-225d-46a8-85a4-b1f3ec54b388")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/9bcb00a0-9deb-4130-90e8-07f6ce662dfd")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -15925,6 +16420,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C106243"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76fb8a8a-5f86-4ebf-9b42-87139da04080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/99d07975-0b93-420f-a43f-466a170ee627")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -17089,6 +17595,17 @@
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(property "LCSC" "C5174472"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12b10e63-9b27-448d-b75c-52e44ad36d04")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/be236ed3-d784-4446-8fce-5a8b1943da2b")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -17789,6 +18306,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df47156b-400c-4918-b3b2-792dec6f8a87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/e343b284-cbbf-4874-9c89-3e2eca9fb8d0")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -17999,6 +18527,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C354262"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "677f69d3-8e94-4416-91e3-1f15acadf01f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/986aac3c-479a-4557-b69b-98a4ef2f89a5")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -18158,6 +18697,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "802ef392-6d32-4736-9cc4-0d09bd5429a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/534cc13b-167f-4a31-a48c-84924da8f0d9")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -19492,6 +20042,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C5341638"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c86b633-16f1-4601-bc2d-30b21c871151")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/243e60d6-a236-478a-a657-ce9aba88cc65")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -20028,6 +20589,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C309049"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38b50952-28d2-44e8-96c8-93c71b40f413")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/64a1cfd1-936f-4b08-9478-c92568b17839")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -20550,6 +21122,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C400703"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe2af4ff-5b03-44e1-b644-9b012d691305")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/0d777408-7cf2-4681-9cfb-cfbe9c1005a1")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -21072,6 +21655,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e8fc435-7bd2-41cc-ad21-35c8ea9a16c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/420c41d0-c479-40a5-868b-c6e1de300913")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -21231,6 +21825,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C577211"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b85b3128-c88f-4fc3-98cb-170f689fd6b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/fa6181c5-6b61-468a-881f-728b2dc91dfa")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -21390,6 +21995,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17499"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aaf4fd61-c7b9-40bb-b9eb-a2f275e95abc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/fe3cc7e2-4e2a-4adc-b0e9-c78fa8e9d123")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -21549,6 +22165,17 @@
 			)
 		)
 		(property ki_fp_filters "CP_*")
+		(property "LCSC" "C49256827"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35933b75-59c9-4117-9bdd-c367f1b3205c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/275f07af-59de-4366-81c4-4551278b5eb9")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -24492,6 +25119,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C2933477"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8aea6e32-1948-4f07-82f1-b8b9247612af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/ea6ade54-6f27-4e87-ad8f-a93592d56414")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -25014,6 +25652,17 @@
 			)
 		)
 		(property ki_fp_filters "SOT?23*")
+		(property "LCSC" "C83775"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa937433-b1ac-4374-a6cb-9e9a9ea44be7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/ea90eeb6-e915-4bb0-98d9-ea101645298a")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -25488,6 +26137,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C7955"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13c3cc17-a51e-480f-9b4e-53c13fa34b23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/6344cce0-f67b-45f2-8490-5b2c9a0338b8")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -25799,6 +26459,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C107112"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a81bcc91-94ad-49fe-b2ac-2f7fc4b050da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/52f6f27c-8b9a-4c9d-8164-a509ff202193")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -25958,6 +26629,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C3013231"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b300747-9ffd-4237-b9d5-3bdf0463c90e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/67b78739-82a4-4b8e-b0b8-3c49c920c544")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -26117,6 +26799,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17513"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ab5bf7f-5096-4b60-8b5d-38c0f2c5d10a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/0b4ed1b0-e072-4e97-9410-2197d3805596")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -26276,6 +26969,17 @@
 			)
 		)
 		(property ki_fp_filters "CP_*")
+		(property "LCSC" "C724604"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eaeefedd-ec61-425d-a7f5-97af26f13b30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d4f8bb01-145d-468f-b6f8-7dece379a5b0")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -28741,6 +29445,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C1750"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11f3c484-2ae8-4392-8092-761940bdeac5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/5cfd82fd-24a0-4b32-a2b0-1bd3fcc99cdb")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -28900,6 +29615,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C28323"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16085cba-47b0-469c-bff7-e8486678927a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/a0d78dcf-f9a1-4225-8ba8-01afbb53fccb")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -29488,6 +30214,17 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(property "LCSC" "C2297"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f0fb858-9be9-4c0f-9cb6-0a234c82af3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/d9ea4934-eb91-465e-bd9a-c9ce42dd7a4c")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -30025,6 +30762,17 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
+		(property "LCSC" "C28323"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8da6c15c-2d01-4b81-b5b1-4cfb66f99673")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/4e599c35-1623-475e-a7ef-1b00b81ba95c")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -31431,6 +32179,17 @@
 			)
 		)
 		(property ki_fp_filters "SOT?23?5*")
+		(property "LCSC" "C51118"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19a280e0-3bf3-4f71-8195-c707c81bdfb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/8b32ebd7-7885-4d5c-9c45-4e31c05e83d8")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
@@ -31834,6 +32593,17 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
+		(property "LCSC" "C17415"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7dca9c5e-9d02-426f-a55c-18945173665f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/2dfbf3e7-1e1a-4093-a825-caa5420c4e16")
 		(sheetname "/")
 		(sheetfile "smc_power.kicad_sch")
