@@ -23762,7 +23762,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "P40B10SL"
+		(property "Value" "AOD4126"
 			(at 233.68 251.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23890,6 +23890,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C457934"
+			(at 233.68 251.4599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -27492,7 +27503,7 @@
 				)
 			)
 		)
-		(property "Value" "NTC_5_20"
+		(property "Value" "MF72 5D13"
 			(at 40.64 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27513,7 +27524,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810170717_Nanjing-Shiheng-Elec-MF72-5D11_C72676.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C72683.html"
 			(at 40.64 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -27524,7 +27535,7 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+170℃ 2800K 3W 4A 5Ω 7.5mm ±10% 插件,P=7.5mm NTC Thermistors ROHS"
+		(property "Description" "NTC inrush limiter 5 Ohm, 5 A, 4 W, disc D13 mm, P=7.5 mm (MF72 5D13)"
 			(at 40.64 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -27535,7 +27546,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122780"
+		(property "LCSC" "C72683"
 			(at 40.64 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -27557,7 +27568,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "MF72 5D11"
+		(property "Manufacturer Part" "MF72 5D13"
 			(at 40.64 242.57 0)
 			(hide yes)
 			(show_name no)
