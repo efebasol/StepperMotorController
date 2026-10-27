@@ -19587,7 +19587,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "LED green 0805"
 			(at 386.08 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21974,7 +21974,7 @@
 				)
 			)
 		)
-		(property "Value" "48V Input"
+		(property "Value" "XT60PW-M"
 			(at 21.844 26.924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22143,7 +22143,7 @@
 				)
 			)
 		)
-		(property "Value" "LM393DR2GH"
+		(property "Value" "LM393DR2G"
 			(at 132.08 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22601,7 +22601,7 @@
 				)
 			)
 		)
-		(property "Value" "Logic Output"
+		(property "Value" "B5B-XH-A"
 			(at 87.63 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24345,7 +24345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "KF128-5.08-2P"
 			(at 245.11 236.2199 0)
 			(hide yes)
 			(show_name no)
@@ -24962,7 +24962,7 @@
 				)
 			)
 		)
-		(property "Value" "100V 10A"
+		(property "Value" "Keystone 3568 + 10A mini fuse"
 			(at 41.91 220.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26421,7 +26421,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100V 3A <= 850mV"
+		(property "Value" "SS310B"
 			(at 163.83 113.9824 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27202,7 +27202,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL431B_C54830630"
+		(property "Value" "TL431B"
 			(at 98.044 265.176 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27412,7 +27412,7 @@
 				)
 			)
 		)
-		(property "Value" "24V Brake Output"
+		(property "Value" "B2P-VH"
 			(at 62.484 27.178 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27774,7 +27774,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24V BRK FLT"
+		(property "Value" "LED red 0805"
 			(at 398.78 128.5874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28754,7 +28754,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "LED green 0805"
 			(at 355.6 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29271,7 +29271,7 @@
 				)
 			)
 		)
-		(property "Value" "L78L12_SOT89"
+		(property "Value" "L78L12ACUTR"
 			(at 275.59 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29366,7 +29366,7 @@
 				)
 			)
 		)
-		(property "Value" "48V Output"
+		(property "Value" "XT30PW-F"
 			(at 42.164 26.924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30454,7 +30454,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MBR10100"
+		(property "Value" "MBR10100G"
 			(at 25.4 234.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30712,7 +30712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+48V"
+		(property "Value" "LED green 0805"
 			(at 334.01 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30817,7 +30817,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "LED green 0805"
 			(at 375.92 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31093,7 +31093,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+VM"
+		(property "Value" "LED green 0805"
 			(at 345.44 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31198,7 +31198,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "LED green 0805"
 			(at 365.76 124.7776 90)
 			(show_name no)
 			(do_not_autoplace no)

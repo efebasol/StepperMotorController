@@ -2162,10 +2162,22 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "LED green 0805"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb00547f-6fec-495d-a17f-42626528342b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+3V3"
 			(at 0 1.65 0)
 			(layer "F.SilkS")
-			(uuid "bb00547f-6fec-495d-a17f-42626528342b")
+			(uuid "61e5090d-2a8e-4ff4-9e15-17bc40a11d07")
 			(effects
 				(font
 					(size 1 1)
@@ -2853,10 +2865,22 @@
 				)
 			)
 		)
-		(property "Value" "24V BRK FLT"
+		(property "Value" "LED red 0805"
+			(at 0.625 2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38debfc0-67fb-42bd-92b5-6ce59641bc54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "24V BRK FLT"
 			(at 0.625 2 0)
 			(layer "F.SilkS")
-			(uuid "38debfc0-67fb-42bd-92b5-6ce59641bc54")
+			(uuid "fa1ef1a1-4c6c-4802-a3af-ac34836ecf27")
 			(effects
 				(font
 					(size 1 1)
@@ -5132,10 +5156,22 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "LED green 0805"
+			(at 0 1.8 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de25fd77-6174-4c7c-962e-255b9ad17c1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+24V"
 			(at 0 1.8 0)
 			(layer "F.SilkS")
-			(uuid "de25fd77-6174-4c7c-962e-255b9ad17c1d")
+			(uuid "5ca06477-bcf5-40f3-ac8a-6912edb28d67")
 			(effects
 				(font
 					(size 1 1)
@@ -9364,10 +9400,22 @@
 				)
 			)
 		)
-		(property "Value" "24V Brake Output"
+		(property "Value" "B2P-VH"
+			(at -3.64 -1.6 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de15b707-bacd-4cff-97ee-d6891432756a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "24V Brake Output"
 			(at -3.64 -1.6 90)
 			(layer "F.SilkS")
-			(uuid "de15b707-bacd-4cff-97ee-d6891432756a")
+			(uuid "91991b9f-5d6f-404a-bcd7-3cc173cc0922")
 			(effects
 				(font
 					(size 1 1)
@@ -10274,10 +10322,22 @@
 				)
 			)
 		)
-		(property "Value" "Logic Output"
+		(property "Value" "B5B-XH-A"
+			(at -8.15 3 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f5e6bef-249d-4ec1-afcb-48d5deb8763f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "Logic Output"
 			(at -8.15 3 0)
 			(layer "F.SilkS")
-			(uuid "0f5e6bef-249d-4ec1-afcb-48d5deb8763f")
+			(uuid "5f3616d7-b854-490f-9416-c48db5c94d69")
 			(effects
 				(font
 					(size 1 1)
@@ -10764,7 +10824,7 @@
 				)
 			)
 		)
-		(property "Value" "L78L12_SOT89"
+		(property "Value" "L78L12ACUTR"
 			(at 0 3.5 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11052,7 +11112,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR10100"
+		(property "Value" "MBR10100G"
 			(at 2.54 -4.45 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11967,10 +12027,22 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "LED green 0805"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79d4c51d-10bc-42ce-9a29-976721f9a2df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+5V"
 			(at 0 1.65 0)
 			(layer "F.SilkS")
-			(uuid "79d4c51d-10bc-42ce-9a29-976721f9a2df")
+			(uuid "4f2b652f-d530-49ed-beb5-83b3497301bd")
 			(effects
 				(font
 					(size 1 1)
@@ -15153,7 +15225,7 @@
 				)
 			)
 		)
-		(property "Value" "100V 3A <= 850mV"
+		(property "Value" "SS310B"
 			(at 0 4.1 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15474,10 +15546,22 @@
 				)
 			)
 		)
-		(property "Value" "+VM"
+		(property "Value" "LED green 0805"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1befff3-c7cc-4bc6-9d21-334b083cf9ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+VM"
 			(at 0 1.65 0)
 			(layer "F.SilkS")
-			(uuid "a1befff3-c7cc-4bc6-9d21-334b083cf9ad")
+			(uuid "b079ac3d-4395-433c-91b3-6dac160d43c5")
 			(effects
 				(font
 					(size 1 1)
@@ -17267,7 +17351,7 @@
 				)
 			)
 		)
-		(property "Value" "100V 10A"
+		(property "Value" "Keystone 3568 + 10A mini fuse"
 			(at -4.25 1.65 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17869,7 +17953,7 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "KF128-5.08-2P"
 			(at 2.54 5.72 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18248,10 +18332,22 @@
 				)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "LED green 0805"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d2257da-7f68-4695-a976-28f82244f151")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+12V"
 			(at 0 1.65 0)
 			(layer "F.SilkS")
-			(uuid "7d2257da-7f68-4695-a976-28f82244f151")
+			(uuid "1e8c566f-b87d-4286-85f6-baf7f4952387")
 			(effects
 				(font
 					(size 1 1)
@@ -19667,10 +19763,22 @@
 				)
 			)
 		)
-		(property "Value" "48V Input"
+		(property "Value" "XT60PW-M"
+			(at 3.6 3.35 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4fb69429-65dd-42e1-8abb-59043fda281c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "48V Input"
 			(at 3.6 3.35 0)
 			(layer "F.SilkS")
-			(uuid "4fb69429-65dd-42e1-8abb-59043fda281c")
+			(uuid "e3259bf8-05f7-48a4-8750-c99680b81dfd")
 			(effects
 				(font
 					(size 1 1)
@@ -25997,7 +26105,7 @@
 				)
 			)
 		)
-		(property "Value" "LM393DR2GH"
+		(property "Value" "LM393DR2G"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -29727,7 +29835,7 @@
 				)
 			)
 		)
-		(property "Value" "TL431B_C54830630"
+		(property "Value" "TL431B"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30145,10 +30253,22 @@
 				)
 			)
 		)
-		(property "Value" "+48V"
+		(property "Value" "LED green 0805"
+			(at 0 1.8 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "686f1446-de74-449c-b6c2-9156d5c24406")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "+48V"
 			(at 0 1.8 0)
 			(layer "F.SilkS")
-			(uuid "686f1446-de74-449c-b6c2-9156d5c24406")
+			(uuid "8780e363-b268-4034-90ae-8f7a1137fa3b")
 			(effects
 				(font
 					(size 1 1)
@@ -33068,10 +33188,22 @@
 				)
 			)
 		)
-		(property "Value" "48V Output"
+		(property "Value" "XT30PW-F"
+			(at 2.5 3.5 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7087c181-5fc4-4167-bc0e-b18c11d50806")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "48V Output"
 			(at 2.5 3.5 0)
 			(layer "F.SilkS")
-			(uuid "7087c181-5fc4-4167-bc0e-b18c11d50806")
+			(uuid "392865ad-1374-4593-8414-1353f4eccd2f")
 			(effects
 				(font
 					(size 1 1)

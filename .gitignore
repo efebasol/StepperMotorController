@@ -94,3 +94,6 @@ desktop.ini
 
 school_files/
 other_files/
+
+# Interactive HTML BOM output (local)
+hardware/*/bom/
