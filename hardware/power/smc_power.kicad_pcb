@@ -38606,6 +38606,28 @@
 		)
 	)
 	(zone
+		(net "/CHOP_DRAIN")
+		(layer "B.Cu")
+		(uuid "701e6b1a-2a95-4578-a7af-c59f1f0422af")
+		(name "CHOP_DRAIN")
+		(hatch edge 0.5)
+		(priority 12)
+		(connect_pads yes
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 191.2 68.4) (xy 198.2 68.4) (xy 198.2 74.8) (xy 191.2 74.8)
+			)
+		)
+	)
+	(zone
 		(net "GND")
 		(layers "B.Cu" "In1.Cu" "In2.Cu")
 		(uuid "93250c16-626a-47ba-9029-7d53d4c75635")
