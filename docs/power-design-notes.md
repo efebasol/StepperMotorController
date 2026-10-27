@@ -25,7 +25,7 @@ Worst-case thresholds (TL431B ±0.3 %, LM393 V<sub>os</sub> ±9 mV, V<sub>OL</su
 
 The lower limit is set by **turn-off**: if the PSU sits above the turn-off threshold, a chopper event triggered by regen never releases and R16 dissipates ~85 W continuously.
 
-→ **PSU requirement: max output (incl. trim range + load regulation) ≤ 52 V**, trim locked/labeled at 48 V; D3 drop not counted as margin. Divider R13 / R17 / R14 = **0.1 %**.
+→ **PSU requirement: max output (incl. trim range + load regulation) ≤ 52 V**, trim locked/labeled at 48 V; D3 drop not counted as margin. Divider R13 / R17 = **0.1 %**; R14 (hysteresis) = **1 %** — R14 only sets the hysteresis, a 1 % change moves turn-on by ~5 mV and turn-off by ~9 mV (no 0.1 % 243 k part in stock at LCSC).
 
 - Capacity: R16 33 Ω at ~55 V → **≈ 1.66 A**. Regen above that keeps raising the bus (6-axis case deferred, #54).
 - The TVS (D4) only handles short transients; sustained regen is the chopper's job.
