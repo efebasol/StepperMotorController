@@ -1,0 +1,77 @@
+name: Release
+
+# Push a tag like `power-rev-a` -> builds fab/assembly files and publishes a GitHub Release.
+on:
+  push:
+    tags: ["power-rev-*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing tag to (re)build the release for"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0-full
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+      - name: Build
+        env:
+          HOME: /root
+        run: |
+          apt-get update -qq && apt-get install -y -qq zip python3 >/dev/null
+          mkdir -p /root/.config/kicad/10.0
+          cp /usr/share/kicad/template/sym-lib-table /usr/share/kicad/template/fp-lib-table /root/.config/kicad/10.0/
+          D=hardware/power; P=$D/smc_power.kicad_pcb; S=$D/smc_power.kicad_sch; O=rel; mkdir -p $O
+          bash ci/jlc_export.sh $D
+          cp ci-out/power/jlc/power-jlc-gerber.zip ci-out/power/jlc/bom_jlc_smt.csv ci-out/power/jlc/cpl_jlc_smt.csv ci-out/power/jlc/hand_solder.csv $O/
+          kicad-cli sch export pdf --output $O/power-schematic.pdf $S
+          kicad-cli pcb export pdf --mode-multipage --layers "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Silkscreen,B.Silkscreen,Edge.Cuts" --common-layers "Edge.Cuts" --output $O/power-pcb-layers.pdf $P || \
+            kicad-cli pcb export pdf --layers "F.Cu,F.Silkscreen,Edge.Cuts" --output $O/power-pcb-layers.pdf $P
+          kicad-cli pcb export step --subst-models --output $O/power-board.step $P
+          kicad-cli pcb render --side top --width 2400 --height 2400 --quality high --output $O/power-top.png $P || true
+          kicad-cli pcb drc --format report --severity-all --schematic-parity --refill-zones --output $O/power-drc.rpt $P || true
+          kicad-cli sch erc --format report --severity-all --output $O/power-erc.rpt $S || true
+          ls -la $O
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-files
+          path: rel
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-files
+          path: rel
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          cat > notes.md <<'EOF'
+          Power board – fabrication & assembly package (JLCPCB).
+
+          | File | Use |
+          |---|---|
+          | `power-jlc-gerber.zip` | Upload as Gerber (4 layers, 1.6 mm, **2 oz outer / 1 oz inner**) |
+          | `bom_jlc_smt.csv` / `cpl_jlc_smt.csv` | JLC SMT assembly BOM + pick & place |
+          | `hand_solder.csv` | Through-hole parts (hand solder or JLC THT) |
+          | `power-schematic.pdf`, `power-pcb-layers.pdf`, `power-top.png` | Documentation |
+          | `power-board.step` | Mechanical (enclosure) |
+          | `power-drc.rpt`, `power-erc.rpt` | Check reports |
+
+          Order checklist: `docs/order-power-rev-a.md`.
+          EOF
+          sed -i 's/^          //' notes.md
+          gh release create "$TAG" rel/* --repo "$GITHUB_REPOSITORY" --title "$TAG" --notes-file notes.md || \
+            gh release upload "$TAG" rel/* --repo "$GITHUB_REPOSITORY" --clobber
