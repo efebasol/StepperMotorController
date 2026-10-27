@@ -19893,28 +19893,6 @@
 			(layer "F.Fab")
 			(uuid "b5a8b401-ec8b-44a1-975b-8ec3768fe386")
 		)
-		(fp_text user "+"
-			(at 9.5 2.5 0)
-			(layer "F.SilkS")
-			(uuid "53bc75e2-42ba-4c42-b41f-70a42bf134e8")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "-"
-			(at -2.8 2.5 0)
-			(layer "F.SilkS")
-			(uuid "ea2edfc3-c740-4908-831d-ce6b9a42635b")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.15)
-				)
-			)
-		)
 		(fp_text user "${REFERENCE}"
 			(at 3.6 -3.6 0)
 			(layer "F.Fab")
@@ -33466,28 +33444,6 @@
 			(layer "F.Fab")
 			(uuid "1d23d8ee-caa7-4574-a7dd-efa1403bfc85")
 		)
-		(fp_text user "+"
-			(at 8 0 0)
-			(layer "F.SilkS")
-			(uuid "55d76071-0f16-4725-aadd-563f805438c2")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "-"
-			(at -3 0 0)
-			(layer "F.SilkS")
-			(uuid "98c91ecc-6f86-4047-9fba-75e682ffdd6f")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "" thru_hole circle
 			(at -3 -5 270)
 			(size 1.4 1.4)
@@ -33636,6 +33592,28 @@
 		(fill no)
 		(layer "Margin")
 		(uuid "bf06ad3c-9bc4-4a37-8b66-439dae670750")
+	)
+	(gr_text "+"
+		(at 190.1 99.6 0)
+		(layer "F.SilkS")
+		(uuid "6a0d7f55-c222-4898-88ef-90e8f39514ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "-"
+		(at 177.8 99.6 0)
+		(layer "F.SilkS")
+		(uuid "5690a731-2265-4c29-ad01-091c75bf2724")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(gr_text "+"
 		(at 126.6 108.4 0)
