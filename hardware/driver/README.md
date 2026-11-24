@@ -49,4 +49,4 @@ Min clearance 0.15 · min track 0.15 · min via 0.6 / 0.3 · annular 0.15 · cop
 
 ## Libraries
 
-Only `Step Motor Controller` (`../lib`) and the standard KiCad libs. No machine-local / PCM libs (CI flags them).
+`Step Motor Controller` (`../lib`), the standard KiCad libs and the project-local `JLCImport` (parts imported from JLC/LCSC, kept inside `hardware/driver`). No machine-local / PCM libs (CI flags them).
