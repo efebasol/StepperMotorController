@@ -18245,7 +18245,7 @@
 			)
 		)
 	)
-		(symbol
+	(symbol
 		(lib_id "Device:C")
 		(at 322.58 50.8 0)
 		(unit 1)
@@ -18311,6 +18311,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 322.58 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0aea200d-c572-40dc-944f-04483c3c98e4")
 		)
@@ -18326,7 +18337,7 @@
 			)
 		)
 	)
-		(symbol
+	(symbol
 		(lib_id "power:+3V3")
 		(at 322.58 44.45 0)
 		(unit 1)
@@ -18403,7 +18414,7 @@
 			)
 		)
 	)
-		(symbol
+	(symbol
 		(lib_id "power:GND")
 		(at 322.58 57.15 0)
 		(unit 1)
@@ -18501,7 +18512,7 @@
 		)
 		(uuid "a2aff09e-a799-48c6-b15c-1f602a843ea4")
 	)
-		(symbol
+	(symbol
 		(lib_id "Device:R")
 		(at 321.31 101.6 90)
 		(unit 1)
@@ -18555,6 +18566,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 321.31 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 321.31 101.6 0)
 			(hide yes)
 			(show_name no)
