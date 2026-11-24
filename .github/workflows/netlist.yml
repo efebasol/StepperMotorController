@@ -1,0 +1,38 @@
+name: Netlist export
+
+# On every hardware push: export netlist + ERC for each board and force-push them to the `ci-netlist` branch,
+# so reviews can read the real connectivity without opening KiCad.
+on:
+  push:
+    branches: [main]
+    paths: ["hardware/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0-full
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export
+        env:
+          HOME: /root
+        run: |
+          apt-get update -qq && apt-get install -y -qq git >/dev/null
+          git config --system --add safe.directory '*'
+          mkdir -p /root/.config/kicad/10.0
+          cp /usr/share/kicad/template/sym-lib-table /usr/share/kicad/template/fp-lib-table /root/.config/kicad/10.0/
+          mkdir -p out
+          for d in hardware/power hardware/driver; do
+            S=$(ls $d/smc_*.kicad_sch | head -1)
+            kicad-cli sch export netlist --format kicadxml --output out/$n.net.xml "$S" || true
+            kicad-cli sch erc --format json --severity-all --output out/$n.erc.json "$S" || true
+          done
+          echo "${GITHUB_SHA}" > out/SOURCE_SHA
+          git config user.name "efebasol-ai" && git config user.email "bot@users.noreply.github.com"
+          git checkout --orphan ci-netlist && git rm -rq --cached . && git add -f out && git commit -qm "netlist for ${GITHUB_SHA}" && git push -fq origin HEAD:ci-netlist

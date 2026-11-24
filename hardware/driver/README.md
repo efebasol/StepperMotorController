@@ -23,14 +23,14 @@ Net names decide the class (patterns in the project file) — **name the nets in
 |---|---|---|---|---|
 | `PWR_48V` | 2.5 / **0.6** | 1.0/0.5 | `+48V`, `+VM` | Bridge supply; 48 V → IPC-2221 B2 0.6 mm |
 | `MOTOR_PHASE` | 1.5 / **0.6** | 1.0/0.5 | `*MOT_*` (e.g. `MOT_A1`, `MOT_A2`, `MOT_B1`, `MOT_B2`), `*BR_A`, `*BR_B` | 5 A RMS on 2 oz outer (ΔT ≈ 20 °C) incl. bridge → sense-resistor path |
-| `GATE` | 0.4 / **0.6** | 0.6/0.3 | `*GATE_*` (e.g. `GATE_HA1`, `GATE_LA1`) | Gate current peaks; high-side gates swing to VM |
-| `BOOT` | 0.4 / **0.6** | 0.6/0.3 | `*BOOT_*` | Bootstrap nodes sit at VM + 12 V |
+| `GATE` | 0.4 / **0.6** | 0.6/0.3 | `*GATE_*` (e.g. `GATE_HA1`, `GATE_LA1`), TMC-side `*/HA?`, `*/HB?`, `*/LA?`, `*/LB?` | Gate current peaks; high-side gates swing to VM |
+| `BOOT` | 0.4 / **0.6** | 0.6/0.3 | `*BOOT_*` (e.g. `BOOT_VCP`, `BOOT_CPI`), `*/CA?`, `*/CB?`, `*/BMA?`, `*/BMB?` | Bootstrap nodes sit at VM + 12 V |
 | `HV_SIGNAL` | 0.3 / **0.6** | 0.6/0.3 | `*VS_TMC*`, `*VSENSE_*` | Low-current but 48 V-referenced (filtered VS, VM divider) |
 | `PWR_24V` | 1.0 / 0.25 | 0.8/0.4 | `+24V`, `*BRAKE_*` | Brake coil supply / low-side drain |
 | `PWR_5V` | 0.5 / 0.2 | 0.6/0.3 | `+5V`, `+12V`, `*5VOUT*` | TMC 5VOUT, gate-drive supply |
 | `PWR_3V3` | 0.4 / 0.2 | 0.6/0.3 | `+3V3` | MCU / logic |
 | `GND` | 0.5 / 0.2 | 0.6/0.3 | `GND` | |
-| `SENSE_KELVIN` | 0.25 / 0.2 | 0.6/0.3 | `*SENSE_*` (e.g. `SENSE_A`, `SENSE_B`) | Kelvin lines from the 22 mΩ shunts to SRA/SRB — route as a pair, away from phases |
+| `SENSE_KELVIN` | 0.25 / 0.2 | 0.6/0.3 | `*SENSE_*`, `*/SRA?`, `*/SRB?` (SRAH/SRAL/SRBH/SRBL) | Kelvin lines from the 22 mΩ shunts to SRA/SRB — route as a pair, away from phases |
 | `RS422` | 0.2 / 0.2 (pair gap 0.2) | 0.6/0.3 | `*ENC_*` with `_P` / `_N` (e.g. `ENC_A_P`, `ENC_A_N`) | Differential encoder lines (not impedance-controlled) |
 | `Default` | 0.2 / 0.15 | 0.6/0.3 | everything else | STM32 LQFP144 0.5 mm pitch fanout |
 

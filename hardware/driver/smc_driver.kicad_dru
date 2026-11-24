@@ -6,6 +6,9 @@
 (rule "M3 mounting holes: keep copper off the screw head / standoff"
   (condition "B.memberOfFootprint('H*')")
   (constraint hole_clearance (min 2.0mm)))
+(rule "TMC5160 (U5) 0.5 mm pitch: allow fine clearance at the pins"
+  (condition "A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')")
+  (constraint clearance (min 0.15mm)))
 (rule "RS422 pairs: keep coupled"
   (condition "A.NetClass == 'RS422'")
   (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.3mm))

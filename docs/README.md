@@ -8,3 +8,4 @@ Design calculations, decisions and notes.
 ## Index
 
 - [Power board – design notes](power-design-notes.md)
+- [Driver board – design notes](driver-design-notes.md)

@@ -757,6 +757,46 @@
       {
         "netclass": "RS422",
         "pattern": "*ENC_*"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "*/HA?"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "*/HB?"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "*/LA?"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "*/LB?"
+      },
+      {
+        "netclass": "BOOT",
+        "pattern": "*/CA?"
+      },
+      {
+        "netclass": "BOOT",
+        "pattern": "*/CB?"
+      },
+      {
+        "netclass": "BOOT",
+        "pattern": "*/BMA?"
+      },
+      {
+        "netclass": "BOOT",
+        "pattern": "*/BMB?"
+      },
+      {
+        "netclass": "SENSE_KELVIN",
+        "pattern": "*/SRA?"
+      },
+      {
+        "netclass": "SENSE_KELVIN",
+        "pattern": "*/SRB?"
       }
     ]
   },
@@ -897,13 +937,17 @@
         "uuid": "30583e29-7231-44d2-b6ef-f52f82bb6e27"
       }
     ],
-    "used_designators": "R1-2,#PWR1-9,D4,#FLG1-5,U1,J1-4",
+    "used_designators": "IC2,R1-2,R13-20,R29-46,R49-52,C19-21,C25-47,Q1,Q3-9,#PWR1-9,#PWR30-64,#PWR67-68,D4,D7,#FLG1-7,U1,U5,J1-6",
     "variants": []
   },
   "sheets": [
     [
       "30583e29-7231-44d2-b6ef-f52f82bb6e27",
       "smc_driver"
+    ],
+    [
+      "eec7717d-184a-467f-8ee7-3c68b7304f5c",
+      "Mosfet Sheet"
     ]
   ],
   "text_variables": {},
