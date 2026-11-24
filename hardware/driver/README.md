@@ -27,8 +27,8 @@ Net names decide the class (patterns in the project file) — **name the nets in
 | `GATE` | 0.4 / **0.6** | 0.6/0.3 | `*GATE_*` (e.g. `GATE_HA1`, `GATE_LA1`), TMC-side `*/HA?`, `*/HB?`, `*/LA?`, `*/LB?` | Gate current peaks; high-side gates swing to VM |
 | `BOOT` | 0.4 / **0.6** | 0.6/0.3 | `*BOOT_*` (e.g. `BOOT_VCP`, `BOOT_CPI`), `*/CA?`, `*/CB?`, `*/BMA?`, `*/BMB?` | Bootstrap nodes sit at VM + 12 V |
 | `HV_SIGNAL` | 0.3 / **0.6** | 0.6/0.3 | `*VS_TMC*`, `*VSENSE_*` | Low-current but 48 V-referenced (filtered VS, VM divider) |
-| `PWR_24V` | 1.0 / 0.25 | 0.8/0.4 | `+24V`, `*BRAKE_LS*` | Brake coil supply / low-side drain (`BRAKE_CTRL` is a logic signal, Default class) |
-| `PWR_5V` | 0.5 / 0.2 | 0.6/0.3 | `+5V`, `+12V`, `*5VOUT*` | TMC 5VOUT, gate-drive supply |
+| `PWR_24V` | 1.0 / **0.6** | 0.8/0.4 | `+24V`, `*BRAKE_LS*` | Brake coil supply / low-side drain. `BRAKE_LS` flies back to the SMBJ33A clamp (~37–53 V) when the brake releases → 31–100 V band, 0.6 mm (`BRAKE_CTRL` is a logic signal, Default class) |
+| `PWR_5V` | 0.5 / 0.2 | 0.6/0.3 | `+5V`, `+12V`, `*5VOUT*`, `*12VOUT*` | TMC 5VOUT, 12VOUT gate-drive supply |
 | `PWR_3V3` | 0.4 / 0.2 | 0.6/0.3 | `+3V3` | MCU / logic |
 | `GND` | 0.5 / 0.2 | 0.6/0.3 | `GND` | |
 | `SENSE_KELVIN` | 0.25 / 0.2 | 0.6/0.3 | `*SENSE_*`, `*/SRA?`, `*/SRB?` (SRAH/SRAL/SRBH/SRBL) | Kelvin lines from the 22 mΩ shunts to SRA/SRB — route as a pair, away from phases |

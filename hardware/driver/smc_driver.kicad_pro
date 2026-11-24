@@ -611,7 +611,7 @@
         "via_drill": 0.5
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.6,
         "line_style": 0,
         "name": "PWR_24V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -733,7 +733,7 @@
       },
       {
         "netclass": "PWR_24V",
-        "pattern": "*BRAKE_*"
+        "pattern": "*BRAKE_LS*"
       },
       {
         "netclass": "PWR_5V",
@@ -746,6 +746,10 @@
       {
         "netclass": "PWR_5V",
         "pattern": "*5VOUT*"
+      },
+      {
+        "netclass": "PWR_5V",
+        "pattern": "*12VOUT*"
       },
       {
         "netclass": "PWR_3V3",

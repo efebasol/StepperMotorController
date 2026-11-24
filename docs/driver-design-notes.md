@@ -100,11 +100,30 @@ The STM32 is **not** on the driver board: a NUCLEO-F446ZE is wired to J7 (2×8 h
 
 ## Encoder input (#74)
 
-J9 (JST XH, 6 pin): 1 +5V, 2 A+, 3 A−, 4 B+, 5 B−, 6 GND. No index channel (ENCN tied to GND, #72). +5 V for the encoder comes from the power board (J4-2).
+J9 (JST XH, 6 pin): 1 +5V, 2 A+, 3 A−, 4 B+, 5 B−, 6 GND. No index channel (ENCN pulled to GND through R62 10 kΩ, #72/#75). +5 V for the encoder comes from the power board (J4-2).
 
 - Net names `ENC_A_P` / `ENC_A_N` / `ENC_B_P` / `ENC_B_N` → RS422 net class.
 - AM26LV32E on 3.3 V, R18/R19 120 Ω termination at the receiver. The bus pins have ±15 kV IEC ESD on chip → no external TVS.
 - **Fail-safe bias R58–R61 (560 Ω):** A+/B+ to 3V3, A−/B− to GND. The current datasheet (SLLS849E, rev E 2023) only guarantees *open-circuit* fail-safe; the shorted/terminated fail-safe was removed. With R18/R19 on the board an unplugged cable is a *terminated* input (V<sub>ID</sub> ≈ 0) → output undefined → the TMC5160 could count noise.
   - Unplugged: V<sub>ID</sub> = 3.3 V × 120 / (560 + 120 + 560) ≈ **320 mV** > 200 mV threshold → outputs high, no counts. A lost encoder then shows up as `ENC_DEVIATION` (encoder vs. X_ACTUAL).
   - Plugged: ~2.7 mA extra load per line, well within an RS422 driver's rating.
+
+## Schematic review (#75)
+
+Full review of the root sheet and the MOSFET sheet against the CI netlist. Bridge, bootstrap, BM, Kelvin sense, SPI, encoder, brake and limit inputs connect as intended. Changes made:
+
+| Change | Why |
+|---|---|
+| **C50 100 nF** on U5 VCC_IO (pin 20) | VCC_IO had no local decoupling: C29 sits at IC2. Every supply pin of every IC gets its own 100 nF. |
+| **C21 (12VOUT) 16 V → 25 V** | 12VOUT runs at ~11.5 V. On a 16 V X7R that is 70 % of the rating and DC bias takes away most of the 2.2 µF; 25 V keeps margin. C25 (5VOUT) stays 16 V. |
+| **R62 10 kΩ** ENCN (pin 25) → GND instead of a direct GND tie | Pin 25 is ENCN / DCO / CFG6 (bidirectional depending on mode). A resistor keeps it low and removes the Bidirectional ↔ Power-output ERC conflict without hiding the check. |
+| `12VOUT` net label + `*12VOUT*` pattern → PWR_5V | It is the gate-drive supply and was in the Default class (0.2 mm). |
+| Net-class pattern `*BRAKE_*` → `*BRAKE_LS*` | `BRAKE_CTRL` (logic, 1 kΩ to the gate) was getting the 1 mm PWR_24V class. |
+| PWR_24V clearance 0.25 → **0.6 mm** | `BRAKE_LS` reaches the SMBJ33A clamp voltage (~37–53 V) at every brake release → 31–100 V band. |
+| `power:+VM` → project `Step Motor Controller:+VM` (5 symbols) | KiCad 10's `power` lib has no `+VM`; removes 5 `lib_symbol_issues` warnings. |
+| Footprint `AOD4185` → `AOD4126` (file, symbol, both boards) | Name now matches the part (pinout unchanged: 1 G, 2 tab D, 3 S). |
+| IC2 MPN fields `AM26LS32AID` → `AM26LV32EIDR` | The value was already LV32E; the 5 V LS32 metadata was left over from the imported symbol (same pinout). |
+| LCSC field on every part (design reference) | Re-used the power board's codes where the part is the same. |
+
+Footprints checked: TMC5160A-TA → KiCad `TQFP-48-1EP_7x7mm_P0.5mm_EP5x5mm_ThermalVias` (the library symbol's own default), AOD4126 → TO-252 pads 1/2/3 = G/D/S, shunts → 2512. The LQFP144 check from the issue no longer applies (no MCU on this board, #73).
 

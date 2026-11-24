@@ -4001,7 +4001,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "AOD4185"
+			(property "Footprint" "Step Motor Controller:AOD4126"
 				(at 11.43 -98.73 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -23773,7 +23773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 233.68 351.46 0)
 			(hide yes)
 			(show_name no)

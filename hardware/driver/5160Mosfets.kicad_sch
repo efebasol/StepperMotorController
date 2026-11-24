@@ -820,7 +820,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "AOD4185"
+			(property "Footprint" "Step Motor Controller:AOD4126"
 				(at 11.43 -98.73 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1140,7 +1140,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+VM"
+		(symbol "Step Motor Controller:+VM"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3307,6 +3307,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17415"
+			(at 182.88 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0699048c-499c-48e4-ba39-eb10f27f24bf")
 		)
@@ -3467,6 +3478,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C192769"
+			(at 142.24 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "87f338ee-64e7-4c40-aab7-c2ae74b8fd92")
 		)
@@ -3542,6 +3564,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 243.84 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 243.84 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3679,7 +3712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 224.79 190.17 0)
 			(hide yes)
 			(show_name no)
@@ -3798,6 +3831,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 236.22 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a9a8ad3e-1f33-470b-a132-dabe176d0417")
 		)
@@ -3883,6 +3927,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2924539"
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "63e5cdc1-5004-409f-93a3-ee1c2283f31a")
 		)
@@ -3955,6 +4010,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 191.77 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28260"
 			(at 191.77 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4125,6 +4191,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C472853"
+			(at 231.14 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6ff90473-ba55-4d8c-afa8-55fbdf5f9a4c")
 		)
@@ -4194,6 +4271,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 245.11 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 245.11 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -4283,6 +4371,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17714"
+			(at 64.77 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dabd4691-6cd1-4c16-96e7-8b5e89892096")
 		)
@@ -4332,7 +4431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 224.79 224.46 0)
 			(hide yes)
 			(show_name no)
@@ -4451,6 +4550,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 236.22 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c1de9ede-1ff9-4156-ae78-56d1c79707b9")
 		)
@@ -4523,6 +4633,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 198.12 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17714"
 			(at 198.12 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4613,6 +4734,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17477"
+			(at 245.11 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "953b557f-9c6e-4476-9ff3-4ec023467878")
 		)
@@ -4683,6 +4815,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 245.11 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 245.11 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4775,6 +4918,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C28260"
+			(at 58.42 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9d55451e-b5bb-4d77-ad47-a0763d2cfa8f")
 		)
@@ -4847,6 +5001,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C472853"
 			(at 110.49 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5017,6 +5182,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2924539"
+			(at 204.47 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "33507eff-aa4b-4486-90ab-9e555b2bbafe")
 		)
@@ -5096,6 +5272,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 182.88 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4e10df17-9a9a-4b25-a52e-f6221b36d7c9")
 		)
@@ -5145,7 +5332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 68.58 190.17 0)
 			(hide yes)
 			(show_name no)
@@ -5264,6 +5451,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 57.15 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "26bbc90b-2ad6-407b-bbd7-39f1007d39b2")
 		)
@@ -5336,6 +5534,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 198.12 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17714"
 			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5428,6 +5637,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49256827"
+			(at 97.79 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "670becbf-c48b-49bd-bc78-204ff0d36a45")
 		)
@@ -5497,6 +5717,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 64.77 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17714"
 			(at 64.77 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5712,7 +5943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 68.58 224.46 0)
 			(hide yes)
 			(show_name no)
@@ -5829,6 +6060,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C457934"
+			(at 57.15 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -5992,6 +6234,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17477"
+			(at 111.76 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4c3e3714-cf78-42e2-bc20-d8ff154c5e3d")
 		)
@@ -6061,6 +6314,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 49.53 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 49.53 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -6141,6 +6405,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 49.53 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17477"
 			(at 49.53 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -6311,6 +6586,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C15177"
+			(at 31.75 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "abe3c166-8a74-4e31-b69c-447e3d26dfd8")
 		)
@@ -6327,7 +6613,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 231.14 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -6468,6 +6754,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17415"
+			(at 110.49 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fbf0f01d-4cc9-4a6b-a032-04a7917d2bb7")
 		)
@@ -6548,6 +6845,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17477"
+			(at 182.88 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "604219cc-ab0f-430f-ae73-1282ee20301b")
 		)
@@ -6564,7 +6872,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 110.49 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -6720,7 +7028,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 243.84 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -6831,7 +7139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 91.44 224.46 0)
 			(hide yes)
 			(show_name no)
@@ -6950,6 +7258,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 102.87 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "71941af8-2ab1-4e50-bfe0-fab2c2f34bd4")
 		)
@@ -7022,6 +7341,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 182.88 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 182.88 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7114,6 +7444,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C15177"
+			(at 165.1 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "676dee84-d195-4d06-b8be-a8d0085b88e6")
 		)
@@ -7186,6 +7527,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 97.79 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C472853"
 			(at 97.79 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7275,6 +7627,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 49.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "60f275c0-ff0f-4f74-972c-c740ad19b73f")
 		)
@@ -7291,7 +7654,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 97.79 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -7435,6 +7798,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C472853"
+			(at 243.84 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "45cd74db-38d8-4249-ae78-a88341b45048")
 		)
@@ -7504,6 +7878,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 111.76 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 111.76 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7641,7 +8026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 91.44 190.17 0)
 			(hide yes)
 			(show_name no)
@@ -7760,6 +8145,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 102.87 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a9bcfd5f-c1f3-478f-9876-08e05c789e73")
 		)
@@ -7812,7 +8208,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 201.93 190.17 0)
 			(hide yes)
 			(show_name no)
@@ -7931,6 +8327,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 190.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "70f2a749-674b-4c2b-bf7e-9748f8701be1")
 		)
@@ -8004,6 +8411,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 49.53 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 49.53 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8094,6 +8512,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17415"
+			(at 111.76 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d2b8f0f2-ca3e-423d-a898-a079f6e84543")
 		)
@@ -8166,6 +8595,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 264.16 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15177"
 			(at 264.16 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8303,7 +8743,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Step Motor Controller:AOD4185"
+		(property "Footprint" "Step Motor Controller:AOD4126"
 			(at 201.93 224.46 0)
 			(hide yes)
 			(show_name no)
@@ -8422,6 +8862,17 @@
 				(justify left top)
 			)
 		)
+		(property "LCSC" "C457934"
+			(at 190.5 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "583e954a-a7a3-45d8-b171-2f1033ef474e")
 		)
@@ -8497,6 +8948,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 130.81 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15177"
 			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)

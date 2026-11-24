@@ -5290,145 +5290,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+VM"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+VM"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+1V0\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+VM_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+VM_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -7432,13 +7293,23 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 101.6) (xy 327.66 101.6)
+			(xy 314.96 101.6) (xy 317.5 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9368f6c8-7d45-4d22-ba41-e5f9635b8808")
+		(uuid "7975799b-86a1-4296-9bda-0fe04c978646")
+	)
+	(wire
+		(pts
+			(xy 325.12 101.6) (xy 327.66 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bee9771-47c0-4f56-ae6f-ef267a8b3653")
 	)
 	(wire
 		(pts
@@ -9447,6 +9318,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C113892"
+			(at 397.51 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8ff101a-7ff3-4d6d-95a5-ec10c86047c3")
 		)
@@ -9463,7 +9345,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 29.21 33.02 0)
 		(unit 1)
 		(body_style 1)
@@ -9762,6 +9644,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C19829543"
+			(at 236.22 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39960190-52f2-4339-b8f5-5a4c411cc6e5")
 		)
@@ -9832,6 +9725,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 30.48 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17513"
 			(at 30.48 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -9999,6 +9903,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 312.42 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bee0ba09-1dbe-4d29-86a6-6b8c48dd8e34")
 		)
@@ -10068,6 +9983,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 250.19 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17513"
 			(at 250.19 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10394,6 +10320,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17437"
+			(at 41.91 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c10439db-3eb6-4722-91c5-11c3b3e49719")
 		)
@@ -10543,6 +10480,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 307.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C513671"
 			(at 307.34 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10789,6 +10737,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C160315"
+			(at 60.96 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "380b33ed-650d-4b41-83c3-a09e9e0ef7e3")
 		)
@@ -10858,6 +10817,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28636"
 			(at 60.96 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -10939,6 +10909,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 332.74 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15972"
 			(at 332.74 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -11097,6 +11078,17 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 21.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C431092"
 			(at 21.59 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -11342,6 +11334,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 313.69 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7886890-2052-4e75-9606-bbd5e18f5e69")
 		)
@@ -11412,6 +11415,17 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144397"
 			(at 22.86 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11749,6 +11763,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C8269"
+			(at 72.39 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "647ca436-6246-4eef-90bc-3d23d7c04813")
 		)
@@ -11821,6 +11846,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 236.22 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12222,6 +12258,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 250.19 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2d6f87cf-a151-45ea-92eb-c64b17baba67")
 		)
@@ -12371,6 +12418,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 340.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17521"
 			(at 340.36 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12540,6 +12598,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 316.23 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 316.23 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -12803,6 +12872,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17437"
+			(at 41.91 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ceba523e-12ad-4bb5-bbce-a026dfe5d32d")
 		)
@@ -12874,6 +12954,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 321.31 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C49678"
 			(at 321.31 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -12966,6 +13057,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C149504"
+			(at 35.56 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6a6d92c7-be90-46fa-aab5-2aa2565a984c")
 		)
@@ -13038,6 +13140,17 @@
 			)
 		)
 		(property "Description" "20A Driver for two-phase bipolar stepper motor, SPI, UART, TQFP-48"
+			(at 345.44 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1161713"
 			(at 345.44 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13347,6 +13460,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C170102"
+			(at 353.06 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9470ac9b-9978-4ef7-9add-1a7a1c8858d2")
 		)
@@ -13558,6 +13682,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17634"
+			(at 311.15 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0f3e61cd-56e2-4679-bb0a-7451826bf6ea")
 		)
@@ -13637,6 +13772,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C28636"
+			(at 60.96 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "10f3234d-97b2-4c28-aabe-d8624ce80553")
 		)
@@ -13706,6 +13852,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 60.96 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28636"
 			(at 60.96 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -14056,7 +14213,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AM26LS32AID"
+		(property "Manufacturer_Part_Number" "AM26LV32EIDR"
 			(at 68.58 667.31 0)
 			(hide yes)
 			(show_name no)
@@ -14068,7 +14225,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-AM26LS32AID"
+		(property "Mouser Part Number" "595-AM26LV32EIDR"
 			(at 68.58 767.31 0)
 			(hide yes)
 			(show_name no)
@@ -14080,7 +14237,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/AM26LS32AID?qs=LgZHeZZt5MVW69%2FlwHyWFQ%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 68.58 867.31 0)
 			(hide yes)
 			(show_name no)
@@ -14092,7 +14249,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "AM26LS32AID"
+		(property "Arrow Part Number" "AM26LV32EIDR"
 			(at 68.58 967.31 0)
 			(hide yes)
 			(show_name no)
@@ -14104,7 +14261,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/am26ls32aid/texas-instruments?region=nac"
+		(property "Arrow Price/Stock" ""
 			(at 68.58 1067.31 0)
 			(hide yes)
 			(show_name no)
@@ -14114,6 +14271,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "LCSC" "C527448"
+			(at 46.99 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14195,7 +14363,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u, 16V"
+		(property "Value" "2.2u, 25V"
 			(at 358.902 52.832 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14229,6 +14397,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 364.49 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C170102"
 			(at 364.49 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -14397,6 +14576,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17928"
+			(at 379.73 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f296e608-4e50-4f82-a987-9638fd110267")
 		)
@@ -14479,6 +14669,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C15177"
+			(at 259.08 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "841493e7-0b87-4cd8-a52d-2a9459dceedd")
 		)
@@ -14551,6 +14752,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 274.32 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15177"
 			(at 274.32 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -15140,6 +15352,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C157991"
+			(at 107.95 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d130f693-b2a1-4a56-874f-2e311ffc4aee")
 		)
@@ -15397,6 +15620,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 316.23 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "83cd4e27-4ad8-4b87-847f-b98f66cf3de3")
 		)
@@ -15623,6 +15857,17 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 214.63 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C66690"
 			(at 214.63 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -16145,6 +16390,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 227.33 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0fc549c5-2ae0-4ed8-b338-86fc26555c0f")
 		)
@@ -16214,6 +16470,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 295.91 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 295.91 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -16295,6 +16562,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 375.92 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C726629"
 			(at 375.92 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -16717,6 +16995,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 316.23 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1253a5c-a007-4343-9328-4c56cd6b4e35")
 		)
@@ -17110,6 +17399,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C19829543"
+			(at 227.33 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fbebd967-5ff1-4c51-bf11-7db0e5f5276a")
 		)
@@ -17179,6 +17479,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 60.96 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28636"
 			(at 60.96 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -17660,6 +17971,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 19.05 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "02a4778e-cc5b-420c-91d7-fb367f432e14")
 		)
@@ -17731,6 +18053,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 387.35 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C726629"
 			(at 387.35 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -17911,6 +18244,351 @@
 				)
 			)
 		)
+	)
+		(symbol
+		(lib_id "Device:C")
+		(at 322.58 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "687ff14b-81a3-4d7f-adcb-5893411b5ba6")
+		(property "Reference" "C50"
+			(at 326.39 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n, 16V"
+			(at 326.644 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 323.545 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 322.58 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0aea200d-c572-40dc-944f-04483c3c98e4")
+		)
+		(pin "1"
+			(uuid "1fc73ab4-9948-437c-9855-05849f3268fa")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+		(symbol
+		(lib_id "power:+3V3")
+		(at 322.58 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "064c4186-d2b5-4458-a713-580ef1f631bd")
+		(property "Reference" "#PWR092"
+			(at 322.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 322.072 40.132 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 322.58 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f399bc75-c72e-4045-8310-173fbf88d513")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+		(symbol
+		(lib_id "power:GND")
+		(at 322.58 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59ab36fc-639e-4e33-bf8e-9638d669d207")
+		(property "Reference" "#PWR093"
+			(at 322.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 322.58 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 322.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "698dc6a8-0d63-4aa3-92d5-6704d6a53df3")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 322.58 44.45) (xy 322.58 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a27aee5-012f-4686-aa59-31fb994eebec")
+	)
+	(wire
+		(pts
+			(xy 322.58 54.61) (xy 322.58 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2aff09e-a799-48c6-b15c-1f602a843ea4")
+	)
+		(symbol
+		(lib_id "Device:R")
+		(at 321.31 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1d31dfb-effa-4270-9222-1e840587548e")
+		(property "Reference" "R62"
+			(at 321.31 98.806 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 321.31 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 321.31 103.378 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 321.31 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 321.31 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01bc893d-20a8-4d2a-914b-be9b928d8002")
+		)
+		(pin "2"
+			(uuid "28ab312d-7eb2-4db1-925a-ee391605da67")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "12VOUT"
+		(at 349.25 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62f71fb6-a990-4816-9cbe-2636d6d5f43f")
 	)
 	(sheet
 		(at 369.57 66.04)

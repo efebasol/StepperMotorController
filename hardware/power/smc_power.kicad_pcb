@@ -29108,7 +29108,7 @@
 			)
 		)
 	)
-	(footprint "Step Motor Controller:AOD4185"
+	(footprint "Step Motor Controller:AOD4126"
 		(layer "F.Cu")
 		(uuid "eea048f9-377a-4e28-acc5-52b3c68a1292")
 		(at 192.25 71.6 -90)
