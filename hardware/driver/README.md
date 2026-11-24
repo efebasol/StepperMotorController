@@ -1,7 +1,7 @@
 # Driver board
 
 Single-axis stepper driver — **design only** (schematic + layout, not manufactured).
-TMC5160A with an external MOSFET bridge (8× AOD4126), RS422 encoder input, brake drive.
+TMC5160A with an external MOSFET bridge (8× AOD4126), RS422 encoder input (J9), brake drive (J8).
 No MCU on the board: a **NUCLEO-F446ZE** drives it over jumper wires through J7 (2×8 header) — pin map in [docs/driver-pinout.md](../../docs/driver-pinout.md).
 Target: **~5 A RMS** per phase, VM = 48 V (from the power board).
 
@@ -27,7 +27,7 @@ Net names decide the class (patterns in the project file) — **name the nets in
 | `GATE` | 0.4 / **0.6** | 0.6/0.3 | `*GATE_*` (e.g. `GATE_HA1`, `GATE_LA1`), TMC-side `*/HA?`, `*/HB?`, `*/LA?`, `*/LB?` | Gate current peaks; high-side gates swing to VM |
 | `BOOT` | 0.4 / **0.6** | 0.6/0.3 | `*BOOT_*` (e.g. `BOOT_VCP`, `BOOT_CPI`), `*/CA?`, `*/CB?`, `*/BMA?`, `*/BMB?` | Bootstrap nodes sit at VM + 12 V |
 | `HV_SIGNAL` | 0.3 / **0.6** | 0.6/0.3 | `*VS_TMC*`, `*VSENSE_*` | Low-current but 48 V-referenced (filtered VS, VM divider) |
-| `PWR_24V` | 1.0 / 0.25 | 0.8/0.4 | `+24V`, `*BRAKE_*` | Brake coil supply / low-side drain |
+| `PWR_24V` | 1.0 / 0.25 | 0.8/0.4 | `+24V`, `*BRAKE_LS*` | Brake coil supply / low-side drain (`BRAKE_CTRL` is a logic signal, Default class) |
 | `PWR_5V` | 0.5 / 0.2 | 0.6/0.3 | `+5V`, `+12V`, `*5VOUT*` | TMC 5VOUT, gate-drive supply |
 | `PWR_3V3` | 0.4 / 0.2 | 0.6/0.3 | `+3V3` | MCU / logic |
 | `GND` | 0.5 / 0.2 | 0.6/0.3 | `GND` | |

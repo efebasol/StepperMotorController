@@ -1140,7 +1140,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Step Motor Controller:+VM"
+		(symbol "power:+VM"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3872,7 +3872,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 71.12 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -3893,84 +3893,6 @@
 			(project "smc_driver"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
 					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Step Motor Controller:+VM")
-		(at 243.84 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16fce74a-ec5b-4f6b-b919-e2168b4883e0")
-		(property "Reference" "#PWR073"
-			(at 243.84 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+VM"
-			(at 243.84 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 243.84 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c087328-9eea-4c1b-a59e-18f25a987232")
-		)
-		(instances
-			(project "smc_driver"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
-					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -4350,7 +4272,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 64.77 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4371,84 +4293,6 @@
 			(project "smc_driver"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Step Motor Controller:+VM")
-		(at 110.49 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32b58d4d-e911-4327-be0e-c9a9ab7c52da")
-		(property "Reference" "#PWR075"
-			(at 110.49 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+VM"
-			(at 110.49 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 110.49 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d691b402-8150-448c-95ff-c1960096d438")
-		)
-		(instances
-			(project "smc_driver"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
-					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -4678,7 +4522,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 198.12 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5162,7 +5006,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 204.47 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5491,7 +5335,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 198.12 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5652,7 +5496,7 @@
 				)
 			)
 		)
-		(property "Description" "düşük endüktanslı tip, %1 tolerans"
+		(property "Description" "Resistor"
 			(at 64.77 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6084,84 +5928,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Step Motor Controller:+VM")
-		(at 97.79 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8211f2e8-97cd-4ecb-abf0-78b80552c711")
-		(property "Reference" "#PWR049"
-			(at 97.79 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+VM"
-			(at 97.79 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.79 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 97.79 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2170966f-6e48-4c8a-9bd8-fd3737ecbee0")
-		)
-		(instances
-			(project "smc_driver"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 111.76 111.76 90)
 		(mirror x)
@@ -6561,6 +6327,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VM")
+		(at 231.14 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0009086-a180-4d7a-bce9-64ddd1cf4bb0")
+		(property "Reference" "#PWR010"
+			(at 231.14 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VM"
+			(at 231.14 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 231.14 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bd51c51-0c90-42ad-853e-1cecc90d6c32")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 110.49 125.73 90)
 		(unit 1)
@@ -6720,6 +6564,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VM")
+		(at 110.49 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab5ad66b-69ee-40d3-8300-7ce5df3f862e")
+		(property "Reference" "#PWR011"
+			(at 110.49 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VM"
+			(at 110.49 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 110.49 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aaf718f9-2b18-4da0-8b39-f2123b5f8421")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 264.16 109.22 0)
 		(unit 1)
@@ -6792,6 +6714,84 @@
 			(project "smc_driver"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
 					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+VM")
+		(at 243.84 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1b411df-dae3-4e8d-bf36-c2e69a00a062")
+		(property "Reference" "#PWR012"
+			(at 243.84 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VM"
+			(at 243.84 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 243.84 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d6ced66-4f90-4aca-9cd8-8f03db004f6e")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7291,6 +7291,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VM")
+		(at 97.79 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c312c2e5-66eb-4793-aa4e-b316ff71d75d")
+		(property "Reference" "#PWR04"
+			(at 97.79 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+VM"
+			(at 97.79 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V0\""
+			(at 97.79 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3579f5f-1226-4440-9dfa-605f92ffea65")
+		)
+		(instances
+			(project "smc_driver"
+				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 243.84 35.56 0)
 		(unit 1)
@@ -7446,84 +7524,6 @@
 			(project "smc_driver"
 				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
 					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Step Motor Controller:+VM")
-		(at 231.14 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce1094d1-c671-46c7-bd2f-36a4b7eedfa4")
-		(property "Reference" "#PWR054"
-			(at 231.14 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+VM"
-			(at 231.14 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 231.14 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 231.14 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7a13d94f-83a6-4f76-a335-d4cd20c0582d")
-		)
-		(instances
-			(project "smc_driver"
-				(path "/30583e29-7231-44d2-b6ef-f52f82bb6e27/eec7717d-184a-467f-8ee7-3c68b7304f5c"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)

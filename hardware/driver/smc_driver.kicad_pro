@@ -293,7 +293,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|3276600|1016000|8a269872-6dbf-4243-8fa1-b86f688a92b5|438029d3-1fd5-48d6-bfd8-58aa188f8745|/30583e29-7231-44d2-b6ef-f52f82bb6e27|/30583e29-7231-44d2-b6ef-f52f82bb6e27|/30583e29-7231-44d2-b6ef-f52f82bb6e27",
+        "ENCN unused in SPI mode (no index, #72) - tied to GND per TMC5160 datasheet. Pin type Bidirectional only because of DcStep DCO function."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -937,7 +942,7 @@
         "uuid": "30583e29-7231-44d2-b6ef-f52f82bb6e27"
       }
     ],
-    "used_designators": "IC2,R1-2,R13-20,R29-46,R49-52,C19-21,C25-47,Q1,Q3-9,#PWR1-9,#PWR30-64,#PWR67-68,D4,D7,#FLG1-7,U1,U5,J1-6",
+    "used_designators": "IC2,R1-2,R13-20,R29-52,C19-21,C25-47,Q1,Q3-10,#PWR1-12,#PWR30-68,D3-4,D7,#FLG1-7,U1,U5,J1-6,J8",
     "variants": []
   },
   "sheets": [

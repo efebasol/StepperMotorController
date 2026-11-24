@@ -22,7 +22,7 @@ Sources for the Nucleo side: UM1974 (Nucleo-144 user manual, Zio connector table
 | 10 | `DIAG1` | out | D5 | CN10-6 | PE11 | EXTI11, falling edge (open-drain, active low, R55 pull-up) |
 | 11 | GND | – | GND | CN10-22 | – | |
 | 12 | `TPS16630_FLT#` | out | D6 | CN10-4 | PE9 | EXTI9, falling edge. eFuse fault from the power board (J4-5), R1 pull-up |
-| 13 | `BRAKE_CTRL` | in | D8 | CN7-20 | PF12 | GPIO out. High = brake released. Gate pull-down lives in the brake stage (#74) |
+| 13 | `BRAKE_CTRL` | in | D8 | CN7-20 | PF12 | GPIO out, push-pull. High = brake released. R47 1 k series, R48 100 k gate pull-down (#74) |
 | 14 | GND | – | GND | – | – | |
 | 15 | `VBUS_ADC` | out (analog) | A0 | CN9-1 | PA3 | ADC1_IN3. Divider on the power board, 1 k series R2 here |
 | 16 | GND | – | GND | – | – | |
@@ -34,14 +34,14 @@ Avoided on purpose: PB0 / PB7 / PB14 (LD1–LD3), PC13 (USER button), PD8 / PD9 
 
 - **Only GND is common.** Do not connect the Nucleo 3V3 (or 5V) to the board: the board's 3V3 comes from the power board (J4-3), and two regulators on one rail fight each other.
 - Use **at least 3 GND wires** (J7-1, -4, -7 next to the SPI lines). Keep the wires short (≤ 15 cm) and run `SPI_SCK` next to a GND wire.
-- Power-up order does not matter: every Nucleo → board line has 1 k in series (R15, R16, R56, R57), so a powered Nucleo can push at most ~3 mA per pin into an unpowered board's clamp diodes. The same resistors damp ringing on the wires (1 k × ~8 pF ≈ 8 ns).
+- Power-up order does not matter: every Nucleo → board line has 1 k in series (R15, R16, R56, R57, R47), so a powered Nucleo can push at most ~3 mA per pin into an unpowered board's clamp diodes. The same resistors damp ringing on the wires (1 k × ~8 pF ≈ 8 ns).
 - The PC's USB ground becomes tied to the 48 V return through J7. Use one PC/USB port and power the 48 V supply from the same outlet strip to avoid ground loops.
 
 ## Fail-safe states
 
 | Situation | DRV_ENN | CSN | Brake |
 |---|---|---|---|
-| J7 unplugged | high via R53 → **driver off** | high via R17 | gate pull-down → **brake engaged** |
+| J7 unplugged | high via R53 → **driver off** | high via R17 | low via R48 → **brake engaged** |
 | Nucleo in reset / unprogrammed (pins Hi-Z) | same | same | same |
 | Nucleo firmware hang | IWDG resets the MCU → pins Hi-Z → same as above | | |
 

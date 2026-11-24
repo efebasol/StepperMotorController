@@ -79,6 +79,32 @@ R<sub>DS(on)</sub> at 100 °C: 24 mΩ max (25 °C) × ~1.45 (normalized curve) �
 The STM32 is **not** on the driver board: a NUCLEO-F446ZE is wired to J7 (2×8 header) with jumper wires. Full pin map, wiring rules and firmware settings: [driver-pinout](driver-pinout.md).
 
 - Only GND is shared; the Nucleo 3V3 is not connected (board 3V3 comes from the power board).
-- **1 kΩ in series on every Nucleo → board line** (R15 MOSI, R16 SCK — changed from 33 Ω — R56 CSN, R57 DRV_ENN): limits back-feed into an unpowered board to ~3 mA per pin and damps ringing on the wires. With the 10 k pull-ups a driven low reads 0.3 V (V<sub>IL</sub> ≈ 1 V) — fine. MISO keeps 33 Ω at the TMC SDO.
+- **1 kΩ in series on every Nucleo → board line** (R15 MOSI, R16 SCK — changed from 33 Ω — R56 CSN, R57 DRV_ENN, R47 BRAKE_CTRL): limits back-feed into an unpowered board to ~3 mA per pin and damps ringing on the wires. With the 10 k pull-ups a driven low reads 0.3 V (V<sub>IL</sub> ≈ 1 V) — fine. MISO keeps 33 Ω at the TMC SDO.
 - Fail-safe: DRV_ENN / CSN pulled high on the board → wire off or MCU in reset = driver disabled.
 - No external watchdog on this board (reason in driver-pinout.md); IWDG on the F446 + the fail-safe pulls.
+
+## Brake drive (#74)
+
+24 V fail-safe brake (coil energised = brake released), switched low-side on the driver board. Connector J8 (+24V / `BRAKE_LS`), +24 V from the power board (J2).
+
+| Part | Value | Why |
+|---|---|---|
+| Q10 | **AO3422** (SOT-23, 55 V, R<sub>DS(on)</sub> < 200 mΩ @ V<sub>GS</sub> = 2.5 V, V<sub>GS(th)</sub> ≤ 2 V) | Driven straight from a 3.3 V GPIO. AOD4126 (bridge FET) was rejected: V<sub>GS(th)</sub> 3.3 V typ / 4 V max and R<sub>DS(on)</sub> only specified at 7 V and 10 V → it would not turn on reliably from 3.3 V |
+| R47 | 1 kΩ series | Same rule as the other Nucleo → board lines (#73) |
+| R48 | 100 kΩ gate → GND | Fail-safe: J7 off / MCU in reset / no 3V3 → gate low → brake engaged. Gate = 3.3 V × 100k / 101k ≈ 3.27 V when driven |
+| D3 | **SMBJ33A** drain → GND (V<sub>BR</sub> 36.7–40.6 V, V<sub>C</sub> ≤ 53.3 V) | Clamps the coil turn-off spike below Q10's 55 V. Standoff 33 V > 24 V + 10 % |
+
+- **Why a TVS instead of a freewheel diode:** with a diode across the coil the reverse voltage is only ~0.7 V, so the current decays slowly and the brake engages late. With the drain clamped at ~38 V the coil sees ~14 V reverse → current decays roughly 20× faster → the brake engages sooner after a fault (important for A2/A3, which hold gravity load).
+- Q10 dissipation at 1 A coil current: 1² × 0.2 Ω = 0.2 W (SOT-23 is fine). Re-check if a brake above ~1.5 A is chosen.
+- Firmware: PF12 low at boot (default), set high only after the axis holds torque.
+
+## Encoder input (#74)
+
+J9 (JST XH, 6 pin): 1 +5V, 2 A+, 3 A−, 4 B+, 5 B−, 6 GND. No index channel (ENCN tied to GND, #72). +5 V for the encoder comes from the power board (J4-2).
+
+- Net names `ENC_A_P` / `ENC_A_N` / `ENC_B_P` / `ENC_B_N` → RS422 net class.
+- AM26LV32E on 3.3 V, R18/R19 120 Ω termination at the receiver. The bus pins have ±15 kV IEC ESD on chip → no external TVS.
+- **Fail-safe bias R58–R61 (560 Ω):** A+/B+ to 3V3, A−/B− to GND. The current datasheet (SLLS849E, rev E 2023) only guarantees *open-circuit* fail-safe; the shorted/terminated fail-safe was removed. With R18/R19 on the board an unplugged cable is a *terminated* input (V<sub>ID</sub> ≈ 0) → output undefined → the TMC5160 could count noise.
+  - Unplugged: V<sub>ID</sub> = 3.3 V × 120 / (560 + 120 + 560) ≈ **320 mV** > 200 mV threshold → outputs high, no counts. A lost encoder then shows up as `ENC_DEVIATION` (encoder vs. X_ACTUAL).
+  - Plugged: ~2.7 mA extra load per line, well within an RS422 driver's rating.
+
