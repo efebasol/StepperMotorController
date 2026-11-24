@@ -73,3 +73,12 @@ R<sub>DS(on)</sub> at 100 °C: 24 mΩ max (25 °C) × ~1.45 (normalized curve) �
 - C31, C37, C48, C49: 470 nF / 100 V X7R, **one per half-bridge**, at the high-side drain / low-side source
 - C20 100 nF / 100 V at the XT30 input; VS RC filter R42 1 Ω + C19/C36 → net `VS_TMC`
 - D1 SMBJ51A clamps at ≈ 82 V > TMC5160 60 V max → it is a secondary transient clamp only; bus over-voltage protection is the **power-board chopper** (see [power-design-notes](power-design-notes.md)).
+
+## MCU interface (#73)
+
+The STM32 is **not** on the driver board: a NUCLEO-F446ZE is wired to J7 (2×8 header) with jumper wires. Full pin map, wiring rules and firmware settings: [driver-pinout](driver-pinout.md).
+
+- Only GND is shared; the Nucleo 3V3 is not connected (board 3V3 comes from the power board).
+- **1 kΩ in series on every Nucleo → board line** (R15 MOSI, R16 SCK — changed from 33 Ω — R56 CSN, R57 DRV_ENN): limits back-feed into an unpowered board to ~3 mA per pin and damps ringing on the wires. With the 10 k pull-ups a driven low reads 0.3 V (V<sub>IL</sub> ≈ 1 V) — fine. MISO keeps 33 Ω at the TMC SDO.
+- Fail-safe: DRV_ENN / CSN pulled high on the board → wire off or MCU in reset = driver disabled.
+- No external watchdog on this board (reason in driver-pinout.md); IWDG on the F446 + the fail-safe pulls.

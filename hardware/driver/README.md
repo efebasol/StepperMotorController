@@ -1,7 +1,8 @@
 # Driver board
 
 Single-axis stepper driver — **design only** (schematic + layout, not manufactured).
-STM32F446ZET6 + TMC5160A with an external MOSFET bridge (8× AOD4126), RS422 encoder input, brake drive.
+TMC5160A with an external MOSFET bridge (8× AOD4126), RS422 encoder input, brake drive.
+No MCU on the board: a **NUCLEO-F446ZE** drives it over jumper wires through J7 (2×8 header) — pin map in [docs/driver-pinout.md](../../docs/driver-pinout.md).
 Target: **~5 A RMS** per phase, VM = 48 V (from the power board).
 
 ## Stackup
@@ -12,7 +13,7 @@ Target: **~5 A RMS** per phase, VM = 48 V (from the power board).
 |---|---|---|
 | L1 (F.Cu) | 2 oz | Power stage (bridge, phases, VM) + parts |
 | L2 (In1.Cu) | 1 oz | Solid GND plane — never split |
-| L3 (In2.Cu) | 1 oz | Signals (STM32 fanout, SPI, encoder) + GND fill |
+| L3 (In2.Cu) | 1 oz | Signals (SPI, J7 interface, encoder) + GND fill |
 | L4 (B.Cu) | 2 oz | Power + signal |
 
 ## Net classes
@@ -32,7 +33,7 @@ Net names decide the class (patterns in the project file) — **name the nets in
 | `GND` | 0.5 / 0.2 | 0.6/0.3 | `GND` | |
 | `SENSE_KELVIN` | 0.25 / 0.2 | 0.6/0.3 | `*SENSE_*`, `*/SRA?`, `*/SRB?` (SRAH/SRAL/SRBH/SRBL) | Kelvin lines from the 22 mΩ shunts to SRA/SRB — route as a pair, away from phases |
 | `RS422` | 0.2 / 0.2 (pair gap 0.2) | 0.6/0.3 | `*ENC_*` with `_P` / `_N` (e.g. `ENC_A_P`, `ENC_A_N`) | Differential encoder lines (not impedance-controlled) |
-| `Default` | 0.2 / 0.15 | 0.6/0.3 | everything else | STM32 LQFP144 0.5 mm pitch fanout |
+| `Default` | 0.2 / 0.15 | 0.6/0.3 | everything else | Logic signals, TMC5160 0.5 mm pitch fanout |
 
 KiCad uses the larger clearance of two nets → every 48 V-class net keeps 0.6 mm from everything.
 
