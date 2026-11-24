@@ -1140,7 +1140,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+VM"
+		(symbol "Step Motor Controller:+VM"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3899,7 +3899,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 243.84 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -4377,7 +4377,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 110.49 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -6084,7 +6084,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 97.79 29.21 0)
 		(unit 1)
 		(body_style 1)
@@ -7452,7 +7452,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VM")
+		(lib_id "Step Motor Controller:+VM")
 		(at 231.14 29.21 0)
 		(unit 1)
 		(body_style 1)

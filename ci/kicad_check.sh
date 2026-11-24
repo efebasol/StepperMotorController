@@ -4,7 +4,7 @@
 # With STRICT=1 the job fails on ERC/DRC errors.
 set -uo pipefail
 DIR="$1"; NAME=$(basename "$DIR")
-SCH=$(ls "$DIR"/*.kicad_sch | head -1); PCB=$(ls "$DIR"/*.kicad_pcb | head -1)
+PRO=$(ls "$DIR"/*.kicad_pro | head -1); SCH="${PRO%.kicad_pro}.kicad_sch"; PCB="${PRO%.kicad_pro}.kicad_pcb"   # root sheet, not a sub-sheet
 OUT="ci-out/$NAME"; mkdir -p "$OUT"/{docs,reports}
 SUM="${GITHUB_STEP_SUMMARY:-/dev/stdout}"
 fail=0

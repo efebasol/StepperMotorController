@@ -29,7 +29,7 @@ jobs:
           cp /usr/share/kicad/template/sym-lib-table /usr/share/kicad/template/fp-lib-table /root/.config/kicad/10.0/
           mkdir -p out
           for d in hardware/power hardware/driver; do
-            S=$(ls $d/smc_*.kicad_sch | head -1)
+            n=$(basename $d); P=$(ls $d/*.kicad_pro | head -1); S="${P%.kicad_pro}.kicad_sch"
             kicad-cli sch export netlist --format kicadxml --output out/$n.net.xml "$S" || true
             kicad-cli sch erc --format json --severity-all --output out/$n.erc.json "$S" || true
           done
