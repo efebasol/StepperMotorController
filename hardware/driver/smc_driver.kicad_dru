@@ -1,0 +1,22 @@
+(version 1)
+(rule "High-current nets: outer 2 oz layers only"
+  (layer inner)
+  (condition "A.NetClass == 'PWR_48V' || A.NetClass == 'MOTOR_PHASE'")
+  (constraint disallow track zone))
+(rule "M3 mounting holes: keep copper off the screw head / standoff"
+  (condition "B.memberOfFootprint('H*')")
+  (constraint hole_clearance (min 2.0mm)))
+(rule "RS422 pairs: keep coupled"
+  (condition "A.NetClass == 'RS422'")
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.2mm) (max 0.3mm))
+  (constraint diff_pair_uncoupled (max 5mm)))
+
+# --- JLCPCB 4-layer, 2 oz outer / 1 oz inner (realistic fab reference) ---
+(rule "JLC: outer 2 oz min track" (layer outer) (constraint track_width (min 0.15mm)))
+(rule "JLC: inner 1 oz min track" (layer inner) (constraint track_width (min 0.09mm)))
+(rule "JLC: via hole to copper" (condition "A.Type == 'Via'") (constraint hole_clearance (min 0.2mm)))
+(rule "JLC: PTH hole to copper" (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && !A.memberOfFootprint('H*')") (constraint hole_clearance (min 0.28mm)))
+(rule "JLC: hole to hole" (constraint hole_to_hole (min 0.2mm)))
+(rule "JLC: via annular ring" (condition "A.Type == 'Via'") (constraint annular_width (min 0.15mm)))
+(rule "JLC: NPTH min" (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'") (constraint hole_size (min 0.5mm)))
+(rule "JLC: silk text" (layer "F.Silkscreen") (constraint text_height (min 1.0mm)) (constraint text_thickness (min 0.15mm)))
