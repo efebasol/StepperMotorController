@@ -1,6 +1,6 @@
 name: Hardware CI
 
-# On every push: ERC, DRC, schematic PDF, BOM, Gerber, CPL
+# On every push: ERC, DRC, schematic PDF, PCB PDF, BOM
 on:
   push:
     paths: ["hardware/**", "ci/**", ".github/workflows/hardware-ci.yml"]

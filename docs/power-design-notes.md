@@ -1,4 +1,4 @@
-# Power board – design notes (Rev A)
+# Power board – design notes
 
 Key numbers behind the power board decisions. Issue numbers point to the discussion.
 

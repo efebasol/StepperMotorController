@@ -1,6 +1,6 @@
 # Power board
 
-Rev A — single-motor bench prototype power board.
+Single-motor bench prototype power board — **design only** (schematic + layout, not manufactured).
 Feeds the driver board (48 V), the stepper motor brake (24 V) and the logic (5 V / 3V3).
 
 ## Blocks
@@ -35,7 +35,7 @@ Main-board side: 1 kΩ series resistor at the MCU ADC pin for VBUS_SENSE; one pu
 
 ## Stackup
 
-4 layers, 1.6 mm, JLCPCB.
+4 layers, 1.6 mm. Design rules follow JLCPCB's 2 oz capabilities as a realistic fab reference.
 
 | Layer | Copper | Use |
 |---|---|---|
@@ -45,8 +45,6 @@ Main-board side: 1 kΩ series resistor at the MCU ADC pin for VBUS_SENSE; one pu
 | L4 (B.Cu) | 2 oz | Power + signal |
 
 **48 V, 24 V and SW nodes are routed on the 2 oz outer layers only** (inner 1 oz layers can't carry or dissipate that current). Vias between L1 and L4 are fine — current flows in the plated barrel.
-
-> Order note: JLC's inner-layer default is 0.5 oz — select **1 oz** explicitly.
 
 ## Net classes
 

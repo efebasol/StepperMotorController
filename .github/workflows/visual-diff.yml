@@ -2,7 +2,7 @@ name: Visual Diff
 
 # Shows schematic/PCB changes visually (before | after | diff).
 # Automatic: on every push that touches hardware/, compares against the previous commit.
-# Manual: Actions > Visual Diff > Run workflow → enter a tag/commit as base (e.g. power-rev-a).
+# Manual: Actions > Visual Diff > Run workflow → enter a tag/commit as base (e.g. a commit hash).
 on:
   push:
     paths: ["hardware/**"]

@@ -1,5 +1,5 @@
 name: 🐞 Bug
-description: Şematikte, layout'ta, kartta veya firmware'de bulunan bir sorun
+description: Şematikte veya layout'ta bulunan bir sorun
 title: "[BUG] "
 labels: ["bug"]
 body:
@@ -12,15 +12,15 @@ body:
   - type: input
     id: rev
     attributes:
-      label: Revizyon / commit
-      description: Sorun hangi kart revizyonunda veya commit'te görülüyor?
-      placeholder: "Rev A / power-rev-a / 4aabb87"
+      label: Commit
+      description: Sorun hangi commit'te görülüyor?
+      placeholder: "4aabb87"
     validations: {required: true}
   - type: dropdown
     id: stage
     attributes:
       label: Nerede bulundu
-      options: [Şematik review, Layout review, ERC/DRC, Bring-up / test, Normal çalışma]
+      options: [Şematik review, Layout review, ERC/DRC]
   - type: textarea
     id: what
     attributes:
@@ -31,7 +31,7 @@ body:
     id: evidence
     attributes:
       label: Kanıt
-      description: Ölçümler, osiloskop görüntüleri, şematik/layout ekran görüntüleri (sürükle bırak)
+      description: Hesaplar, şematik/layout ekran görüntüleri, DRC/ERC çıktısı (sürükle bırak)
   - type: textarea
     id: fix
     attributes:
@@ -40,4 +40,4 @@ body:
     id: when
     attributes:
       label: Ne zaman düzeltilecek?
-      options: [Bu revizyonda, Rev B'ye ertele, Karar verilmedi]
+      options: [Şimdi, Robot kol aşamasına ertele, Karar verilmedi]

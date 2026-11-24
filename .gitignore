@@ -44,7 +44,7 @@ fp-info-cache
 *.csv
 
 # --- Fabrication outputs ---
-# Not committed: CI generates them on every push; the ordered revision is attached to a GitHub Release
+# Not committed (design-only project; nothing is manufactured)
 gerber/
 gerbers/
 fab/

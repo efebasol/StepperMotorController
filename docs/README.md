@@ -7,4 +7,4 @@ Design calculations, decisions and notes.
 
 ## Index
 
-- [Power board – design notes (Rev A)](power-design-notes.md)
+- [Power board – design notes](power-design-notes.md)

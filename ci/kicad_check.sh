@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Usage: ci/kicad_check.sh <board-dir>   (e.g. hardware/power)
-# Runs ERC + DRC and generates fab/doc outputs under ci-out/<board>/.
+# Runs ERC + DRC and generates doc outputs (schematic/PCB PDF, BOM) under ci-out/<board>/.
 # With STRICT=1 the job fails on ERC/DRC errors.
 set -uo pipefail
 DIR="$1"; NAME=$(basename "$DIR")
 SCH=$(ls "$DIR"/*.kicad_sch | head -1); PCB=$(ls "$DIR"/*.kicad_pcb | head -1)
-OUT="ci-out/$NAME"; mkdir -p "$OUT"/{fab,docs,reports}
+OUT="ci-out/$NAME"; mkdir -p "$OUT"/{docs,reports}
 SUM="${GITHUB_STEP_SUMMARY:-/dev/stdout}"
 fail=0
 
@@ -55,25 +55,18 @@ print(sum(x['severity']=='error' for x in v), sum(x['severity']=='warning' for x
   echo "| Unconnected | $DU | – |" >> "$SUM"
   echo "| Schematic ↔ PCB parity | $DP | – |" >> "$SUM"
   [ "$DE" -gt 0 ] || [ "$DU" -gt 0 ] && echo "::warning title=DRC ($NAME)::$DE errors, $DU unconnected – details: artifact > reports/drc.rpt" && fail=1
-  # --- Fabrication outputs ---
-  kicad-cli pcb export gerbers --output "$OUT/fab/gerber/" "$PCB" >/dev/null
-  kicad-cli pcb export drill   --output "$OUT/fab/gerber/" "$PCB" >/dev/null
-  kicad-cli pcb export pos --format csv --units mm --side both --output "$OUT/fab/cpl.csv" "$PCB" >/dev/null
-  (cd "$OUT/fab" && zip -qr "${NAME}-gerber.zip" gerber)
   kicad-cli pcb export pdf --layers "F.Cu,B.Cu,F.Silkscreen,B.Silkscreen,Edge.Cuts" --output "$OUT/docs/${NAME}-pcb.pdf" "$PCB" >/dev/null || true
-  # --- JLCPCB-ready Gerber / BOM / CPL ---
-  bash "$(dirname "$0")/jlc_export.sh" "$DIR" || echo "::warning title=JLC export ($NAME)::failed"
 else
-  echo "| DRC | – | – |" >> "$SUM"; echo "" >> "$SUM"; echo "_No footprints on the PCB yet – DRC and fab outputs skipped._" >> "$SUM"
+  echo "| DRC | – | – |" >> "$SUM"; echo "" >> "$SUM"; echo "_No footprints on the PCB yet – DRC skipped._" >> "$SUM"
 fi
 
 # --- Documentation ---
 kicad-cli sch export pdf --output "$OUT/docs/${NAME}-schematic.pdf" "$SCH" >/dev/null
-kicad-cli sch export bom --output "$OUT/fab/bom.csv" \
+kicad-cli sch export bom --output "$OUT/docs/bom.csv" \
   --fields 'Reference,Value,Footprint,${QUANTITY},LCSC' --labels 'Designator,Value,Footprint,Qty,LCSC Part' \
   --group-by 'Value,Footprint' --ref-range-delimiter '' "$SCH" >/dev/null || true
 
-echo "" >> "$SUM"; echo "📦 Outputs: in the **$NAME-outputs** artifact (schematic PDF, BOM, Gerber, CPL, reports)." >> "$SUM"
+echo "" >> "$SUM"; echo "📦 Outputs: in the **$NAME-outputs** artifact (schematic/PCB PDF, BOM, reports)." >> "$SUM"
 echo "::notice title=Outputs ($NAME)::$(cd "$OUT" && find . -type f -printf '%P (%kK) ' | cut -c1-900)"
 if [ "${STRICT:-0}" = "1" ] && [ $fail = 1 ]; then echo "STRICT: ERC/DRC errors"; exit 1; fi
 exit 0
